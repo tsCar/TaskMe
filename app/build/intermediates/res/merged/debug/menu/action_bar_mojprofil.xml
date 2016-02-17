@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- my profile -->
+    <item android:id="@+id/action_profil"
+        android:icon="@drawable/profil"
+        android:title="Profil"
+        app:showAsAction="always"
+
+        />
+
+
+
+
+</menu>

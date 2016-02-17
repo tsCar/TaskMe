@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\mpetk\Desktop\TaskMe\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
+        <dex dex="C:\Users\mpetk\Desktop\TaskMe\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.0_dc5392f91a56592f7e58d7b90434c3a46a9c2d7f.jar" />
+    </item>
+    <item
+        jar="C:\Users\mpetk\Desktop\TaskMe\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Users\mpetk\Desktop\TaskMe\app\build\intermediates\pre-dexed\debug\com.mcxiaoke.volley-library-aar-1.0.0_5728572c6570338b629214fee23a7e61c5436a4e.jar" />
+    </item>
+
+</items>

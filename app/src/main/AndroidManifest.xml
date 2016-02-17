@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mpetk.taskme">
+
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".BrisanjeKlijenata"></activity>
+        <activity android:name=".BrisanjeKorisnika"></activity>
+        <activity android:name=".BrisanjeZadatka"></activity>
+        <activity android:name=".DodjelaZadatka"></activity>
+        <activity android:name=".EvidentirajObavljeniPosao"></activity>
+        <activity android:name=".Home"></activity>
+        <activity android:name=".HomeZaposlenik"></activity>
+        <activity android:name=".IzmjenaKlijenata"></activity>
+        <activity android:name=".IzmjenaKorisnika"></activity>
+        <activity android:name=".IzmjenaZadatka"></activity>
+        <activity android:name=".IzmjeniObavljeniPosao"></activity>
+        <activity android:name=".KreiranjeIzvjestaja"></activity>
+        <activity android:name=".KreiranjeKlijenta"></activity>
+        <activity android:name=".KreiranjeKorisnika"></activity>
+        <activity android:name=".KreiranjeZadatak"></activity>
+        <activity android:name=".Odjava"></activity>
+        <activity android:name=".PregledEvidencije"></activity>
+        <activity android:name=".PretragaKlijenata"></activity>
+        <activity android:name=".PretragaKorisnika"></activity>
+        <activity android:name=".PretragaZadataka"></activity>
+        <activity android:name=".PromjenaSifre"></activity>
+        <activity android:name=".UpravljanjeZadacima"></activity>
+        <activity android:name=".ZadaciZaposlenika"></activity>
+
+    </application>
+
+</manifest>

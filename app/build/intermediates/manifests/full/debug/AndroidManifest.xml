@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mpetk.taskme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.mpetk.taskme.Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.mpetk.taskme.BrisanjeKlijenata" />
+        <activity android:name="com.example.mpetk.taskme.BrisanjeKorisnika" />
+        <activity android:name="com.example.mpetk.taskme.BrisanjeZadatka" />
+        <activity android:name="com.example.mpetk.taskme.DodjelaZadatka" />
+        <activity android:name="com.example.mpetk.taskme.EvidentirajObavljeniPosao" />
+        <activity android:name="com.example.mpetk.taskme.Home" />
+        <activity android:name="com.example.mpetk.taskme.HomeZaposlenik" />
+        <activity android:name="com.example.mpetk.taskme.IzmjenaKlijenata" />
+        <activity android:name="com.example.mpetk.taskme.IzmjenaKorisnika" />
+        <activity android:name="com.example.mpetk.taskme.IzmjenaZadatka" />
+        <activity android:name="com.example.mpetk.taskme.IzmjeniObavljeniPosao" />
+        <activity android:name="com.example.mpetk.taskme.KreiranjeIzvjestaja" />
+        <activity android:name="com.example.mpetk.taskme.KreiranjeKlijenta" />
+        <activity android:name="com.example.mpetk.taskme.KreiranjeKorisnika" />
+        <activity android:name="com.example.mpetk.taskme.KreiranjeZadatak" />
+        <activity android:name="com.example.mpetk.taskme.Odjava" />
+        <activity android:name="com.example.mpetk.taskme.PregledEvidencije" />
+        <activity android:name="com.example.mpetk.taskme.PretragaKlijenata" />
+        <activity android:name="com.example.mpetk.taskme.PretragaKorisnika" />
+        <activity android:name="com.example.mpetk.taskme.PretragaZadataka" />
+        <activity android:name="com.example.mpetk.taskme.PromjenaSifre" />
+        <activity android:name="com.example.mpetk.taskme.UpravljanjeZadacima" />
+        <activity android:name="com.example.mpetk.taskme.ZadaciZaposlenika" />
+    </application>
+
+</manifest>
