@@ -130,8 +130,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
                 //Adding parameters to request
-               // params.put(Config.KEY_KOR_IME, username);
-               // params.put(Config.KEY_LOZINKA, password);
+               params.put(Config.KEY_KOR_IME, username);
+               params.put(Config.KEY_LOZINKA, password);
 
                 //returning parameter
                 System.out.println("params:");
