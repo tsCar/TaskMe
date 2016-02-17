@@ -10,7 +10,7 @@ public class Config {
     public static final String KEY_LOZINKA = "LOZINKA";
 
     //If server response is equal to this that means login is successful
-    public static final String LOGIN_SUCCESS = "success";
+    public static final String LOGIN_SUCCESS = "1";
 
     //Keys for Sharedpreferences
     //This would be the name of our shared preferences
