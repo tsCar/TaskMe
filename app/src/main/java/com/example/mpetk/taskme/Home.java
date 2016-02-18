@@ -29,7 +29,7 @@ public class Home extends AppCompatActivity {
         String email = sharedPreferences.getString(Config.IME_SHARED_PREF,"Not Available");
 
         //Showing the current logged in email to textview
-        textView.setText("Current User: " + email);
+       // textView.setText("Current User: " + email);
     }
 
     //Logout function

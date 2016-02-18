@@ -18,6 +18,7 @@ import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.BasicNetwork;
 import com.android.volley.toolbox.HurlStack;
@@ -87,12 +88,13 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         final String password = editTextPassword.getText().toString().trim();
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeUsername.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.42.138/taskmeBazaCitanjeUsername.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                   //If we are getting success from server
-                        if (response.equalsIgnoreCase("1")) {
+
+                        if (response.trim().equalsIgnoreCase("1")) {
                             //Creating a shared preference
                             SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
@@ -123,7 +125,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //You can handle error here if you want
+                        System.out.println(error);
                     }
                 }) {
             @Override
@@ -152,7 +154,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
       //  RequestQueue requestQueue = new RequestQueue(new NoCache(), new BasicNetwork(new HurlStack()));
+        System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
+
+
 
     }
 
