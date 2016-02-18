@@ -113,19 +113,39 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             Intent intent = new Intent(Login.this, Home.class);
                             startActivity(intent);
 
-                        } else {
+                        }
+                        else  if (response.trim().equalsIgnoreCase("2")) {
+                            //Creating a shared preference
+                            SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+
+                            //Creating editor to store values to shared preferences
+                            SharedPreferences.Editor editor;
+                            editor = sharedPreferences.edit();
+
+                            //Adding values to editor
+                            editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
+                            editor.putString(Config.IME_SHARED_PREF, username);
+
+                            //Saving values to editor
+                            editor.apply();
+
+                            //Starting profile activity
+                            Intent intent = new Intent(Login.this, HomeZaposlenik.class);
+                            startActivity(intent);
+
+                        }
+                        else {
                             //If the server response is not success
                             //Displaying an error message on toast
                             Toast.makeText(Login.this, "Invalid username or password", Toast.LENGTH_LONG).show();
                         }
-                        System.out.println("response");
-                        System.out.println(response);
+
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        System.out.println(error);
+                        //
                     }
                 }) {
             @Override

@@ -26,10 +26,10 @@ public class Home extends AppCompatActivity {
 
         //Fetching email from shared preferences
         SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        String email = sharedPreferences.getString(Config.IME_SHARED_PREF,"Not Available");
+        String us = sharedPreferences.getString(Config.IME_SHARED_PREF,"Not Available");
 
         //Showing the current logged in email to textview
-       // textView.setText("Current User: " + email);
+        textView.setText(us);
     }
 
     //Logout function
