@@ -18,7 +18,6 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
             android:id="@+id/textView"
-            android:textStyle="bold"
             android:textColor="#F7FAF9"
             />
 
