@@ -16,6 +16,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import android.widget.ArrayAdapter;
@@ -30,13 +33,13 @@ import com.android.volley.toolbox.Volley;
  */
 public class PretragaKorisnika  extends Activity {
 
-
+    public ArrayList list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pretraga_korisnika);
-
+        list = new ArrayList();
        // setContentView(R.layout.activity_pretraga_korisnika);
 
 
@@ -46,9 +49,9 @@ public class PretragaKorisnika  extends Activity {
     protected void onResume() {
         super.onResume();
         showList();
-        String[] lista={"Android","IPhone","WindowsMobile","Blackberry","WebOS","Ubuntu","Windows7","Max OS X"};
+       // String[] lista={"Android","IPhone","WindowsMobile","Blackberry","WebOS","Ubuntu","Windows7","Max OS X"};
         //String[] lista = getResources().getStringArray(R.array.lista_proba);
-        ArrayAdapter adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, lista);
+        ArrayAdapter adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
         ListView listview = (ListView) findViewById(R.id.lista_usera);
 System.out.println("to, ovo"+listview);
         listview.setAdapter(adapter1);
@@ -64,7 +67,8 @@ System.out.println("to, ovo"+listview);
                         //If we are getting success from server
 
                         System.out.print(response);
-                        String[] lista = response.split(",");
+                        List<String> useri = Arrays.asList(response.split(","));
+                        list.addAll(useri);
                       //  System.out.print("useri: " + lista[0]);
                     }
                 },
