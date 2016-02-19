@@ -528,6 +528,10 @@
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\src\\main\\res\\layout\\activity_kreiranje_korisnika.xml"
     },
     {
+        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grga.xml",
+        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\layout\\grga.xml"
+    },
+    {
         "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_time.xml"
     },
@@ -962,10 +966,6 @@
     {
         "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_izmjena_korisnika.xml",
-        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\layout\\activity_izmjena_korisnika.xml"
     },
     {
         "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\prikaz_radnog_zadataka.xml",

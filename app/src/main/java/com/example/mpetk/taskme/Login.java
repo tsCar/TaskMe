@@ -75,11 +75,13 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         boolean loggedIn = sharedPreferences.getBoolean(Config.LOGGEDIN_SHARED_PREF, false);
 
         //If we will get true
-        if (loggedIn) {
+       //  OVO VRATIT
+       if (loggedIn) {
             //We will start the Profile Activity
             Intent intent = new Intent(Login.this, Home.class);
             startActivity(intent);
-        }
+       // I OVO
+       }
     }
 
     private void login() {
