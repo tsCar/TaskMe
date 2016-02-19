@@ -579,6 +579,7 @@ int id action_mode_bar_stub 0x7f0d0056
 int id action_mode_close_button 0x7f0d003c
 int id action_profil 0x7f0d0097
 int id activity_chooser_view_content 0x7f0d003d
+int id add 0x7f0d0099
 int id adjust_height 0x7f0d0030
 int id adjust_width 0x7f0d0031
 int id alertTitle 0x7f0d0049
@@ -610,7 +611,9 @@ int id customPanel 0x7f0d004f
 int id datePicker 0x7f0d007a
 int id decor_content_parent 0x7f0d0058
 int id default_activity_button 0x7f0d0040
+int id delete 0x7f0d009b
 int id disableHome 0x7f0d000d
+int id edit 0x7f0d009a
 int id edit_query 0x7f0d005c
 int id editxt_novi_pas 0x7f0d0086
 int id editxt_password 0x7f0d0080
@@ -799,6 +802,7 @@ int layout select_dialog_singlechoice_material 0x7f040049
 int layout support_simple_spinner_dropdown_item 0x7f04004a
 int menu action_bar_mojprofil 0x7f0e0000
 int menu menu 0x7f0e0001
+int menu menu_list 0x7f0e0002
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f060001

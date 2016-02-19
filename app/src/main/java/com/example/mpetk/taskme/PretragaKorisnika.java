@@ -4,7 +4,12 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.HeaderViewListAdapter;
 import android.widget.ListAdapter;
@@ -31,7 +36,7 @@ import com.android.volley.toolbox.Volley;
 /**
  * Created by mpetk on 15.2.2016..
  */
-public class PretragaKorisnika  extends Activity {
+public class PretragaKorisnika  extends AppCompatActivity {
 
     public ArrayList list;
 
@@ -53,7 +58,7 @@ public class PretragaKorisnika  extends Activity {
         //String[] lista = getResources().getStringArray(R.array.lista_proba);
         ArrayAdapter adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
         ListView listview = (ListView) findViewById(R.id.lista_usera);
-System.out.println("to, ovo"+listview);
+        registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
         //setContentView(R.layout.activity_pretraga_korisnika);
     }
@@ -94,5 +99,32 @@ System.out.println("to, ovo"+listview);
         requestQueue.add(stringRequest);
     }
 
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        if (v.getId()==R.id.lista_usera) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.menu_list, menu);
+        }
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        switch(item.getItemId()) {
+            case R.id.add:
+                // add stuff here
+                return true;
+            case R.id.edit:
+                // edit stuff here
+                return true;
+            case R.id.delete:
+                // remove stuff here
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
 
     }

@@ -2196,6 +2196,7 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f0d003c;
         public static final int action_profil=0x7f0d0097;
         public static final int activity_chooser_view_content=0x7f0d003d;
+        public static final int add=0x7f0d0099;
         public static final int adjust_height=0x7f0d0030;
         public static final int adjust_width=0x7f0d0031;
         public static final int alertTitle=0x7f0d0049;
@@ -2227,7 +2228,9 @@ containing a value of this type.
         public static final int datePicker=0x7f0d007a;
         public static final int decor_content_parent=0x7f0d0058;
         public static final int default_activity_button=0x7f0d0040;
+        public static final int delete=0x7f0d009b;
         public static final int disableHome=0x7f0d000d;
+        public static final int edit=0x7f0d009a;
         public static final int edit_query=0x7f0d005c;
         public static final int editxt_novi_pas=0x7f0d0086;
         public static final int editxt_password=0x7f0d0080;
@@ -2422,6 +2425,7 @@ containing a value of this type.
     public static final class menu {
         public static final int action_bar_mojprofil=0x7f0e0000;
         public static final int menu=0x7f0e0001;
+        public static final int menu_list=0x7f0e0002;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
