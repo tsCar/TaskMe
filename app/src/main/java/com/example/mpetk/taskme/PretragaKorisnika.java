@@ -113,10 +113,10 @@ public class PretragaKorisnika  extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         switch(item.getItemId()) {
-            case R.id.add:
+            case R.id.show:
                 // add stuff here
                 return true;
-            case R.id.edit:
+            case R.id.modify:
                 // edit stuff here
                 return true;
             case R.id.delete:

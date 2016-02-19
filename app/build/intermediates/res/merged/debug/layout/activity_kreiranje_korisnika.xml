@@ -1,6 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mpetk.taskme;"
+    android:background="#54ABE0"
+    >
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                />
+
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_ime"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_prezime"
+                android:hint="Surname"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_OIB"
+                android:hint="OIB"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_broj_osobne"
+                android:hint="ID number"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_adresa"
+                android:hint="Address"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_telefon"
+                android:hint="Phone number"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_mail"
+                android:hint="E-mail"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_datum_zap"
+                android:hint="Date of employment"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_username"
+                android:hint="Username"
+                android:paddingLeft="10dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/izmjena_korisnika_pass"
+                android:hint="Password"
+                android:paddingLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_tip_korisnika"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#E8FDF6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/spinner_tip_korisnika"
+                />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="Create user"
+                android:id="@+id/button_modify_user"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/zakrivljeno"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="#F7FAF9"
+
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
