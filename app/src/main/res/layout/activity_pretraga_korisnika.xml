@@ -34,7 +34,7 @@
             android:layout_height="250dp"
             android:background="#E8FDF6"
             android:id="@+id/lista_usera"
-            android:entries="@array/lista_proba"
+            android:textColor="#000000"
             />
 
         <Button
