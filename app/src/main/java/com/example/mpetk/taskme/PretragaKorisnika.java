@@ -51,15 +51,16 @@ public class PretragaKorisnika  extends AppCompatActivity{//} implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pretraga_korisnika);
-        Button dodaj = (Button) findViewById(R.id.pretraga_add_korisnik);
+        final Button dodaj = (Button) findViewById(R.id.pretraga_add_korisnik);
         dodaj.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 System.out.println("idem");
-                Intent intentNewUser = new Intent(PretragaKorisnika.this, Login.class);
+                Intent intentNewUser = new Intent(PretragaKorisnika.this, KreiranjeKorisnika.class);
                 startActivity(intentNewUser);
             }
         });
-        System.out.println("dodaj  " + dodaj + "   is clickable?" +dodaj.isClickable());
+        System.out.println("dodaj  " + dodaj + "   \nis clickable? " + dodaj.isClickable() + " is in layout " + dodaj.isInLayout());
+
         list = new ArrayList();
     }
 
@@ -67,12 +68,14 @@ public class PretragaKorisnika  extends AppCompatActivity{//} implements View.On
     protected void onResume() {
         super.onResume();
         showList();
+
        // String[] lista={"Android","IPhone","WindowsMobile","Blackberry","WebOS","Ubuntu","Windows7","Max OS X"};
         //String[] lista = getResources().getStringArray(R.array.lista_proba);
         ArrayAdapter adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
         listview = (ListView) findViewById(R.id.lista_usera);
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
+
         //setContentView(R.layout.activity_pretraga_korisnika);
     }
 
@@ -104,7 +107,7 @@ public class PretragaKorisnika  extends AppCompatActivity{//} implements View.On
 
 
         };
-        setContentView(R.layout.activity_pretraga_korisnika);
+      //  setContentView(R.layout.activity_pretraga_korisnika);
         //Adding the string request to the queue
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);

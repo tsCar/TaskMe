@@ -27,7 +27,7 @@ public class KreiranjeKorisnika  extends AppCompatActivity implements View.OnCli
 
     int[] idtxt = new int[] { R.id.kreiranje_korisnika_ime, R.id.kreiranje_korisnika_prezime, R.id.kreiranje_korisnika_OIB,
             R.id.kreiranje_korisnika_broj_osobne,R.id.kreiranje_korisnika_adresa,R.id.kreiranje_korisnika_telefon,
-            R.id.izmjena_korisnika_mail,R.id.izmjena_korisnika_username,
+            R.id.kreiranje_korisnika_mail,R.id.kreiranje_korisnika_username,
             R.id.kreiranje_korisnika_pass, R.id.kreiranje_korisnika_datum_zap};
 
     @Override
@@ -61,8 +61,8 @@ public class KreiranjeKorisnika  extends AppCompatActivity implements View.OnCli
                 }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-
-                Map<String, String> params = new HashMap<>();
+System.out.println("spinner: "+((Spinner) findViewById(R.id.kreiranje_spinner_tip_korisnika)).getSelectedItem().toString());
+        Map < String, String > params = new HashMap<>();
                 params.put("imeTablice", "korisnik");
                 params.put("IME", ((EditText)findViewById(idtxt[0])).getText().toString());
                 params.put("PREZIME", ((EditText) findViewById(idtxt[1])).getText().toString());
@@ -74,7 +74,7 @@ public class KreiranjeKorisnika  extends AppCompatActivity implements View.OnCli
                 params.put("KORISNICKO_IME", ((EditText) findViewById(idtxt[7])).getText().toString());
                 params.put("LOZINKA", ((EditText) findViewById(idtxt[8])).getText().toString());
                 params.put("DATUM_ZAPOSLENJA", ((EditText) findViewById(idtxt[9])).getText().toString());
-                params.put("TIP_KORISNIKA", ((Spinner)findViewById(R.id.kreiranje_spinner_tip_korisnika)).getSelectedItem().toString() );
+                params.put("TIPKORISNIKA_ID", ((Spinner)findViewById(R.id.kreiranje_spinner_tip_korisnika)).getSelectedItem().toString() );
 
                 return params;
 
