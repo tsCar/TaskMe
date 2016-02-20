@@ -70,7 +70,7 @@ public class PretragaKorisnika  extends AppCompatActivity {
 
     private void showList () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.42.138/taskmeBazaCitanjeKorisnika.php",
+                "http://192.168.178.50/taskmeBazaCitanjeKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -85,7 +85,7 @@ public class PretragaKorisnika  extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //
+                        System.out.println("error: "+error);
                     }
                 }) {
             @Override

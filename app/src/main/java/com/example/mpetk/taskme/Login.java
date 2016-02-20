@@ -90,11 +90,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         final String password = editTextPassword.getText().toString().trim();
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.42.138/taskmeBazaCitanjeUsername.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.178.50/taskmeBazaCitanjeUsername.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                  //If we are getting success from server
+                        System.out.println("response " + response);
 
                         if (response.trim().equalsIgnoreCase("1")) {
                             //Creating a shared preference
@@ -147,7 +147,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //
+                        System.out.println("error: "+error);
                     }
                 }) {
             @Override

@@ -34,7 +34,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:inputType="text"
-                android:text="proba"
                 android:background="#E8FDF6"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"

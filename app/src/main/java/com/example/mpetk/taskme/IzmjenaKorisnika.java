@@ -2,7 +2,11 @@ package com.example.mpetk.taskme;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
@@ -24,8 +28,9 @@ import java.util.Map;
  */
 public class IzmjenaKorisnika  extends AppCompatActivity {
 
-    List<String> useri;
-    public ArrayList list;
+    String[] podaci =new String[33];
+    int[] idtxt = new int[] { R.id.izmjena_korisnika_ime, R.id.izmjena_korisnika_prezime, R.id.izmjena_korisnika_OIB,R.id.izmjena_korisnika_broj_osobne,R.id.izmjena_korisnika_adresa,R.id.izmjena_korisnika_telefon,R.id.izmjena_korisnika_mail,R.id.izmjena_korisnika_datum_zap,R.id.izmjena_korisnika_username,R.id.izmjena_korisnika_pass };
+   // public ArrayList list;
     public String stariUser;
 
     @Override
@@ -41,28 +46,41 @@ public class IzmjenaKorisnika  extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         defaultValues();
-        populate(useri);
+     //   populate();
     }
 
     private void defaultValues () {
         System.out.println("usao u default");
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.42.138/taskmePodaciKorisnik.php",
+                "http://192.168.178.50/taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         //If we are getting success from server
+                        System.out.println("response " );System.out.println(response);
+                        podaci = response.split("\\|t",-1);
 
-                        System.out.print("response:  ");
-                        useri = Arrays.asList(response.split("\t"));
-                        list.addAll(useri);
-                        //  System.out.print("useri: " + lista[0]);
+                        System.out.println("useri: ");   System.out.println(java.util.Arrays.toString(podaci));
+                        System.out.println("podaci.length: ");   System.out.println(podaci.length);
+
+                        for (int i = 0; i < podaci.length-1; i++) {//zadnje je spinner, ne edittext
+                            EditText tmp= (EditText) findViewById(idtxt[i]);
+                            tmp.setText(podaci[i]);
+                            System.out.println("text iz view:"+tmp.getText());
+                        }
+                        Spinner tmp= (Spinner)findViewById(R.id.spinner_tip_korisnika);
+                        String myString = podaci[podaci.length-1].trim();//"some value"; //the value you want the position for
+                        ArrayAdapter myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
+                        int spinnerPosition = myAdap.getPosition(myString);
+                        tmp.setSelection(spinnerPosition);
+
+
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //
+                        System.out.println("error: "+error);
                     }
                 }) {
             @Override
@@ -75,20 +93,15 @@ public class IzmjenaKorisnika  extends AppCompatActivity {
 
 
         };
-        setContentView(R.layout.activity_pretraga_korisnika);
+      //  setContentView(R.layout.activity_pretraga_korisnika);
         //Adding the string request to the queue
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        // RequestQueue requestQueue = new RequestQueue(new NoCache(), new BasicNetwork(new HurlStack()));
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
     }
-    public void populate(List<String> useri){
-        EditText name22= (EditText) findViewById(R.id.izmjena_korisnika_ime);
-        System.out.println(R.id.izmjena_korisnika_ime);
-        System.out.println("name:  "+name22);
-        String txt="grga";//useri.get(0);
-        name22.setText("grgurGrozni Veličanstveni");
+    public void populate( ){
+
 
     }
 
