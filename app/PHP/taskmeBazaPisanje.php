@@ -16,7 +16,7 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
+    //echo "Connected successfully";
 
     if($imeTablice=="emaillog"){
 	$stmt = $conn->prepare("INSERT INTO $imeTablice (EMAILLOG_ID ,DATUM)    VALUES (:a, :b)");

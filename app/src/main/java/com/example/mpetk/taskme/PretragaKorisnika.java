@@ -138,6 +138,7 @@ public class PretragaKorisnika  extends AppCompatActivity{//} implements View.On
                 // add stuff here
 
                 Intent intent_show = new Intent(getApplicationContext(), PrikazKorisnika.class);
+                intent_show.putExtra(id_extra,user);
                 startActivity(intent_show);
                 return true;
             case R.id.modify:

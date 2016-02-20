@@ -2194,7 +2194,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0d0057;
         public static final int action_mode_bar_stub=0x7f0d0056;
         public static final int action_mode_close_button=0x7f0d003c;
-        public static final int action_profil=0x7f0d00af;
+        public static final int action_profil=0x7f0d00ba;
         public static final int activity_chooser_view_content=0x7f0d003d;
         public static final int adjust_height=0x7f0d0030;
         public static final int adjust_width=0x7f0d0031;
@@ -2228,7 +2228,7 @@ containing a value of this type.
         public static final int datePicker=0x7f0d0086;
         public static final int decor_content_parent=0x7f0d0058;
         public static final int default_activity_button=0x7f0d0040;
-        public static final int delete=0x7f0d00b3;
+        public static final int delete=0x7f0d00be;
         public static final int disableHome=0x7f0d000d;
         public static final int edit_query=0x7f0d005c;
         public static final int editxt_novi_pas=0x7f0d0093;
@@ -2284,10 +2284,10 @@ containing a value of this type.
         public static final int list_item=0x7f0d0041;
         public static final int lista_usera=0x7f0d008f;
         public static final int media_actions=0x7f0d00a6;
-        public static final int menuLogout=0x7f0d00b0;
+        public static final int menuLogout=0x7f0d00bb;
         public static final int middle=0x7f0d002f;
         public static final int mini=0x7f0d002d;
-        public static final int modify=0x7f0d00b2;
+        public static final int modify=0x7f0d00bd;
         public static final int multiply=0x7f0d0024;
         public static final int never=0x7f0d0035;
         public static final int none=0x7f0d000f;
@@ -2296,6 +2296,17 @@ containing a value of this type.
         public static final int parentPanel=0x7f0d0046;
         public static final int pin=0x7f0d0019;
         public static final int pretraga_add_korisnik=0x7f0d0090;
+        public static final int prikaz_korisnika_OIB=0x7f0d00b1;
+        public static final int prikaz_korisnika_adresa=0x7f0d00b3;
+        public static final int prikaz_korisnika_broj_osobne=0x7f0d00b2;
+        public static final int prikaz_korisnika_datum_zap=0x7f0d00b6;
+        public static final int prikaz_korisnika_ime=0x7f0d00af;
+        public static final int prikaz_korisnika_mail=0x7f0d00b5;
+        public static final int prikaz_korisnika_pass=0x7f0d00b8;
+        public static final int prikaz_korisnika_prezime=0x7f0d00b0;
+        public static final int prikaz_korisnika_telefon=0x7f0d00b4;
+        public static final int prikaz_korisnika_tip=0x7f0d00b9;
+        public static final int prikaz_korisnika_username=0x7f0d00b7;
         public static final int progress_circular=0x7f0d0005;
         public static final int progress_horizontal=0x7f0d0006;
         public static final int radio=0x7f0d0054;
@@ -2318,7 +2329,7 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f0d0067;
         public static final int select_dialog_listview=0x7f0d0068;
         public static final int shortcut=0x7f0d0053;
-        public static final int show=0x7f0d00b1;
+        public static final int show=0x7f0d00bc;
         public static final int showCustom=0x7f0d0010;
         public static final int showHome=0x7f0d0011;
         public static final int showTitle=0x7f0d0012;
