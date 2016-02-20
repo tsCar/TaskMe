@@ -24,12 +24,15 @@ import com.android.volley.toolbox.StringRequest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 //import com.android.volley.toolbox.Volley;
@@ -38,7 +41,7 @@ import com.android.volley.toolbox.Volley;
 /**
  * Created by mpetk on 15.2.2016..
  */
-public class PretragaKorisnika  extends AppCompatActivity {
+public class PretragaKorisnika  extends AppCompatActivity{//} implements View.OnClickListener{
 
     public ArrayList<String> list;
     public ListView listview;
@@ -48,11 +51,16 @@ public class PretragaKorisnika  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pretraga_korisnika);
-        System.out.println("Ispravan layout: "+R.layout.activity_pretraga_korisnika);
+        Button dodaj = (Button) findViewById(R.id.pretraga_add_korisnik);
+        dodaj.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("idem");
+                Intent intentNewUser = new Intent(PretragaKorisnika.this, Login.class);
+                startActivity(intentNewUser);
+            }
+        });
+        System.out.println("dodaj  " + dodaj + "   is clickable?" +dodaj.isClickable());
         list = new ArrayList();
-       // setContentView(R.layout.activity_pretraga_korisnika);
-
-
     }
 
     @Override
@@ -67,6 +75,7 @@ public class PretragaKorisnika  extends AppCompatActivity {
         listview.setAdapter(adapter1);
         //setContentView(R.layout.activity_pretraga_korisnika);
     }
+
 
     private void showList () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
@@ -146,4 +155,6 @@ public class PretragaKorisnika  extends AppCompatActivity {
         }
     }
 
-    }
+
+
+}

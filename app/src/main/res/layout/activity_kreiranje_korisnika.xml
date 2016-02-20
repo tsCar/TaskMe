@@ -38,7 +38,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_ime"
+                android:id="@+id/kreiranje_korisnika_ime"
                 android:hint="Name"
                 android:paddingLeft="10dp"
                 />
@@ -51,7 +51,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_prezime"
+                android:id="@+id/kreiranje_korisnika_prezime"
                 android:hint="Surname"
                 android:paddingLeft="10dp"
                 />
@@ -64,7 +64,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_OIB"
+                android:id="@+id/kreiranje_korisnika_OIB"
                 android:hint="OIB"
                 android:paddingLeft="10dp"
                 />
@@ -77,7 +77,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_broj_osobne"
+                android:id="@+id/kreiranje_korisnika_broj_osobne"
                 android:hint="ID number"
                 android:paddingLeft="10dp"
                 />
@@ -90,7 +90,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_adresa"
+                android:id="@+id/kreiranje_korisnika_adresa"
                 android:hint="Address"
                 android:paddingLeft="10dp"
                 />
@@ -103,7 +103,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_telefon"
+                android:id="@+id/kreiranje_korisnika_telefon"
                 android:hint="Phone number"
                 android:paddingLeft="10dp"
                 />
@@ -116,7 +116,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_mail"
+                android:id="@+id/kreiranje_korisnika_mail"
                 android:hint="E-mail"
                 android:paddingLeft="10dp"
                 />
@@ -129,7 +129,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_datum_zap"
+                android:id="@+id/kreiranje_korisnika_datum_zap"
                 android:hint="Date of employment"
                 android:paddingLeft="10dp"
                 />
@@ -142,7 +142,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_username"
+                android:id="@+id/kreiranje_korisnika_username"
                 android:hint="Username"
                 android:paddingLeft="10dp"
                 />
@@ -155,13 +155,13 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/izmjena_korisnika_pass"
+                android:id="@+id/kreiranje_korisnika_pass"
                 android:hint="Password"
                 android:paddingLeft="10dp"
                 />
 
             <Spinner
-                android:id="@+id/spinner_tip_korisnika"
+                android:id="@+id/kreiranje_spinner_tip_korisnika"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:background="#E8FDF6"
