@@ -82,6 +82,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             startActivity(intent);
        // I OVO
        }
+        else Toast.makeText(Login.this, "Šukurac", Toast.LENGTH_LONG).show();
     }
 
     private void login() {
