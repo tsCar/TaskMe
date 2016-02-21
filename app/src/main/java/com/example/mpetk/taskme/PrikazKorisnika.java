@@ -53,7 +53,7 @@ public class PrikazKorisnika  extends AppCompatActivity{
     private void defaultValues () {
         System.out.println("usao u default");
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.178.50/taskmePodaciKorisnik.php",
+                "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

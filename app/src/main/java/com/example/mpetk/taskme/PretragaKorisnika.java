@@ -82,7 +82,7 @@ public class PretragaKorisnika  extends AppCompatActivity{//} implements View.On
 
     private void showList () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.178.50/taskmeBazaCitanjeKorisnika.php",
+                "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

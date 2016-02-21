@@ -43,7 +43,7 @@ public class KreiranjeKorisnika  extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.178.50/taskmeBazaPisanje.php",
+                "http://whackamile.byethost3.com/taskme/taskmeBazaPisanje.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

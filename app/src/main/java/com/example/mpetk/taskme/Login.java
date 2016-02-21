@@ -91,7 +91,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         final String password = editTextPassword.getText().toString().trim();
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.178.50/taskmeBazaCitanjeUsername.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeUsername.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -168,8 +168,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public Map<String, String> getHeaders() throws AuthFailureError {
                 // Removed this line if you dont need it or Use application/json
                 // params.put("Content-Type", "application/x-www-form-urlencoded");
+                Map<String, String> headers = new HashMap<String, String>();
+                headers.put("User-agent", "Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile Safari/<WebKit Rev>");
+                return headers;
 
-                return new HashMap<String, String>();
             }
         };
 

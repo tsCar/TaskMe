@@ -61,7 +61,7 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
     private void defaultValues () {
         System.out.println("usao u default");
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.178.50/taskmePodaciKorisnik.php",
+                "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -113,7 +113,7 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.178.50/taskmeModifikacijaKorisnika.php",
+                "http://whackamile.byethost3.com/taskme/taskmeModifikacijaKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

@@ -3,7 +3,7 @@ package com.example.mpetk.taskme;
 
 public class Config {
     //URL to our login.php file
-    public static final String LOGIN_URL = "http://10.0.2.2/taskmeBazaCitanjeUsername.php";
+    public static final String LOGIN_URL = "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeUsername.php";
 
     //Keys for email and password as defined in our $_POST['key'] in login.php
     public static final String KEY_KOR_IME = "KORISNICKO_IME";
