@@ -2,6 +2,7 @@ package com.example.mpetk.taskme;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ContextMenu;
@@ -23,11 +24,15 @@ import com.android.volley.toolbox.StringRequest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 //import com.android.volley.toolbox.Volley;
@@ -36,42 +41,54 @@ import com.android.volley.toolbox.Volley;
 /**
  * Created by mpetk on 15.2.2016..
  */
-public class PretragaKorisnika  extends AppCompatActivity {
+public class PretragaKorisnika  extends AppCompatActivity{//} implements View.OnClickListener{
 
-    public ArrayList list;
+    public ArrayList<String> list;
+    public ListView listview;
+    public static final String id_extra = "com.example.mpetk.taskme._ID";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pretraga_korisnika);
+        final Button dodaj = (Button) findViewById(R.id.pretraga_add_korisnik);
+        dodaj.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("idem");
+                Intent intentNewUser = new Intent(PretragaKorisnika.this, KreiranjeKorisnika.class);
+                startActivity(intentNewUser);
+            }
+        });
+        System.out.println("dodaj  " + dodaj + "   \nis clickable? " + dodaj.isClickable() + " is in layout " + dodaj.isInLayout());
+
         list = new ArrayList();
-       // setContentView(R.layout.activity_pretraga_korisnika);
-
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         showList();
+
        // String[] lista={"Android","IPhone","WindowsMobile","Blackberry","WebOS","Ubuntu","Windows7","Max OS X"};
         //String[] lista = getResources().getStringArray(R.array.lista_proba);
         ArrayAdapter adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
-        ListView listview = (ListView) findViewById(R.id.lista_usera);
+        listview = (ListView) findViewById(R.id.lista_usera);
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
+
         //setContentView(R.layout.activity_pretraga_korisnika);
     }
 
+
     private void showList () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://192.168.42.138/taskmeBazaCitanjeKorisnika.php",
+                "http://192.168.178.50/taskmeBazaCitanjeKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         //If we are getting success from server
 
-                        System.out.print(response);
+                        //System.out.print(response);
                         List<String> useri = Arrays.asList(response.split(","));
                         list.addAll(useri);
                       //  System.out.print("useri: " + lista[0]);
@@ -80,7 +97,7 @@ public class PretragaKorisnika  extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //
+                        System.out.println("error: "+error);
                     }
                 }) {
             @Override
@@ -90,7 +107,7 @@ public class PretragaKorisnika  extends AppCompatActivity {
 
 
         };
-        setContentView(R.layout.activity_pretraga_korisnika);
+      //  setContentView(R.layout.activity_pretraga_korisnika);
         //Adding the string request to the queue
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
@@ -112,19 +129,36 @@ public class PretragaKorisnika  extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        int index =info.position;
+
+        String user = list.get(index);
+
         switch(item.getItemId()) {
-            case R.id.add:
+            case R.id.show:
                 // add stuff here
+
+                Intent intent_show = new Intent(getApplicationContext(), PrikazKorisnika.class);
+                intent_show.putExtra(id_extra,user);
+                startActivity(intent_show);
                 return true;
-            case R.id.edit:
+            case R.id.modify:
                 // edit stuff here
+                Intent intent_izmjena_korisnika = new Intent(getApplicationContext(), IzmjenaKorisnika.class);
+                intent_izmjena_korisnika.putExtra(id_extra,user);
+                startActivity(intent_izmjena_korisnika);
+
                 return true;
             case R.id.delete:
                 // remove stuff here
+                Intent intent_delete_user = new Intent(getApplicationContext(), BrisanjeKorisnika.class);
+                startActivity(intent_delete_user);
+
                 return true;
             default:
                 return super.onContextItemSelected(item);
         }
     }
 
-    }
+
+
+}

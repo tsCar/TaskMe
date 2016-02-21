@@ -12,7 +12,7 @@ if(isset($_POST['KORISNICKO_IME']))  {
 }
 
 else {
-     echo("nesto nije ok sa korisnickim imenom!");
+ //    echo("nesto nije ok sa korisnickim imenom!");
      $output="-1";                    echo $output;
      break;
 }
@@ -21,7 +21,7 @@ if(isset($_POST['LOZINKA']))  {
      $pass=$_POST['LOZINKA'];  
 }
 else {
-     echo("nesto nije ok sa lozinkom!");
+  //   echo("nesto nije ok sa lozinkom!");
      $output="-1";                    echo $output;
      break;
 }

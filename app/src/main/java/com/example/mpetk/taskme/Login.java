@@ -75,11 +75,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         boolean loggedIn = sharedPreferences.getBoolean(Config.LOGGEDIN_SHARED_PREF, false);
 
         //If we will get true
-        if (loggedIn) {
+       //  OVO VRATIT
+       if (loggedIn) {
             //We will start the Profile Activity
             Intent intent = new Intent(Login.this, Home.class);
             startActivity(intent);
-        }
+       // I OVO
+       }
+        else Toast.makeText(Login.this, "Šukurac", Toast.LENGTH_LONG).show();
     }
 
     private void login() {
@@ -88,11 +91,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         final String password = editTextPassword.getText().toString().trim();
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.42.138/taskmeBazaCitanjeUsername.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.178.50/taskmeBazaCitanjeUsername.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                  //If we are getting success from server
+                        System.out.println("response " + response);
 
                         if (response.trim().equalsIgnoreCase("1")) {
                             //Creating a shared preference
@@ -145,7 +148,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //
+                        System.out.println("error: "+error);
                     }
                 }) {
             @Override
