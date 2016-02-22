@@ -51,7 +51,6 @@ public class PrikazKorisnika  extends AppCompatActivity{
     }
 
     private void defaultValues () {
-        System.out.println("usao u default");
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {

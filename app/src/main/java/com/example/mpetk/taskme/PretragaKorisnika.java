@@ -113,6 +113,7 @@ public class PretragaKorisnika  extends AppCompatActivity{
                 return true;
             case R.id.delete:
                 Intent intent_delete_user = new Intent(getApplicationContext(), BrisanjeKorisnika.class);
+                intent_delete_user.putExtra(id_extra,user);
                 startActivity(intent_delete_user);
                 return true;
 

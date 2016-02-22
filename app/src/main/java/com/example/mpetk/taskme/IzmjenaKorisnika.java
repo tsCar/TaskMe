@@ -92,7 +92,6 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        System.out.println("response " );System.out.println(response);
                         Toast.makeText(IzmjenaKorisnika.this, response, Toast.LENGTH_LONG).show();
                         Intent intentPretraga = new Intent(getApplicationContext(), PretragaKorisnika.class);
                         startActivity(intentPretraga);
