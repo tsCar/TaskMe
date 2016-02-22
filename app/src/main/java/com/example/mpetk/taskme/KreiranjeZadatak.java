@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -15,21 +16,23 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClickListener {
 
-    int[] idtxt = new int[] { R.id.kreiranje_korisnika_ime, R.id.kreiranje_korisnika_prezime, R.id.kreiranje_korisnika_OIB,
-            R.id.kreiranje_korisnika_broj_osobne,R.id.kreiranje_korisnika_adresa,R.id.kreiranje_korisnika_telefon,
-            R.id.kreiranje_korisnika_mail,R.id.kreiranje_korisnika_username,
-            R.id.kreiranje_korisnika_pass, R.id.kreiranje_korisnika_datum_zap};
+    String id;
+    int[] idtxt = new int[] { R.id.editxt_taskname, R.id.spinner_type_task,R.id.spinner_klijent, R.id.spinner_klijent,
+           R.id.datePicker,   R.id.editxt_taskDESC,R.id.spinner_asigned_task};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kreiranje_zad);
         Button dodaj = (Button) findViewById(R.id.button_create);
         dodaj.setOnClickListener(this);
+
     }
     @Override
     public void onClick(View v) {
@@ -39,37 +42,32 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        System.out.println("response " );System.out.println(response);
                         Toast.makeText(KreiranjeZadatak.this, response, Toast.LENGTH_LONG).show();
-                        Intent intentPretraga = new Intent(getApplicationContext(), PretragaKorisnika.class);
+                        Intent intentPretraga = new Intent(getApplicationContext(), PretragaZadataka.class);
                         startActivity(intentPretraga);
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        System.out.println("error: "+error);
+                        System.out.println("error: " + error);
                     }
                 })
         {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
+             //   nadiId();
                 Map < String, String > params = new HashMap<>();
-                params.put("imeTablice", "korisnik");
-                params.put("IME", ((EditText)findViewById(idtxt[0])).getText().toString());
-                params.put("PREZIME", ((EditText) findViewById(idtxt[1])).getText().toString());
-                params.put("JMBG", ((EditText) findViewById(idtxt[2])).getText().toString());
-                params.put("BR_LK", ((EditText) findViewById(idtxt[3])).getText().toString());
-                params.put("ADRESA", ((EditText) findViewById(idtxt[4])).getText().toString());
-                params.put("TELEFON", ((EditText) findViewById(idtxt[5])).getText().toString());
-                params.put("EMAIL", ((EditText) findViewById(idtxt[6])).getText().toString());
-                params.put("KORISNICKO_IME", ((EditText) findViewById(idtxt[7])).getText().toString());
-                params.put("LOZINKA", ((EditText) findViewById(idtxt[8])).getText().toString());
-                params.put("DATUM_ZAPOSLENJA", ((EditText) findViewById(idtxt[9])).getText().toString());
-                params.put("TIPKORISNIKA_ID", ((Spinner)findViewById(R.id.kreiranje_spinner_tip_korisnika)).getSelectedItem().toString() );
+                params.put("imeTablice", "radnizadatak");
+                params.put("NAZIV_ZADATKA", ((EditText) findViewById(idtxt[0])).getText().toString());
+                params.put("VRSTAZADATKA", ((Spinner)findViewById(idtxt[1])).getSelectedItem().toString());
+                params.put("KLIJENT_ID", ((Spinner) findViewById(idtxt[3])).getSelectedItem().toString());
+                params.put("KORISNIK_ID",((Spinner) findViewById(idtxt[2])).getSelectedItem().toString());
+                params.put("KRAJNJIDATUMIZVRSENJA", ((DatePicker) findViewById(idtxt[4])).getCalendarView().toString());
+                params.put("OPIS", ((EditText) findViewById(idtxt[5])).getText().toString());
+                params.put("STATUSDODJELJENOSTI", ((Spinner) findViewById(idtxt[6])).getSelectedItem().toString());
 
                 return params;
-
             }
         };
         //Adding the string request to the queue
@@ -77,4 +75,49 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
     }
+    public void nadiId(){
+        final Spinner sp=(Spinner) findViewById(R.id.spinner_employe);
+
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                "http://whackamile.byethost3.com/taskme/taskmeBazaKorisnikID.php",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        id=response;
+                        //varam(id);
+                        System.out.println(id);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        System.out.println("error: " + error);
+                    }
+                })
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+
+
+                Map < String, String > params = new HashMap<>();
+
+                params.put("KORISNICKO_IME", sp.getSelectedItem().toString().trim());
+
+                return params;
+
+            }
+        };
+        //Adding the string request to the queue
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        System.out.println("request iz id " + stringRequest);
+        requestQueue.add(stringRequest);
+
+       // return id;
+    }
+    public String varam(String v){
+        return v;
+    }
+
+
 }

@@ -9,6 +9,7 @@
     <item>Saturn</item>
     <item>Uranus</item>
     <item>Neptune</item>
+        <item>1265456</item>
 </string-array>
     <string-array name="spinner_tip_korisnika">
         <item>1</item>
