@@ -2242,7 +2242,9 @@ containing a value of this type.
         public static final int decor_content_parent=0x7f0d0058;
         public static final int default_activity_button=0x7f0d0040;
         public static final int delete=0x7f0d00de;
+        public static final int deleteZadatka=0x7f0d00e2;
         public static final int disableHome=0x7f0d000d;
+        public static final int dodjelaZadatka=0x7f0d00e1;
         public static final int edit_query=0x7f0d005c;
         public static final int editxt_novi_pas=0x7f0d00ae;
         public static final int editxt_opis_prikaz_task=0x7f0d00d9;
@@ -2313,6 +2315,7 @@ containing a value of this type.
         public static final int middle=0x7f0d002f;
         public static final int mini=0x7f0d002d;
         public static final int modify=0x7f0d00dd;
+        public static final int modifyZadatka=0x7f0d00e0;
         public static final int multiply=0x7f0d0024;
         public static final int never=0x7f0d0035;
         public static final int none=0x7f0d000f;
@@ -2323,6 +2326,7 @@ containing a value of this type.
         public static final int pretraga_add_klijent=0x7f0d00a5;
         public static final int pretraga_add_korisnik=0x7f0d00a8;
         public static final int pretraga_add_task=0x7f0d00ab;
+        public static final int prikazZadatka=0x7f0d00df;
         public static final int prikaz_korisnika_OIB=0x7f0d00cc;
         public static final int prikaz_korisnika_adresa=0x7f0d00ce;
         public static final int prikaz_korisnika_broj_osobne=0x7f0d00cd;
@@ -2494,6 +2498,7 @@ containing a value of this type.
         public static final int action_bar_mojprofil=0x7f0e0000;
         public static final int menu=0x7f0e0001;
         public static final int menu_list=0x7f0e0002;
+        public static final int menu_task=0x7f0e0003;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

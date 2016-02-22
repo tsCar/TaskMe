@@ -26,15 +26,38 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         Button user1 = (Button) findViewById(R.id.button_users);
+        Button task = (Button) findViewById(R.id.button_tasks);
+        Button report = (Button) findViewById(R.id.button_reports);
+        Button client = (Button) findViewById(R.id.button_clients);
 
         user1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 Intent intent = new Intent(getApplicationContext(), PretragaKorisnika.class);
                 startActivity(intent);
 
+            }
+        });
+        task.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), PretragaZadataka.class);
+                startActivity(intent2);
+            }
+        });
+
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(getApplicationContext(), PretragaIzvjestaja.class);
+                startActivity(intent3);
+            }
+        });
+        client.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(getApplicationContext(), PretragaKlijenata.class);
+                startActivity(intent4);
             }
         });
 
