@@ -3,11 +3,14 @@ package com.example.mpetk.taskme;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.ContextMenu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -28,6 +31,8 @@ public class PretragaKorisnika  extends AppCompatActivity{
     public ArrayList<String> list;
     public ListView listview;
     public static final String id_extra = "com.example.mpetk.taskme._ID";
+    public EditText inputSearch;
+    public ArrayAdapter adapter1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +53,35 @@ public class PretragaKorisnika  extends AppCompatActivity{
     protected void onResume() {
         super.onResume();
         showList();
-        ArrayAdapter adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
+        adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
         listview = (ListView) findViewById(R.id.lista_usera);
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
+
+
+                /*-----------SEARCH liste--------------*/
+        inputSearch = (EditText) findViewById(R.id.inputSearch);
+        inputSearch.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
+                // When user changed the Text
+                PretragaKorisnika.this.adapter1.getFilter().filter(cs);
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+                                          int arg3) {
+                // TODO Auto-generated method stub
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable arg0) {
+                // TODO Auto-generated method stub
+            }
+        });
+
     }
 
 

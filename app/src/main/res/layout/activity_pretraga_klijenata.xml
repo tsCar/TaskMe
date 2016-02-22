@@ -28,7 +28,8 @@
             android:layout_height="40dp"
             android:background="#CDD0D1"
             android:hint="Search clients.."
-            android:inputType="textVisiblePassword"/>
+            android:inputType="text"/>
+
         <ListView
             android:layout_width="fill_parent"
             android:layout_height="250dp"
