@@ -69,12 +69,14 @@ public class PretragaKorisnika  extends AppCompatActivity{//} implements View.On
         super.onResume();
         showList();
 
+
        // String[] lista={"Android","IPhone","WindowsMobile","Blackberry","WebOS","Ubuntu","Windows7","Max OS X"};
         //String[] lista = getResources().getStringArray(R.array.lista_proba);
         ArrayAdapter adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
         listview = (ListView) findViewById(R.id.lista_usera);
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
+        listview.refreshDrawableState();
 
         //setContentView(R.layout.activity_pretraga_korisnika);
     }
@@ -91,6 +93,7 @@ public class PretragaKorisnika  extends AppCompatActivity{//} implements View.On
                         //System.out.print(response);
                         List<String> useri = Arrays.asList(response.split(","));
                         list.addAll(useri);
+
                       //  System.out.print("useri: " + lista[0]);
                     }
                 },
