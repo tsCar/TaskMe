@@ -68,7 +68,7 @@ public class PretragaKorisnika  extends AppCompatActivity{
                 // When user changed the Text
                 PretragaKorisnika.this.adapter1.getFilter().filter(cs);
             }
-
+//
             @Override
             public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
                                           int arg3) {
