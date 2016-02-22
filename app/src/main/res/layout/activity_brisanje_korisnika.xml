@@ -1,6 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mpetk.taskme;"
+    android:background="#54ABE0"
+    >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
 
-</LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/logo1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Are you sure you want to delete this user?"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#F7FAF9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+
+            >
+
+
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="No"
+                android:id="@+id/button_delete_no"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/zakrivljeno"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="#F7FAF9"
+
+                />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="yes"
+                android:id="@+id/button_delete_yes"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/zakrivljeno_crveno"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="#F7FAF9"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
