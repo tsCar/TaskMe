@@ -116,7 +116,7 @@ public class PretragaKlijenata  extends AppCompatActivity{
         super.onCreateContextMenu(menu, v, menuInfo);
         if (v.getId()==R.id.lista_klijenata) {
             MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.menu_list, menu);
+            inflater.inflate(R.menu.menu_klijent, menu);
         }
     }
 
@@ -124,17 +124,25 @@ public class PretragaKlijenata  extends AppCompatActivity{
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         int index =info.position;
-        String user = list.get(index);
+        String klijent = list.get(index);
         switch(item.getItemId()) {
             case R.id.show:
+                Intent intent_show = new Intent(getApplicationContext(), PrikazKlijenata.class);
+                intent_show.putExtra(id_extra,klijent);
+                startActivity(intent_show);
                 return true;
 
             case R.id.modify:
+                Intent intent_izmjena_korisnika = new Intent(getApplicationContext(), IzmjenaKlijenata.class);
+                intent_izmjena_korisnika.putExtra(id_extra,klijent);
+                startActivity(intent_izmjena_korisnika);
 
                 return true;
             case R.id.delete:
+                Intent intent_delete_user = new Intent(getApplicationContext(), BrisanjeKlijenata.class);
+                intent_delete_user.putExtra(id_extra,klijent);
+                startActivity(intent_delete_user);
                 return true;
-
 
             default:
                 return super.onContextItemSelected(item);

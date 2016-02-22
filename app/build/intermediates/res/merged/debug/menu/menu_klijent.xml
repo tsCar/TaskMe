@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/show"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Show more" />
+
+    <item android:id="@+id/modify"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Modify client" />
+
+    <item android:id="@+id/delete"
+        android:title="Delete client" />
+
+</menu>

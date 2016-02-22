@@ -55,7 +55,7 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
                         //If we are getting success from server
                         podaci = response.split("\\|t",-1);
                         for (int i = 0; i < podaci.length-1; i++) {//zadnje je spinner, ne edittext
-                            EditText tmp= (EditText) findViewById(idtxt[i]);
+                            EditText tmp = (EditText) findViewById(idtxt[i]);
                             tmp.setText(podaci[i]);
                         }
                         Spinner tmp= (Spinner)findViewById(R.id.spinner_tip_korisnika);
