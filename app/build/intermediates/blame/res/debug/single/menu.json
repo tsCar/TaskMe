@@ -1,7 +1,19 @@
 [
     {
-        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
-        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
+        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
+        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
+        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_list.xml",
+        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\menu_list.xml"
+    },
+    {
+        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
+        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
@@ -12,39 +24,27 @@
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
-        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
-        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
-    },
-    {
-        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
-        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
-    },
-    {
         "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
     },
     {
-        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
-        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
+        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
+        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
+    },
+    {
+        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_list.xml",
+        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu_list.xml"
+    },
+    {
+        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
+        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
     },
     {
         "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
         "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
     },
     {
-        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
-        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_list.xml",
-        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\menu_list.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
-        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
-    },
-    {
-        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_list.xml",
-        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu_list.xml"
+        "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
+        "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
     }
 ]
