@@ -4,14 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -19,16 +16,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-/**
- * Created by mpetk on 15.2.2016..
- */
 public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClickListener{
 
     String[] podaci =new String[33];
@@ -36,9 +26,7 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
             R.id.izmjena_korisnika_broj_osobne,R.id.izmjena_korisnika_adresa,R.id.izmjena_korisnika_telefon,
             R.id.izmjena_korisnika_mail,R.id.izmjena_korisnika_username,
             R.id.izmjena_korisnika_pass, R.id.izmjena_korisnika_datum_zap};
-
-
-   // public ArrayList list;
+    // public ArrayList list;
     public String stariUser;
 
     @Override
@@ -48,42 +36,33 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
         Button promijeni = (Button) findViewById(R.id.button_modify_user);
         promijeni.setOnClickListener(this);
         stariUser = getIntent().getStringExtra(PretragaKorisnika.id_extra);
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         defaultValues();
-     //   populate();
     }
 
     private void defaultValues () {
         System.out.println("usao u default");
-        StringRequest stringRequest = new StringRequest(Request.Method.POST,
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
                 "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         //If we are getting success from server
-                        System.out.println("response " );System.out.println(response);
                         podaci = response.split("\\|t",-1);
-
-                        System.out.println("useri: ");   System.out.println(java.util.Arrays.toString(podaci));
-                        System.out.println("podaci.length: ");   System.out.println(podaci.length);
-
                         for (int i = 0; i < podaci.length-1; i++) {//zadnje je spinner, ne edittext
                             EditText tmp= (EditText) findViewById(idtxt[i]);
                             tmp.setText(podaci[i]);
-                            System.out.println("text iz view:"+tmp.getText());
                         }
                         Spinner tmp= (Spinner)findViewById(R.id.spinner_tip_korisnika);
                         String myString = podaci[podaci.length-1].trim();//"some value"; //the value you want the position for
                         ArrayAdapter myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
                         int spinnerPosition = myAdap.getPosition(myString);
                         tmp.setSelection(spinnerPosition);
-
-
                     }
                 },
                 new Response.ErrorListener() {
@@ -91,28 +70,24 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
                     public void onErrorResponse(VolleyError error) {
                         System.out.println("error: "+error);
                     }
-                }) {
+                })
+            {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
                 params.put(Config.KEY_KOR_IME, stariUser);
                 return params;
-
             }
-
-
         };
-      //  setContentView(R.layout.activity_pretraga_korisnika);
-        //Adding the string request to the queue
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        System.out.println("request " + stringRequest);
-        requestQueue.add(stringRequest);
+       RequestQueue requestQueue = Volley.newRequestQueue(this);
+       System.out.println("request " + stringRequest);
+       requestQueue.add(stringRequest);
     }
 
     @Override
     public void onClick(View v) {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST,
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
                 "http://whackamile.byethost3.com/taskme/taskmeModifikacijaKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
@@ -128,10 +103,10 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
                     public void onErrorResponse(VolleyError error) {
                         System.out.println("error: "+error);
                     }
-                }) {
+                })
+        {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-
                 Map<String, String> params = new HashMap<>();
                 params.put("STARO_IME", stariUser);
                 params.put("IME", ((EditText)findViewById(idtxt[0])).getText().toString());
@@ -145,21 +120,13 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
                 params.put("LOZINKA", ((EditText) findViewById(idtxt[8])).getText().toString());
                 params.put("DATUM_ZAPOSLENJA", ((EditText) findViewById(idtxt[9])).getText().toString());
                 params.put("TIP_KORISNIKA", ((Spinner)findViewById(R.id.spinner_tip_korisnika)).getSelectedItem().toString() );
-
                 return params;
-
             }
-
-
         };
-        //  setContentView(R.layout.activity_pretraga_korisnika);
         //Adding the string request to the queue
-
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
     }
-
-
 }
 

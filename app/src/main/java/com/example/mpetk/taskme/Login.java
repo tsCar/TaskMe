@@ -4,48 +4,29 @@ package com.example.mpetk.taskme;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-//import android.support.v7.widget.AppCompatButton;
-//import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
-import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.BasicNetwork;
-import com.android.volley.toolbox.HurlStack;
-import com.android.volley.toolbox.NoCache;
 import com.android.volley.toolbox.StringRequest;
-//import com.android.volley.toolbox.Volley;
 import com.android.volley.toolbox.Volley;
-import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
-
 import java.util.HashMap;
 import java.util.Map;
-
-import static com.android.volley.toolbox.Volley.*;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
     //Defining views
     private EditText editTextUser;
     private EditText editTextPassword;
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,9 +41,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         //Adding click listener
         buttonLogin.setOnClickListener(this);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     @Override
@@ -75,14 +53,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         boolean loggedIn = sharedPreferences.getBoolean(Config.LOGGEDIN_SHARED_PREF, false);
 
         //If we will get true
-       //  OVO VRATIT
        if (loggedIn) {
             //We will start the Profile Activity
             Intent intent = new Intent(Login.this, Home.class);
             startActivity(intent);
-       // I OVO
        }
-        else Toast.makeText(Login.this, "Šukurac", Toast.LENGTH_LONG).show();
     }
 
     private void login() {
@@ -95,8 +70,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        System.out.println("response " + response);
-
                         if (response.trim().equalsIgnoreCase("1")) {
                             //Creating a shared preference
                             SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
@@ -135,14 +108,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             //Starting profile activity
                             Intent intent = new Intent(Login.this, HomeZaposlenik.class);
                             startActivity(intent);
-
                         }
                         else {
                             //If the server response is not success
                             //Displaying an error message on toast
                             Toast.makeText(Login.this, "Invalid username or password", Toast.LENGTH_LONG).show();
                         }
-
                     }
                 },
                 new Response.ErrorListener() {
@@ -166,12 +137,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
-                // Removed this line if you dont need it or Use application/json
-                // params.put("Content-Type", "application/x-www-form-urlencoded");
                 Map<String, String> headers = new HashMap<String, String>();
                 headers.put("User-agent", "Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile Safari/<WebKit Rev>");
                 return headers;
-
             }
         };
 
@@ -181,9 +149,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
       //  RequestQueue requestQueue = new RequestQueue(new NoCache(), new BasicNetwork(new HurlStack()));
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
-
-
-
     }
 
     @Override
@@ -201,6 +166,5 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onStop() {
         super.onStop();
-
     }
 }
