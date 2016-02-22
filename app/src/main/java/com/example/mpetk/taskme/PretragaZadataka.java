@@ -42,7 +42,7 @@ public class PretragaZadataka extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pretraga_korisnika);
+        setContentView(R.layout.activity_pretraga_zadataka);
         final Button dodaj = (Button) findViewById(R.id.pretraga_add_task);
         dodaj.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -129,25 +129,32 @@ public class PretragaZadataka extends AppCompatActivity{
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         int index =info.position;
-        String user = list.get(index);
+        String t = list.get(index);
         switch(item.getItemId()) {
-            case R.id.show:
-                Intent intent_show = new Intent(getApplicationContext(), PrikazKorisnika.class);
-                intent_show.putExtra(id_extra,user);
+            case R.id.prikazZadatka:
+                Intent intent_show = new Intent(getApplicationContext(), PrikazZadatka.class);
+                intent_show.putExtra(id_extra,t);
                 startActivity(intent_show);
                 return true;
 
-            case R.id.modify:
-                Intent intent_izmjena_korisnika = new Intent(getApplicationContext(), IzmjenaKorisnika.class);
-                intent_izmjena_korisnika.putExtra(id_extra,user);
-                startActivity(intent_izmjena_korisnika);
+            case R.id.modifyZadatka:
+                Intent intent_izmjena_task = new Intent(getApplicationContext(), IzmjenaZadatka.class);
+                intent_izmjena_task.putExtra(id_extra,t);
+                startActivity(intent_izmjena_task);
+                return true;
 
+            case R.id.dodjelaZadatka:
+                Intent intent_dodjela_task = new Intent(getApplicationContext(), DodjelaZadatka.class);
+                intent_dodjela_task.putExtra(id_extra,t);
+                startActivity(intent_dodjela_task);
                 return true;
-            case R.id.delete:
-                Intent intent_delete_user = new Intent(getApplicationContext(), BrisanjeKorisnika.class);
-                intent_delete_user.putExtra(id_extra,user);
-                startActivity(intent_delete_user);
+
+            case R.id.deleteZadatka:
+                Intent intent_delete_task= new Intent(getApplicationContext(), BrisanjeZadatka.class);
+                intent_delete_task.putExtra(id_extra,t);
+                startActivity(intent_delete_task);
                 return true;
+
 
             default:
                 return super.onContextItemSelected(item);

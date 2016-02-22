@@ -36,6 +36,10 @@
         "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu_list.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_task.xml",
+        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\menu_task.xml"
+    },
+    {
         "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar_mojprofil.xml",
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\src\\main\\res\\menu\\action_bar_mojprofil.xml"
     },

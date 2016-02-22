@@ -33,8 +33,6 @@ public class Home extends AppCompatActivity {
         user1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 Intent intent = new Intent(getApplicationContext(), PretragaKorisnika.class);
                 startActivity(intent);
 
@@ -43,23 +41,23 @@ public class Home extends AppCompatActivity {
         task.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PretragaZadataka.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(getApplicationContext(), PretragaZadataka.class);
+                startActivity(intent2);
             }
         });
 
         report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PretragaIzvjestaja.class);
-                startActivity(intent);
+                Intent intent3 = new Intent(getApplicationContext(), PretragaIzvjestaja.class);
+                startActivity(intent3);
             }
         });
         client.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PretragaKlijenata.class);
-                startActivity(intent);
+                Intent intent4 = new Intent(getApplicationContext(), PretragaKlijenata.class);
+                startActivity(intent4);
             }
         });
 
