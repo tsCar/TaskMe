@@ -43,12 +43,12 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kreiranje_zad);
-        System.out.println("array prije poziva funkcije: " + Arrays.asList(arrayEmployee));
-        makeArrayEmployee();
+
+
+
         Button dodaj = (Button) findViewById(R.id.button_create);
         dodaj.setOnClickListener(this);
 
-//resdfsd
 
 
     }
@@ -57,7 +57,34 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
         super.onResume();
 
 
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeKorisnika.php",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        //If we are getting success from server
+                        List<String> useri = Arrays.asList(response.split(","));
+                        arrayEmployee.addAll(useri);
+                        System.out.println("array iz make array:" + arrayEmployee);
 
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                return null;
+            }
+        };
+        //Adding the string request to the queue
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        // RequestQueue requestQueue = new RequestQueue(new NoCache(), new BasicNetwork(new HurlStack()));
+        System.out.println("request " + stringRequest);
+        requestQueue.add(stringRequest);
 
         ArrayAdapter<String> adapterEmployee=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, arrayEmployee);
         Spinner spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);

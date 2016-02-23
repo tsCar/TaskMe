@@ -96,6 +96,9 @@
         <activity
             android:name="com.example.mpetk.taskme.PrikazKorisnika"
             android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.mpetk.taskme.PrikazZadatka"
+            android:windowSoftInputMode="stateHidden" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.

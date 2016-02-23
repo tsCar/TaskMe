@@ -126,7 +126,7 @@ public class PretragaZadataka extends AppCompatActivity{
         super.onCreateContextMenu(menu, v, menuInfo);
         if (v.getId()==R.id.lista_taskova) {
             MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.menu_list, menu);
+            inflater.inflate(R.menu.menu_task, menu);
         }
     }
 
@@ -137,9 +137,9 @@ public class PretragaZadataka extends AppCompatActivity{
         String t = list.get(index);
         switch(item.getItemId()) {
             case R.id.prikazZadatka:
-                Intent intent_show = new Intent(getApplicationContext(), PrikazZadatka.class);
-                intent_show.putExtra(id_extra,t);
-                startActivity(intent_show);
+                Intent intent_showZ = new Intent(getApplicationContext(), PrikazZadatka.class);
+                intent_showZ.putExtra(id_extra,t);
+                startActivity(intent_showZ);
                 return true;
 
             case R.id.modifyZadatka:
