@@ -12,6 +12,10 @@
         "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\menu_list.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_klijent.xml",
+        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\menu\\menu_klijent.xml"
+    },
+    {
         "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\menu\\menu.xml"
     },
