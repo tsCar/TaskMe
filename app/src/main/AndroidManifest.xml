@@ -38,7 +38,6 @@
         <activity android:name=".KreiranjeKlijenta" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".KreiranjeKorisnika" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".KreiranjeZadatak" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".Odjava" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PregledEvidencije" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaKlijenata" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaKorisnika" android:windowSoftInputMode="stateHidden"></activity>

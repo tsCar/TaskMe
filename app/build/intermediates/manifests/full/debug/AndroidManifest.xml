@@ -73,9 +73,6 @@
             android:name="com.example.mpetk.taskme.KreiranjeZadatak"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.example.mpetk.taskme.Odjava"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
             android:name="com.example.mpetk.taskme.PregledEvidencije"
             android:windowSoftInputMode="stateHidden" />
         <activity
