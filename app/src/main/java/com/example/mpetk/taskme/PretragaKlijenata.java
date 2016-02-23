@@ -28,7 +28,7 @@ import com.android.volley.toolbox.Volley;
 
 public class PretragaKlijenata  extends AppCompatActivity{
 
-    public ArrayList<String> list;
+    public ArrayList<String> klijent;
     public ListView listview;
     public static final String id_extra = "com.example.mpetk.taskme._ID";
     public EditText inputSearch;
@@ -45,14 +45,14 @@ public class PretragaKlijenata  extends AppCompatActivity{
                 startActivity(intentNewUser);
             }
         });
-        list = new ArrayList();
+        klijent = new ArrayList();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         showList();
-        adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
+        adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, klijent);
         listview = (ListView) findViewById(R.id.lista_klijenata);
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
@@ -91,8 +91,9 @@ public class PretragaKlijenata  extends AppCompatActivity{
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        List<String> klijent = Arrays.asList(response.split(","));
-                        list.addAll(klijent);
+                        List<String> klijenti = Arrays.asList(response.split(","));
+                        klijent.addAll(klijenti);
+                        System.out.print(Arrays.asList(klijent));
                     }
                 },
                 new Response.ErrorListener() {
@@ -124,23 +125,23 @@ public class PretragaKlijenata  extends AppCompatActivity{
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         int index =info.position;
-        String klijent = list.get(index);
+        String stariklijent = klijent.get(index);
         switch(item.getItemId()) {
             case R.id.show:
                 Intent intent_show = new Intent(getApplicationContext(), PrikazKlijenata.class);
-                intent_show.putExtra(id_extra,klijent);
+                intent_show.putExtra(id_extra,stariklijent);
                 startActivity(intent_show);
                 return true;
 
             case R.id.modify:
-                Intent intent_izmjena_korisnika = new Intent(getApplicationContext(), IzmjenaKlijenata.class);
-                intent_izmjena_korisnika.putExtra(id_extra,klijent);
-                startActivity(intent_izmjena_korisnika);
+                Intent intent_izmjena_klijenta = new Intent(getApplicationContext(), IzmjenaKlijenata.class);
+                intent_izmjena_klijenta.putExtra(id_extra,stariklijent);
+                startActivity(intent_izmjena_klijenta);
 
                 return true;
             case R.id.delete:
                 Intent intent_delete_user = new Intent(getApplicationContext(), BrisanjeKlijenata.class);
-                intent_delete_user.putExtra(id_extra,klijent);
+                intent_delete_user.putExtra(id_extra,stariklijent);
                 startActivity(intent_delete_user);
                 return true;
 

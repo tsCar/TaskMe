@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class HomeZaposlenik extends AppCompatActivity {
@@ -20,6 +22,33 @@ public class HomeZaposlenik extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_zaposlenik);
+        Button mytasks = (Button) findViewById(R.id.zaposlenik_button_mytasks);
+        Button tasks = (Button) findViewById(R.id.zaposlenik_button_tasks);
+        Button finnished = (Button) findViewById(R.id.button_job);
+
+        mytasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MyTasks.class);
+                startActivity(intent);
+
+            }
+        });
+        tasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), ZadaciZaposlenika.class);
+                startActivity(intent2);
+            }
+        });
+
+        finnished.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(getApplicationContext(), FinnishedTask.class);
+                startActivity(intent3);
+            }
+        });
 
         //Initializing textview
         textView1 = (TextView) findViewById(R.id.textViewZ);

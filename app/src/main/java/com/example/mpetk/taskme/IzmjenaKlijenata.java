@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class IzmjenaKlijenata  extends AppCompatActivity implements View.OnClickListener{
 
-    ArrayList<String> podaci =new ArrayList<>();
+    ArrayList<String> podaci;
     int[] idtxt = new int[] { R.id.izmjena_klijenta_ime, R.id.izmjena_klijenta_adresa,
             R.id.izmjena_klijenta_telefon,R.id.izmjena_klijenta_mail};
 
@@ -42,6 +42,7 @@ public class IzmjenaKlijenata  extends AppCompatActivity implements View.OnClick
     @Override
     protected void onResume() {
         super.onResume();
+        podaci  =new ArrayList<>();
         defaultValues();
     }
 
@@ -53,7 +54,7 @@ public class IzmjenaKlijenata  extends AppCompatActivity implements View.OnClick
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        List<String> taskovi = Arrays.asList(response.split("\\|t", -1));
+                        List<String> taskovi = Arrays.asList(response.split("\\|t"));
                         podaci.addAll(taskovi);
                         for (int i = 0; i < podaci.size(); i++) {
                             EditText tmp = (EditText) findViewById(idtxt[i]);
