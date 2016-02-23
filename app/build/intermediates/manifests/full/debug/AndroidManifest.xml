@@ -28,6 +28,9 @@
             android:name="com.example.mpetk.taskme.BrisanjeKlijenata"
             android:windowSoftInputMode="stateHidden" />
         <activity
+            android:name="com.example.mpetk.taskme.PrikazKlijenata"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
             android:name="com.example.mpetk.taskme.BrisanjeKorisnika"
             android:windowSoftInputMode="stateHidden" />
         <activity
