@@ -14,3 +14,4 @@ public class BrisanjeKlijenata  extends AppCompatActivity {
         setContentView(R.layout.activity_brisanje_klijenata);
     }
 }
+//bez komentara ni u konzum
