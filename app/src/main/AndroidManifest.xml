@@ -22,6 +22,9 @@
         </activity>
 
         <activity android:name=".BrisanjeKlijenata" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".PrikazKlijenata" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".IzmjenaKlijenata" android:windowSoftInputMode="stateHidden"></activity>
+
         <activity android:name=".BrisanjeKorisnika" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".BrisanjeZadatka" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".DodjelaZadatka" android:windowSoftInputMode="stateHidden"></activity>
