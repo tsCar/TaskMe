@@ -50,7 +50,7 @@ public class PrikazKorisnika  extends AppCompatActivity{
         //   populate();
     }
 
-    private void defaultValues () {
+    public void defaultValues () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {
