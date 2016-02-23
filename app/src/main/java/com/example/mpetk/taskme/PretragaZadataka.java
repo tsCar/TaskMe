@@ -37,17 +37,17 @@ public class PretragaZadataka extends AppCompatActivity{
     public ListView listview;
     public static final String id_extra = "com.example.mpetk.taskme._ID";
     public EditText inputSearch;
-    public ArrayAdapter adapter1;
+    public ArrayAdapter adapterTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pretraga_zadataka);
-        final Button dodaj = (Button) findViewById(R.id.pretraga_add_task);
-        dodaj.setOnClickListener(new View.OnClickListener() {
+        final Button dodajZadatak = (Button) findViewById(R.id.pretraga_add_task);
+        dodajZadatak.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intentNewUser = new Intent(PretragaZadataka.this, KreiranjeZadatak.class);
-                startActivity(intentNewUser);
+                Intent intentNewTask = new Intent(PretragaZadataka.this, KreiranjeZadatak.class);
+                startActivity(intentNewTask);
             }
         });
         list = new ArrayList();
@@ -57,10 +57,10 @@ public class PretragaZadataka extends AppCompatActivity{
     protected void onResume() {
         super.onResume();
         showList();
-        adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
+        adapterTask=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
         listview = (ListView) findViewById(R.id.lista_taskova);
         registerForContextMenu(listview); //za meni nesto
-        listview.setAdapter(adapter1);
+        listview.setAdapter(adapterTask);
 
 
                 /*-----------SEARCH liste--------------*/
@@ -70,7 +70,7 @@ public class PretragaZadataka extends AppCompatActivity{
             @Override
             public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
                 // When user changed the Text
-                PretragaZadataka.this.adapter1.getFilter().filter(cs);
+                PretragaZadataka.this.adapterTask.getFilter().filter(cs);
             }
 
             @Override

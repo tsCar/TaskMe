@@ -37,7 +37,7 @@ public class BrisanjeKorisnika  extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.grga);
+        setContentView(R.layout.activity_brisanje_korisnika);
         Button brisi = (Button) findViewById(R.id.button_delete_yes);
         Button nebrisi = (Button) findViewById(R.id.button_delete_no);
         brisi.setOnClickListener(this);
