@@ -33,7 +33,7 @@ public class KreiranjeKlijenta extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeKlijentNovi.php",
+                "http://whackamile.byethost3.com/taskme/taskmeBazaPisanje.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -53,7 +53,7 @@ public class KreiranjeKlijenta extends AppCompatActivity implements View.OnClick
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map < String, String > params = new HashMap<>();
-                params.put("imeTablice", "korisnik");
+                params.put("imeTablice", "klijent");
                 params.put("NAZIV", ((EditText)findViewById(idtxt[0])).getText().toString());
                 params.put("ADRESA", ((EditText) findViewById(idtxt[1])).getText().toString());
                 params.put("BROJ_TELEFONA", ((EditText) findViewById(idtxt[2])).getText().toString());

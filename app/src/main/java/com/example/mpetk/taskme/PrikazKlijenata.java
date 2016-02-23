@@ -12,12 +12,15 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class PrikazKlijenata  extends AppCompatActivity{
 
-    String[] podaci =new String[200];
+    ArrayList<String> podaci =new ArrayList<>();
     int[] idtxt = new int[] { R.id.prikaz_klijenta_ime, R.id.prikaz_klijent_adresa,
             R.id.prikaz_klijent_telefon,R.id.prikaz_klijent_mail};
 
@@ -48,12 +51,13 @@ public class PrikazKlijenata  extends AppCompatActivity{
                     public void onResponse(String response) {
 
                         System.out.println("response " );System.out.println(response);
+                        List<String> taskovi = Arrays.asList(response.split("\\|t",-1));
+                        podaci.addAll(taskovi);
+        System.out.println("podaci "+ Arrays.asList(podaci));
 
-                        podaci = response.split("\\|t",-1);
-
-                        for (int i = 0; i < podaci.length-1; i++) {
+                        for (int i = 0; i < podaci.size(); i++) {
                             TextView tmp= (TextView) findViewById(idtxt[i]);
-                            tmp.setText(podaci[i]);
+                            tmp.setText(podaci.get(i));
                         }
                     }
                 },
