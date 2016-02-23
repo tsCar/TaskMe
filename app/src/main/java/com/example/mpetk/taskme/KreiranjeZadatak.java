@@ -36,21 +36,33 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kreiranje_zad);
+        System.out.println("array prije poziva funkcije: " + Arrays.asList(arrayEmployee));
         makeArrayEmployee();
-//re
         Button dodaj = (Button) findViewById(R.id.button_create);
         dodaj.setOnClickListener(this);
-        Spinner spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);
 
-System.out.println("array: "+ Arrays.asList(arrayEmployee));
-        ArrayAdapter<String> adapterEmployee=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item, arrayEmployee);
+//resdfsd
+
+
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+
+
+        System.out.println("array: "+ Arrays.asList(arrayEmployee));
+        ArrayAdapter<String> adapterEmployee=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, arrayEmployee);
         System.out.println("array nakon što napravi adapter ali ga ne doda na spinner: " + Arrays.asList(arrayEmployee));
-
+        Spinner spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);
         spinnerEmployee.setAdapter(adapterEmployee);
+        adapterEmployee.notifyDataSetChanged();
+
         System.out.println("array nakon što napravi spinner: " + Arrays.asList(arrayEmployee));
 
-        //       int spinnerPosition = adapterEmployee.getPosition(arrayEmployee.get(3));
-     //   spinnerEmployee.setSelection(spinnerPosition);
+        int spinnerPosition = adapterEmployee.getPosition("Mars");
+        spinnerEmployee.setSelection(spinnerPosition);
+
 
     }
     @Override
