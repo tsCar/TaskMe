@@ -37,13 +37,13 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        arrayEmployee =new ArrayList<>();//arrayEmployee.add("jebemli");arrayEmployee.add("te");
         setContentView(R.layout.activity_kreiranje_zad);
+
+        arrayEmployee =new ArrayList<>();arrayEmployee.add("Izaberi korisnika");
+        makeArrayEmployee();
 
         Button dodaj = (Button) findViewById(R.id.button_create);
         dodaj.setOnClickListener(this);
-        arrayEmployee=makeArrayEmployee();
-        System.out.print("o createv "+Arrays.asList(arrayEmployee));
 //resdfsdfdghjkadfhgjkhdf
 
 
@@ -105,9 +105,7 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
         requestQueue.add(stringRequest);
     }
 
-
-    public ArrayList<String> makeArrayEmployee(){
-        final ArrayList<String> zavratit=new ArrayList<>();
+    public void makeArrayEmployee(){
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
                 "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeKorisnika.php",
@@ -116,24 +114,28 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        zavratit.addAll(useri);
+                        System.out.print("useri "+useri);
+                        arrayEmployee.clear();
+                        arrayEmployee.addAll(useri);
+
+                        System.out.print("iz respons e"+Arrays.asList(arrayEmployee));
                 }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        System.out.print("error: "+error.toString());
                     }
                 }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 return null;
             }
+
         };
         //Adding the string request to the queue
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
-
-        return zavratit;
     }
 
 
