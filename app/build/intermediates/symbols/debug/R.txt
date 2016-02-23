@@ -883,7 +883,8 @@ int layout prikaz_radnog_zadataka 0x7f040047
 int layout select_dialog_item_material 0x7f040048
 int layout select_dialog_multichoice_material 0x7f040049
 int layout select_dialog_singlechoice_material 0x7f04004a
-int layout support_simple_spinner_dropdown_item 0x7f04004b
+int layout spinner_zadatak_employee 0x7f04004b
+int layout support_simple_spinner_dropdown_item 0x7f04004c
 int menu action_bar_mojprofil 0x7f0e0000
 int menu menu 0x7f0e0001
 int menu menu_klijent 0x7f0e0002
