@@ -29,10 +29,7 @@ import java.util.Map;
  */
 public class BrisanjeKlijenata  extends AppCompatActivity implements View.OnClickListener{
 
-    String[] podaci =new String[33];
-    int[] idtxt = new int[] {R.id.izmjena_klijenta_ime, R.id.izmjena_klijenta_adresa,
-            R.id.izmjena_klijenta_telefon,R.id.izmjena_klijenta_mail};
-    // public ArrayList list;
+
     public String stariKlijent;
 
     @Override

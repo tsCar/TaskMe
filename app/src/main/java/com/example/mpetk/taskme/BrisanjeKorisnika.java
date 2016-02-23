@@ -32,12 +32,7 @@ import java.util.Map;
  */
 public class BrisanjeKorisnika  extends AppCompatActivity implements View.OnClickListener{
 
-    String[] podaci =new String[33];
-    int[] idtxt = new int[] { R.id.izmjena_korisnika_ime, R.id.izmjena_korisnika_prezime, R.id.izmjena_korisnika_OIB,
-            R.id.izmjena_korisnika_broj_osobne,R.id.izmjena_korisnika_adresa,R.id.izmjena_korisnika_telefon,
-            R.id.izmjena_korisnika_mail,R.id.izmjena_korisnika_username,
-            R.id.izmjena_korisnika_pass, R.id.izmjena_korisnika_datum_zap};
-    // public ArrayList list;
+
     public String stariUser;
 
     @Override
