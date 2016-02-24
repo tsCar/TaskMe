@@ -2210,6 +2210,7 @@ containing a value of this type.
         public static final int button_create_client=0x7f0d008c;
         public static final int button_delete_no=0x7f0d006a;
         public static final int button_delete_yes=0x7f0d006b;
+        public static final int button_dodjela=0x7f0d006d;
         public static final int button_izmjena_zad_cancel=0x7f0d0086;
         public static final int button_job=0x7f0d0076;
         public static final int button_login=0x7f0d00a3;
@@ -2271,7 +2272,6 @@ containing a value of this type.
         public static final int image=0x7f0d003f;
         public static final int info=0x7f0d00c9;
         public static final int inputSearch=0x7f0d00a7;
-        public static final int inputSearch_dodjela=0x7f0d006c;
         public static final int inputSearch_klijent=0x7f0d00a4;
         public static final int inputSearch_tasks=0x7f0d00aa;
         public static final int izmjena_klijenta_adresa=0x7f0d0078;
@@ -2306,7 +2306,6 @@ containing a value of this type.
         public static final int linearLayout=0x7f0d0069;
         public static final int listMode=0x7f0d000a;
         public static final int list_item=0x7f0d0041;
-        public static final int lista_dodjela_zad=0x7f0d006d;
         public static final int lista_klijenata=0x7f0d00a5;
         public static final int lista_taskova=0x7f0d00ab;
         public static final int lista_usera=0x7f0d00a8;
@@ -2379,6 +2378,7 @@ containing a value of this type.
         public static final int snackbar_text=0x7f0d00b2;
         public static final int spacer=0x7f0d0045;
         public static final int spinner_employe=0x7f0d009c;
+        public static final int spinner_employe_dodjela=0x7f0d006c;
         public static final int spinner_employe_izmjena=0x7f0d0081;
         public static final int spinner_klijent=0x7f0d009b;
         public static final int spinner_klijent_izmjena=0x7f0d007f;

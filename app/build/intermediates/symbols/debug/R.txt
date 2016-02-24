@@ -593,6 +593,7 @@ int id button_create 0x7f0d009f
 int id button_create_client 0x7f0d008c
 int id button_delete_no 0x7f0d006a
 int id button_delete_yes 0x7f0d006b
+int id button_dodjela 0x7f0d006d
 int id button_izmjena_zad_cancel 0x7f0d0086
 int id button_job 0x7f0d0076
 int id button_login 0x7f0d00a3
@@ -654,7 +655,6 @@ int id ifRoom 0x7f0d0034
 int id image 0x7f0d003f
 int id info 0x7f0d00c9
 int id inputSearch 0x7f0d00a7
-int id inputSearch_dodjela 0x7f0d006c
 int id inputSearch_klijent 0x7f0d00a4
 int id inputSearch_tasks 0x7f0d00aa
 int id izmjena_klijenta_adresa 0x7f0d0078
@@ -689,7 +689,6 @@ int id line3 0x7f0d00c7
 int id linearLayout 0x7f0d0069
 int id listMode 0x7f0d000a
 int id list_item 0x7f0d0041
-int id lista_dodjela_zad 0x7f0d006d
 int id lista_klijenata 0x7f0d00a5
 int id lista_taskova 0x7f0d00ab
 int id lista_usera 0x7f0d00a8
@@ -762,6 +761,7 @@ int id snackbar_action 0x7f0d00b3
 int id snackbar_text 0x7f0d00b2
 int id spacer 0x7f0d0045
 int id spinner_employe 0x7f0d009c
+int id spinner_employe_dodjela 0x7f0d006c
 int id spinner_employe_izmjena 0x7f0d0081
 int id spinner_klijent 0x7f0d009b
 int id spinner_klijent_izmjena 0x7f0d007f
