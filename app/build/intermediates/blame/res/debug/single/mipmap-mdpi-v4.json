@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/tmilicic/AndroidStudioProjects/TaskMe/C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
-        "source": "/home/tmilicic/AndroidStudioProjects/TaskMe/C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "/home/tmilicic/AndroidStudioProjects/TaskMe/D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
         "source": "/home/tmilicic/AndroidStudioProjects/TaskMe/D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/home/tmilicic/AndroidStudioProjects/TaskMe/C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "/home/tmilicic/AndroidStudioProjects/TaskMe/C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "/home/tmilicic/AndroidStudioProjects/TaskMe/C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
