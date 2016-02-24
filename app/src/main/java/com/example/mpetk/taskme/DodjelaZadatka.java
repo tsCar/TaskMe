@@ -1,3 +1,4 @@
+/*
 package com.example.mpetk.taskme;
 
 import android.content.Context;
@@ -31,9 +32,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+*/
 /**
  * Created by mpetk on 15.2.2016..
- */
+ *//*
+
 public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickListener{
 
 
@@ -215,4 +218,4 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
 
         return super.onOptionsItemSelected(item);
     }
-}
+}*/
