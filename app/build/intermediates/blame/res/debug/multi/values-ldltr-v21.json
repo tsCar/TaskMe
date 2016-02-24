@@ -24,30 +24,6 @@
         ]
     },
     {
-        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 112,
-                    "endOffset": 163
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 240,
-                        "endColumn": 112,
-                        "endOffset": 348
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
         "map": [
             {
@@ -60,54 +36,6 @@
                 },
                 "from": {
                     "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 240,
-                        "endColumn": 112,
-                        "endOffset": 348
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 112,
-                    "endOffset": 163
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 240,
-                        "endColumn": 112,
-                        "endOffset": 348
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 112,
-                    "endOffset": 163
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -144,6 +72,30 @@
         ]
     },
     {
+        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 112,
+                    "endOffset": 163
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 240,
+                        "endColumn": 112,
+                        "endOffset": 348
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
         "map": [
             {
@@ -156,6 +108,54 @@
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 240,
+                        "endColumn": 112,
+                        "endOffset": 348
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 112,
+                    "endOffset": 163
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 240,
+                        "endColumn": 112,
+                        "endOffset": 348
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-ldltr-v21\\values-ldltr-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 112,
+                    "endOffset": 163
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

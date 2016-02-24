@@ -1,390 +1,5 @@
 [
     {
-        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-fa\\values-fa.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 109,
-                    "endOffset": 160
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 109,
-                        "endOffset": 334
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 165,
-                    "endColumn": 109,
-                    "endOffset": 270
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 339,
-                        "endColumn": 109,
-                        "endOffset": 444
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 275,
-                    "endColumn": 125,
-                    "endOffset": 396
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 449,
-                        "endColumn": 125,
-                        "endOffset": 570
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 401,
-                    "endColumn": 102,
-                    "endOffset": 499
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 575,
-                        "endColumn": 102,
-                        "endOffset": 673
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 504,
-                    "endColumn": 110,
-                    "endOffset": 610
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 678,
-                        "endColumn": 110,
-                        "endOffset": 784
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 615,
-                    "endColumn": 83,
-                    "endOffset": 694
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 789,
-                        "endColumn": 83,
-                        "endOffset": 868
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 699,
-                    "endColumn": 102,
-                    "endOffset": 797
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 873,
-                        "endColumn": 102,
-                        "endOffset": 971
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 802,
-                    "endColumn": 114,
-                    "endOffset": 912
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 976,
-                        "endColumn": 114,
-                        "endOffset": 1086
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 917,
-                    "endColumn": 78,
-                    "endOffset": 991
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1091,
-                        "endColumn": 78,
-                        "endOffset": 1165
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 996,
-                    "endColumn": 77,
-                    "endOffset": 1069
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1170,
-                        "endColumn": 77,
-                        "endOffset": 1243
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1074,
-                    "endColumn": 80,
-                    "endOffset": 1150
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1248,
-                        "endColumn": 80,
-                        "endOffset": 1324
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1155,
-                    "endColumn": 111,
-                    "endOffset": 1262
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1329,
-                        "endColumn": 111,
-                        "endOffset": 1436
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1267,
-                    "endColumn": 102,
-                    "endOffset": 1365
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1441,
-                        "endColumn": 102,
-                        "endOffset": 1539
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1370,
-                    "endColumn": 97,
-                    "endOffset": 1463
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1544,
-                        "endColumn": 97,
-                        "endOffset": 1637
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1468,
-                    "endColumn": 109,
-                    "endOffset": 1573
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1642,
-                        "endColumn": 109,
-                        "endOffset": 1747
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1578,
-                    "endColumn": 102,
-                    "endOffset": 1676
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1752,
-                        "endColumn": 102,
-                        "endOffset": 1850
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1681,
-                    "endColumn": 108,
-                    "endOffset": 1785
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1855,
-                        "endColumn": 108,
-                        "endOffset": 1959
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1790,
-                    "endColumn": 124,
-                    "endOffset": 1910
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1964,
-                        "endColumn": 124,
-                        "endOffset": 2084
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1915,
-                    "endColumn": 100,
-                    "endOffset": 2011
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2089,
-                        "endColumn": 100,
-                        "endOffset": 2185
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 2016,
-                    "endColumn": 100,
-                    "endOffset": 2112
-                },
-                "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 2190,
-                        "endColumn": 100,
-                        "endOffset": 2286
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-fa\\values-fa.xml",
         "map": [
             {
@@ -2680,7 +2295,7 @@
         ]
     },
     {
-        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-fa\\values-fa.xml",
+        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-fa\\values-fa.xml",
         "map": [
             {
                 "to": {
@@ -2691,7 +2306,7 @@
                     "endOffset": 210
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -2710,7 +2325,7 @@
                     "endOffset": 320
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -2729,7 +2344,7 @@
                     "endOffset": 446
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -2748,7 +2363,7 @@
                     "endOffset": 549
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -2767,7 +2382,7 @@
                     "endOffset": 660
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -2786,7 +2401,7 @@
                     "endOffset": 744
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -2805,7 +2420,7 @@
                     "endOffset": 847
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -2824,7 +2439,7 @@
                     "endOffset": 962
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -2843,7 +2458,7 @@
                     "endOffset": 1041
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -2862,7 +2477,7 @@
                     "endOffset": 1119
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -2881,7 +2496,7 @@
                     "endOffset": 1200
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -2900,7 +2515,7 @@
                     "endOffset": 1312
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -2919,7 +2534,7 @@
                     "endOffset": 1415
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -2938,7 +2553,7 @@
                     "endOffset": 1513
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -2957,7 +2572,7 @@
                     "endOffset": 1623
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -2976,7 +2591,7 @@
                     "endOffset": 1726
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -2995,7 +2610,7 @@
                     "endOffset": 1835
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -3014,7 +2629,7 @@
                     "endOffset": 1960
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -3033,7 +2648,7 @@
                     "endOffset": 2061
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -3052,7 +2667,7 @@
                     "endOffset": 2252
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -3071,7 +2686,7 @@
                     "endOffset": 2441
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -3090,7 +2705,7 @@
                     "endOffset": 2558
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -3109,7 +2724,7 @@
                     "endOffset": 2823
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -3128,7 +2743,7 @@
                     "endOffset": 2952
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -3147,7 +2762,7 @@
                     "endOffset": 3147
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -3166,7 +2781,7 @@
                     "endOffset": 3274
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -3185,7 +2800,7 @@
                     "endOffset": 3443
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -3204,7 +2819,7 @@
                     "endOffset": 3570
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -3223,7 +2838,7 @@
                     "endOffset": 3779
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -3242,7 +2857,7 @@
                     "endOffset": 3995
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -3261,7 +2876,7 @@
                     "endOffset": 4119
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -3280,7 +2895,7 @@
                     "endOffset": 4306
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -3299,7 +2914,7 @@
                     "endOffset": 4427
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -3318,7 +2933,7 @@
                     "endOffset": 4586
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -3337,7 +2952,7 @@
                     "endOffset": 4745
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -3356,7 +2971,7 @@
                     "endOffset": 4861
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -3375,7 +2990,7 @@
                     "endOffset": 5043
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -3394,7 +3009,7 @@
                     "endOffset": 5175
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -3413,7 +3028,7 @@
                     "endOffset": 5366
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -3432,7 +3047,7 @@
                     "endOffset": 5488
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -3451,7 +3066,7 @@
                     "endOffset": 5623
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -3470,7 +3085,7 @@
                     "endOffset": 5870
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -3489,7 +3104,7 @@
                     "endOffset": 5993
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -3508,7 +3123,7 @@
                     "endOffset": 6105
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -3527,7 +3142,7 @@
                     "endOffset": 6308
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -3546,7 +3161,7 @@
                     "endOffset": 6438
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -3565,7 +3180,7 @@
                     "endOffset": 6654
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -3584,7 +3199,7 @@
                     "endOffset": 6803
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -3603,7 +3218,7 @@
                     "endOffset": 6898
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -3622,7 +3237,392 @@
                     "endOffset": 6999
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2190,
+                        "endColumn": 100,
+                        "endOffset": 2286
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-fa\\values-fa.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 109,
+                    "endOffset": 160
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 109,
+                        "endOffset": 334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 165,
+                    "endColumn": 109,
+                    "endOffset": 270
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 339,
+                        "endColumn": 109,
+                        "endOffset": 444
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 275,
+                    "endColumn": 125,
+                    "endOffset": 396
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 449,
+                        "endColumn": 125,
+                        "endOffset": 570
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 401,
+                    "endColumn": 102,
+                    "endOffset": 499
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 575,
+                        "endColumn": 102,
+                        "endOffset": 673
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 504,
+                    "endColumn": 110,
+                    "endOffset": 610
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 678,
+                        "endColumn": 110,
+                        "endOffset": 784
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 615,
+                    "endColumn": 83,
+                    "endOffset": 694
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 789,
+                        "endColumn": 83,
+                        "endOffset": 868
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 699,
+                    "endColumn": 102,
+                    "endOffset": 797
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 873,
+                        "endColumn": 102,
+                        "endOffset": 971
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 802,
+                    "endColumn": 114,
+                    "endOffset": 912
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 976,
+                        "endColumn": 114,
+                        "endOffset": 1086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 917,
+                    "endColumn": 78,
+                    "endOffset": 991
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1091,
+                        "endColumn": 78,
+                        "endOffset": 1165
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 996,
+                    "endColumn": 77,
+                    "endOffset": 1069
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1170,
+                        "endColumn": 77,
+                        "endOffset": 1243
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1074,
+                    "endColumn": 80,
+                    "endOffset": 1150
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1248,
+                        "endColumn": 80,
+                        "endOffset": 1324
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1155,
+                    "endColumn": 111,
+                    "endOffset": 1262
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1329,
+                        "endColumn": 111,
+                        "endOffset": 1436
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1267,
+                    "endColumn": 102,
+                    "endOffset": 1365
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1441,
+                        "endColumn": 102,
+                        "endOffset": 1539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1370,
+                    "endColumn": 97,
+                    "endOffset": 1463
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1544,
+                        "endColumn": 97,
+                        "endOffset": 1637
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1468,
+                    "endColumn": 109,
+                    "endOffset": 1573
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1642,
+                        "endColumn": 109,
+                        "endOffset": 1747
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1578,
+                    "endColumn": 102,
+                    "endOffset": 1676
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1752,
+                        "endColumn": 102,
+                        "endOffset": 1850
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1681,
+                    "endColumn": 108,
+                    "endOffset": 1785
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1855,
+                        "endColumn": 108,
+                        "endOffset": 1959
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1790,
+                    "endColumn": 124,
+                    "endOffset": 1910
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1964,
+                        "endColumn": 124,
+                        "endOffset": 2084
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1915,
+                    "endColumn": 100,
+                    "endOffset": 2011
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2089,
+                        "endColumn": 100,
+                        "endOffset": 2185
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2016,
+                    "endColumn": 100,
+                    "endOffset": 2112
+                },
+                "from": {
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -4590,7 +4590,7 @@
         ]
     },
     {
-        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-fa\\values-fa.xml",
+        "outputFile": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\values-fa\\values-fa.xml",
         "map": [
             {
                 "to": {
@@ -4601,7 +4601,7 @@
                     "endOffset": 210
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -4620,7 +4620,7 @@
                     "endOffset": 320
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -4639,7 +4639,7 @@
                     "endOffset": 446
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -4658,7 +4658,7 @@
                     "endOffset": 549
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -4677,7 +4677,7 @@
                     "endOffset": 660
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -4696,7 +4696,7 @@
                     "endOffset": 744
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -4715,7 +4715,7 @@
                     "endOffset": 847
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -4734,7 +4734,7 @@
                     "endOffset": 962
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -4753,7 +4753,7 @@
                     "endOffset": 1041
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -4772,7 +4772,7 @@
                     "endOffset": 1119
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -4791,7 +4791,7 @@
                     "endOffset": 1200
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -4810,7 +4810,7 @@
                     "endOffset": 1312
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -4829,7 +4829,7 @@
                     "endOffset": 1415
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -4848,7 +4848,7 @@
                     "endOffset": 1513
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -4867,7 +4867,7 @@
                     "endOffset": 1623
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -4886,7 +4886,7 @@
                     "endOffset": 1726
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -4905,7 +4905,7 @@
                     "endOffset": 1835
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -4924,7 +4924,7 @@
                     "endOffset": 1960
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -4943,7 +4943,7 @@
                     "endOffset": 2061
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -4962,7 +4962,7 @@
                     "endOffset": 2252
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -4981,7 +4981,7 @@
                     "endOffset": 2441
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -5000,7 +5000,7 @@
                     "endOffset": 2558
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -5019,7 +5019,7 @@
                     "endOffset": 2823
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -5038,7 +5038,7 @@
                     "endOffset": 2952
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -5057,7 +5057,7 @@
                     "endOffset": 3147
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -5076,7 +5076,7 @@
                     "endOffset": 3274
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -5095,7 +5095,7 @@
                     "endOffset": 3443
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -5114,7 +5114,7 @@
                     "endOffset": 3570
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -5133,7 +5133,7 @@
                     "endOffset": 3779
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -5152,7 +5152,7 @@
                     "endOffset": 3995
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -5171,7 +5171,7 @@
                     "endOffset": 4119
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -5190,7 +5190,7 @@
                     "endOffset": 4306
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -5209,7 +5209,7 @@
                     "endOffset": 4427
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -5228,7 +5228,7 @@
                     "endOffset": 4586
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -5247,7 +5247,7 @@
                     "endOffset": 4745
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -5266,7 +5266,7 @@
                     "endOffset": 4861
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -5285,7 +5285,7 @@
                     "endOffset": 5043
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -5304,7 +5304,7 @@
                     "endOffset": 5175
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -5323,7 +5323,7 @@
                     "endOffset": 5366
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -5342,7 +5342,7 @@
                     "endOffset": 5488
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -5361,7 +5361,7 @@
                     "endOffset": 5623
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -5380,7 +5380,7 @@
                     "endOffset": 5870
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -5399,7 +5399,7 @@
                     "endOffset": 5993
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -5418,7 +5418,7 @@
                     "endOffset": 6105
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -5437,7 +5437,7 @@
                     "endOffset": 6308
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -5456,7 +5456,7 @@
                     "endOffset": 6438
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -5475,7 +5475,7 @@
                     "endOffset": 6654
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -5494,7 +5494,7 @@
                     "endOffset": 6803
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -5513,7 +5513,7 @@
                     "endOffset": 6898
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-fa\\common_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -5532,7 +5532,7 @@
                     "endOffset": 6999
                 },
                 "from": {
-                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
+                    "file": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-fa\\values-fa.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,

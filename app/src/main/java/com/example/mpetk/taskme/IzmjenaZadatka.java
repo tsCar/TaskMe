@@ -289,7 +289,7 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
             }
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        System.out.println("request " + stringRequest);
+        System.out.println("request " + stringRequest+ "iz default values");
         requestQueue.add(stringRequest);
     }
 

@@ -2241,10 +2241,10 @@ containing a value of this type.
         public static final int date_prikaz_task=0x7f0d00e1;
         public static final int decor_content_parent=0x7f0d0058;
         public static final int default_activity_button=0x7f0d0040;
-        public static final int delete=0x7f0d00e7;
-        public static final int deleteZadatka=0x7f0d00eb;
+        public static final int delete=0x7f0d00e8;
+        public static final int deleteZadatka=0x7f0d00ec;
         public static final int disableHome=0x7f0d000d;
-        public static final int dodjelaZadatka=0x7f0d00ea;
+        public static final int dodjelaZadatka=0x7f0d00eb;
         public static final int edit_query=0x7f0d005c;
         public static final int editxt_novi_pas=0x7f0d00af;
         public static final int editxt_opis_prikaz_task=0x7f0d00e2;
@@ -2315,11 +2315,12 @@ containing a value of this type.
         public static final int lista_taskova=0x7f0d00ab;
         public static final int lista_usera=0x7f0d00a8;
         public static final int media_actions=0x7f0d00c4;
+        public static final int menuHome=0x7f0d00e5;
         public static final int menuLogout=0x7f0d00e4;
         public static final int middle=0x7f0d002f;
         public static final int mini=0x7f0d002d;
-        public static final int modify=0x7f0d00e6;
-        public static final int modifyZadatka=0x7f0d00e9;
+        public static final int modify=0x7f0d00e7;
+        public static final int modifyZadatka=0x7f0d00ea;
         public static final int multiply=0x7f0d0024;
         public static final int never=0x7f0d0035;
         public static final int none=0x7f0d000f;
@@ -2330,7 +2331,7 @@ containing a value of this type.
         public static final int pretraga_add_klijent=0x7f0d00a6;
         public static final int pretraga_add_korisnik=0x7f0d00a9;
         public static final int pretraga_add_task=0x7f0d00ac;
-        public static final int prikazZadatka=0x7f0d00e8;
+        public static final int prikazZadatka=0x7f0d00e9;
         public static final int prikaz_klijent_adresa=0x7f0d00ce;
         public static final int prikaz_klijent_mail=0x7f0d00d0;
         public static final int prikaz_klijent_telefon=0x7f0d00cf;
@@ -2371,7 +2372,7 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f0d0067;
         public static final int select_dialog_listview=0x7f0d0068;
         public static final int shortcut=0x7f0d0053;
-        public static final int show=0x7f0d00e5;
+        public static final int show=0x7f0d00e6;
         public static final int showCustom=0x7f0d0010;
         public static final int showHome=0x7f0d0011;
         public static final int showTitle=0x7f0d0012;
@@ -2502,7 +2503,8 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f040048;
         public static final int select_dialog_multichoice_material=0x7f040049;
         public static final int select_dialog_singlechoice_material=0x7f04004a;
-        public static final int support_simple_spinner_dropdown_item=0x7f04004b;
+        public static final int spinner_zadatak_employee=0x7f04004b;
+        public static final int support_simple_spinner_dropdown_item=0x7f04004c;
     }
     public static final class menu {
         public static final int action_bar_mojprofil=0x7f0e0000;
