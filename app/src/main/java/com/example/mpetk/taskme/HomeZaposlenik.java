@@ -99,8 +99,6 @@ public class HomeZaposlenik extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
 }
 
 

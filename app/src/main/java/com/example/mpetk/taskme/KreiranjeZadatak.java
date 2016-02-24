@@ -31,16 +31,19 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
     int[] idtxt = new int[] { R.id.editxt_taskname, R.id.spinner_type_task,R.id.spinner_klijent, R.id.spinner_employe,
            R.id.datePicker,   R.id.editxt_taskDESC,R.id.spinner_asigned_task};
     public ArrayList<String> arrayEmployee;
-    public String[] stringArrayEmployee;
-    String ready="0";
+    public ArrayList<String> arrayClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kreiranje_zad);
 
-        arrayEmployee =new ArrayList<>();arrayEmployee.add("Izaberi korisnika");
+        arrayEmployee =new ArrayList<>();arrayEmployee.add("Select user");
+        arrayClient =new ArrayList<>();arrayClient.add("Select client");
+
         makeArrayEmployee();
+        makeArrayClient();
+
 
         Button dodaj = (Button) findViewById(R.id.button_create);
         dodaj.setOnClickListener(this);
@@ -53,14 +56,19 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
         super.onResume();
         System.out.println("iz onResume: " + Arrays.asList(arrayEmployee));
 
-        ArrayAdapter<String> adapterEmployee=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayEmployee);//new String[]{"jebo","sam","ti","majku"});//                stringArrayEmployee);
+        ArrayAdapter<String> adapterEmployee=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayEmployee);
         Spinner spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);
         spinnerEmployee.setAdapter(adapterEmployee);
         adapterEmployee.notifyDataSetChanged();
+        ArrayAdapter<String> adapterClient=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayClient);
+        Spinner spinnerClient = (Spinner)findViewById(R.id.spinner_klijent);
+        spinnerClient.setAdapter(adapterClient);
+        adapterClient.notifyDataSetChanged();
 
 
-        int spinnerPosition = adapterEmployee.getPosition("Mars");
-        spinnerEmployee.setSelection(spinnerPosition);
+
+     //   int spinnerPosition = adapterEmployee.getPosition("Mars");
+       // spinnerEmployee.setSelection(spinnerPosition);
 
 
     }
@@ -118,8 +126,40 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
                         arrayEmployee.clear();
                         arrayEmployee.addAll(useri);
 
-                        System.out.print("iz respons e"+Arrays.asList(arrayEmployee));
+                        System.out.print("iz respons e" + Arrays.asList(arrayEmployee));
                 }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        System.out.print("error: " + error.toString());
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                return null;
+            }
+
+        };
+        //Adding the string request to the queue
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+    public void makeArrayClient(){
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                "http://whackamile.byethost3.com/taskme/taskmeKijentCitanje.php",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        //If we are getting success from server
+                        List<String> useri = Arrays.asList(response.split(","));
+                        System.out.print("useri "+useri);
+                        arrayClient.clear();
+                        arrayClient.addAll(useri);
+
+                        System.out.print("klijenti iz responsa"+Arrays.asList(arrayClient));
+                    }
                 },
                 new Response.ErrorListener() {
                     @Override
@@ -137,7 +177,6 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
-
 
 
 }
