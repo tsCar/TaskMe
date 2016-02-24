@@ -29,9 +29,11 @@ import java.lang.Thread;
 public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClickListener {
 
     int[] idtxt = new int[] { R.id.editxt_taskname, R.id.spinner_type_task,R.id.spinner_klijent, R.id.spinner_employe,
-           R.id.datePicker,   R.id.editxt_taskDESC,R.id.spinner_asigned_task};
+           R.id.datePicker,   R.id.editxt_taskDESC};
     public ArrayList<String> arrayEmployee;
     public ArrayList<String> arrayClient;
+    public ArrayList<String> arrayTaskType;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +42,11 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
 
         arrayEmployee =new ArrayList<>();arrayEmployee.add("Select user");
         arrayClient =new ArrayList<>();arrayClient.add("Select client");
+        arrayTaskType =new ArrayList<>();arrayTaskType.add("Select type");
 
         makeArrayEmployee();
         makeArrayClient();
+        makeArrayTaskType();
 
 
         Button dodaj = (Button) findViewById(R.id.button_create);
@@ -60,10 +64,18 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
         Spinner spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);
         spinnerEmployee.setAdapter(adapterEmployee);
         adapterEmployee.notifyDataSetChanged();
+
         ArrayAdapter<String> adapterClient=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayClient);
         Spinner spinnerClient = (Spinner)findViewById(R.id.spinner_klijent);
         spinnerClient.setAdapter(adapterClient);
         adapterClient.notifyDataSetChanged();
+
+        ArrayAdapter<String> adapterTaskType=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayTaskType);
+        Spinner spinnerTaskType = (Spinner)findViewById(R.id.spinner_type_task);
+        spinnerTaskType.setAdapter(adapterTaskType);
+        adapterTaskType.notifyDataSetChanged();
+
+
 
 
 
@@ -103,7 +115,14 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
                 params.put("KORISNIK_ID", ((Spinner) findViewById(idtxt[3])).getSelectedItem().toString());
                 params.put("KRAJNJIDATUMIZVRSENJA", ((DatePicker) findViewById(idtxt[4])).getCalendarView().toString());
                 params.put("OPIS", ((EditText) findViewById(idtxt[5])).getText().toString());
-                params.put("STATUSDODJELJENOSTI", ((Spinner) findViewById(idtxt[6])).getSelectedItem().toString());
+                if(((Spinner) findViewById(idtxt[3])).getSelectedItem().toString()=="Select user")
+                    params.put("STATUSDODJELJENOSTI", "0");
+                else
+                    params.put("STATUSDODJELJENOSTI", "1");
+
+
+
+                //params.put("STATUSDODJELJENOSTI", ((Spinner) findViewById(idtxt[6])).getSelectedItem().toString());
 
                 return params;
             }
@@ -177,6 +196,38 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
+    public void makeArrayTaskType(){
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                "http://whackamile.byethost3.com/taskme/taskmeTipZadatkaCitanje.php",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        //If we are getting success from server
+                        List<String> useri = Arrays.asList(response.split(","));
+                        System.out.print("useri "+useri);
+                        arrayTaskType.clear();
+                        arrayTaskType.addAll(useri);
 
+                        System.out.print("klijenti iz responsa"+Arrays.asList(arrayTaskType));
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        System.out.print("error: "+error.toString());
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                return null;
+            }
+
+        };
+        //Adding the string request to the queue
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
 
 }
+

@@ -68,7 +68,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="5dp"
-            android:entries="@array/spinner_array1"
+            android:entries="@array/spinner_tip_korisnika"
             />
 
    <!--     <TextView
@@ -177,7 +177,7 @@
           android:textSize="20sp"
           /> -->
 
-        <Spinner
+  <!--      <Spinner
             android:id="@+id/spinner_asigned_task"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
@@ -186,7 +186,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="5dp"
             android:entries="@array/spinner_array1"
-            />
+            /> -->
 
 
 
