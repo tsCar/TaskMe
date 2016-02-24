@@ -23,25 +23,32 @@
             android:layout_gravity="center"
             />
 
-        <EditText android:id="@+id/inputSearch_dodjela"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:background="#CDD0D1"
-            android:hint="Search users.."
-            />
 
-        <ListView
+        <Spinner
+            android:id="@+id/spinner_employe_dodjela"
             android:layout_width="fill_parent"
-            android:layout_height="250dp"
+            android:layout_height="60dp"
             android:background="#E8FDF6"
-            android:id="@+id/lista_dodjela_zad"
-            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/spinner_array1"
             />
 
-
-
-
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="Asign user"
+            android:id="@+id/button_dodjela"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/zakrivljeno"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#F7FAF9"
+            />
 
 
     </LinearLayout>
