@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class HomeZaposlenik extends AppCompatActivity {
@@ -20,20 +22,47 @@ public class HomeZaposlenik extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_zaposlenik);
+        Button mytasks = (Button) findViewById(R.id.zaposlenik_button_mytasks);
+        Button tasks = (Button) findViewById(R.id.zaposlenik_button_tasks);
+        Button finnished = (Button) findViewById(R.id.button_job);
+
+        mytasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MyTasks.class);
+                startActivity(intent);
+
+            }
+        });
+        tasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), ZadaciZaposlenika.class);
+                startActivity(intent2);
+            }
+        });
+
+        finnished.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(getApplicationContext(), FinnishedTask.class);
+                startActivity(intent3);
+            }
+        });
 
         //Initializing textview
         textView1 = (TextView) findViewById(R.id.textViewZ);
 
         //Fetching email from shared preferences
         SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        String us = sharedPreferences.getString(Config.IME_SHARED_PREF, "Not Available");
+        String us = sharedPreferences.getString(Config.IME_SHARED_PREF,"Not Available");
 
         //Showing the current logged in email to textview
         textView1.setText(us);
     }
 
     //Logout function
-    private void logout() {
+    private void logout(){
         //Creating an alert dialog to confirm logout
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setMessage("Are you sure you want to logout?");
@@ -43,7 +72,7 @@ public class HomeZaposlenik extends AppCompatActivity {
                     public void onClick(DialogInterface arg0, int arg1) {
 
                         //Getting out sharedpreferences
-                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_NAME,Context.MODE_PRIVATE);
                         //Getting editor
                         SharedPreferences.Editor editor = preferences.edit();
 
@@ -57,7 +86,7 @@ public class HomeZaposlenik extends AppCompatActivity {
                         editor.commit();
 
                         //Starting login activity
-                        Intent intent = new Intent(getApplicationContext(), Login.class);
+                        Intent intent = new Intent(HomeZaposlenik.this, Login.class);
                         startActivity(intent);
                     }
                 });
@@ -80,7 +109,6 @@ public class HomeZaposlenik extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         //Adding our menu to toolbar
         getMenuInflater().inflate(R.menu.menu, menu);
-
         return true;
     }
 
@@ -90,13 +118,7 @@ public class HomeZaposlenik extends AppCompatActivity {
         if (id == R.id.menuLogout) {
             //calling logout method when the logout button is clicked
             logout();
-        }else if (id == R.id.menuHome){
-
-            Intent intent = new Intent(getApplicationContext(), HomeZaposlenik.class);
-            startActivity(intent);
-
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

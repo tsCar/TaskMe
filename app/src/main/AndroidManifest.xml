@@ -38,6 +38,7 @@
         <activity android:name=".KreiranjeKlijenta" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".KreiranjeKorisnika" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".KreiranjeZadatak" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".Odjava" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PregledEvidencije" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaKlijenata" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaKorisnika" android:windowSoftInputMode="stateHidden"></activity>
@@ -46,7 +47,10 @@
         <activity android:name=".UpravljanjeZadacima" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".ZadaciZaposlenika" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PrikazKorisnika" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".PrikazZadatka" android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity android:name=".FinnishedTask" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".MyTasks" android:windowSoftInputMode="stateHidden"></activity>
+
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

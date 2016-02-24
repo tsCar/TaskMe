@@ -1,16 +1,11 @@
 package com.example.mpetk.taskme;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.ContextMenu;
-import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,7 +28,7 @@ import com.android.volley.toolbox.Volley;
 
 public class PretragaKlijenata  extends AppCompatActivity{
 
-    public ArrayList<String> list;
+    public ArrayList<String> klijent;
     public ListView listview;
     public static final String id_extra = "com.example.mpetk.taskme._ID";
     public EditText inputSearch;
@@ -50,14 +45,14 @@ public class PretragaKlijenata  extends AppCompatActivity{
                 startActivity(intentNewUser);
             }
         });
-        list = new ArrayList();
+        klijent = new ArrayList();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         showList();
-        adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
+        adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview, klijent);
         listview = (ListView) findViewById(R.id.lista_klijenata);
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
@@ -96,8 +91,9 @@ public class PretragaKlijenata  extends AppCompatActivity{
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        List<String> klijent = Arrays.asList(response.split(","));
-                        list.addAll(klijent);
+                        List<String> klijenti = Arrays.asList(response.split(","));
+                        klijent.addAll(klijenti);
+                        System.out.print(Arrays.asList(klijent));
                     }
                 },
                 new Response.ErrorListener() {
@@ -129,96 +125,28 @@ public class PretragaKlijenata  extends AppCompatActivity{
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         int index =info.position;
-        String klijent = list.get(index);
+        String stariklijent = klijent.get(index);
         switch(item.getItemId()) {
             case R.id.show:
                 Intent intent_show = new Intent(getApplicationContext(), PrikazKlijenata.class);
-                intent_show.putExtra(id_extra,klijent);
+                intent_show.putExtra(id_extra,stariklijent);
                 startActivity(intent_show);
                 return true;
 
             case R.id.modify:
-                Intent intent_izmjena_korisnika = new Intent(getApplicationContext(), IzmjenaKlijenata.class);
-                intent_izmjena_korisnika.putExtra(id_extra,klijent);
-                startActivity(intent_izmjena_korisnika);
+                Intent intent_izmjena_klijenta = new Intent(getApplicationContext(), IzmjenaKlijenata.class);
+                intent_izmjena_klijenta.putExtra(id_extra,stariklijent);
+                startActivity(intent_izmjena_klijenta);
 
                 return true;
             case R.id.delete:
                 Intent intent_delete_user = new Intent(getApplicationContext(), BrisanjeKlijenata.class);
-                intent_delete_user.putExtra(id_extra,klijent);
+                intent_delete_user.putExtra(id_extra,stariklijent);
                 startActivity(intent_delete_user);
                 return true;
 
             default:
                 return super.onContextItemSelected(item);
         }
-    }
-
-    //Logout function
-    private void logout() {
-        //Creating an alert dialog to confirm logout
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Are you sure you want to logout?");
-        alertDialogBuilder.setPositiveButton("Yes",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface arg0, int arg1) {
-
-                        //Getting out sharedpreferences
-                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-                        //Getting editor
-                        SharedPreferences.Editor editor = preferences.edit();
-
-                        //Puting the value false for loggedin
-                        editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, false);
-
-                        //Putting blank value to email
-                        editor.putString(Config.IME_SHARED_PREF, "");
-
-                        //Saving the sharedpreferences
-                        editor.commit();
-
-                        //Starting login activity
-                        Intent intent = new Intent(getApplicationContext(), Login.class);
-                        startActivity(intent);
-                    }
-                });
-
-        alertDialogBuilder.setNegativeButton("No",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface arg0, int arg1) {
-
-                    }
-                });
-
-        //Showing the alert dialog
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //Adding our menu to toolbar
-        getMenuInflater().inflate(R.menu.menu, menu);
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.menuLogout) {
-            //calling logout method when the logout button is clicked
-            logout();
-        }else if (id == R.id.menuHome){
-
-            Intent intent = new Intent(getApplicationContext(), Home.class);
-            startActivity(intent);
-
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

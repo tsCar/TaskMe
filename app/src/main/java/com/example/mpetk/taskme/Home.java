@@ -121,7 +121,6 @@ public class Home extends AppCompatActivity {
             public boolean onCreateOptionsMenu(Menu menu) {
                 //Adding our menu to toolbar
                 getMenuInflater().inflate(R.menu.menu, menu);
-
                 return true;
             }
 
@@ -131,13 +130,7 @@ public class Home extends AppCompatActivity {
                 if (id == R.id.menuLogout) {
                     //calling logout method when the logout button is clicked
                     logout();
-                }else if (id == R.id.menuHome){
-
-                    Intent intent = new Intent(getApplicationContext(), Home.class);
-                    startActivity(intent);
-
                 }
-
                 return super.onOptionsItemSelected(item);
             }
 

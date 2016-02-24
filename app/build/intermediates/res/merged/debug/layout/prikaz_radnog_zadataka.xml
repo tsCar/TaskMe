@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Task name:"
+                android:text="Type of task:"
                 android:id="@+id/text1"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
@@ -40,29 +40,7 @@
                 />
 
             <TextView
-                android:id="@+id/prikaz_task_name_p"
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:background="#E8FDF6"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Type of task:"
-                android:id="@+id/text2"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="5dp"
-                android:textColor="#FFFF"
-                android:textSize="20sp"
-                />
-
-            <TextView
-                android:id="@+id/prikaz_task_type_p"
+                android:id="@+id/prikaz_task_type"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:background="#E8FDF6"
@@ -75,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Client:"
-                android:id="@+id/textbla"
+                android:id="@+id/text2"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="5dp"
@@ -84,7 +62,7 @@
                 />
 
             <TextView
-                android:id="@+id/prikaz_task_klijent_p"
+                android:id="@+id/prikaz_task_klijent"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:background="#E8FDF6"
@@ -106,7 +84,7 @@
                 />
 
             <TextView
-                android:id="@+id/prikaz_task_zaposlenik_p"
+                android:id="@+id/prikaz_task_zaposlenik"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:background="#E8FDF6"
@@ -127,10 +105,8 @@
                 android:textSize="20sp"
                 />
 
-
-
             <TextView
-                android:id="@+id/date_prikaz_task_p"
+                android:id="@+id/date_prikaz_task"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:background="#E8FDF6"
@@ -161,34 +137,9 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/opis_prikaz_task"
+                android:id="@+id/editxt_opis_prikaz_task"
                 android:paddingLeft="10dp"
                 />
-
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Description:"
-            android:id="@+id/text_dodjeljenost"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#FFFF"
-            android:textSize="20sp"
-            />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:inputType="text"
-                android:background="#E8FDF6"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:id="@+id/opis_prikaz_dodjeljenosti"
-                android:paddingLeft="10dp"
-                />
-
 
 
 
