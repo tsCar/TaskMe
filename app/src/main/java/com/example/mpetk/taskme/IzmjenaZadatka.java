@@ -126,19 +126,14 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                 params.put("NAZIV_ZADATKA", ((EditText) findViewById(idtxt[0])).getText().toString());
                 params.put("VRSTAZADATKA", ((Spinner)findViewById(idtxt[1])).getSelectedItem().toString());
                 params.put("KLIJENT_ID", ((Spinner) findViewById(idtxt[2])).getSelectedItem().toString());
-                if(((Spinner) findViewById(idtxt[3])).getSelectedItem().toString()!="unasigned")
+                if (!((Spinner) findViewById(idtxt[3])).getSelectedItem().toString().equalsIgnoreCase("unasigned"))
                     params.put("KORISNIK_ID",((Spinner) findViewById(idtxt[3])).getSelectedItem().toString());
-
                 params.put("KRAJNJIDATUMIZVRSENJA", ((DatePicker) findViewById(idtxt[4])).getCalendarView().toString());
                 params.put("OPIS", ((EditText) findViewById(idtxt[5])).getText().toString());
-                if(((Spinner) findViewById(idtxt[3])).getSelectedItem().toString()=="unasigned")
+                if(((Spinner) findViewById(idtxt[3])).getSelectedItem().toString().equals("unasigned"))
                     params.put("STATUSDODJELJENOSTI", "0");
                 else
                     params.put("STATUSDODJELJENOSTI", "1");
-
-
-
-                //params.put("STATUSDODJELJENOSTI", ((Spinner) findViewById(idtxt[6])).getSelectedItem().toString());
 
                 return params;
             }

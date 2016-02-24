@@ -120,6 +120,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         System.out.println("error: "+error);
+                        Toast.makeText(Login.this, error.toString(), Toast.LENGTH_LONG).show();
+
                     }
                 }) {
             @Override
