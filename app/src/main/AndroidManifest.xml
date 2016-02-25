@@ -41,6 +41,7 @@
         <activity android:name=".PregledEvidencije" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaKlijenata" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaKorisnika" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".PretragaIzvjestaja" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaZadataka" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PromjenaSifre" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".UpravljanjeZadacima" android:windowSoftInputMode="stateHidden"></activity>

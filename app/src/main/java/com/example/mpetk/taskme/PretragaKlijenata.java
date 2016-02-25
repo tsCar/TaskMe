@@ -92,7 +92,7 @@ public class PretragaKlijenata  extends AppCompatActivity{
     private void showList () {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeKijentCitanje.php",
+                Config.LOGIN_WAMP_URL+"taskmeKijentCitanje.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

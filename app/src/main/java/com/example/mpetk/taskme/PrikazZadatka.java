@@ -62,7 +62,7 @@ public class PrikazZadatka  extends AppCompatActivity{
 
     private void defaultValues () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeZadatakPodaci.php",
+                Config.LOGIN_WAMP_URL+"taskmeZadatakPodaci.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

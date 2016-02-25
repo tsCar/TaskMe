@@ -97,7 +97,7 @@ public class PretragaZadataka extends AppCompatActivity{
     private void showList () {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeZadataka.php", //ToDo
+                Config.LOGIN_WAMP_URL+"taskmeBazaCitanjeZadataka.php", //ToDo
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

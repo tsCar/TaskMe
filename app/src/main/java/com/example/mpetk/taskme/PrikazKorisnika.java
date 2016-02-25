@@ -59,7 +59,7 @@ public class PrikazKorisnika  extends AppCompatActivity{
 
     public void defaultValues () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
+                Config.LOGIN_WAMP_URL+"taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

@@ -79,7 +79,7 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
     public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeZadatakDodjela.php",
+                Config.LOGIN_WAMP_URL+"taskmeZadatakDodjela.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

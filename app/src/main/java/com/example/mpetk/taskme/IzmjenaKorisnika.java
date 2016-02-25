@@ -54,7 +54,7 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
         System.out.println("usao u default");
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
+                Config.LOGIN_WAMP_URL+"taskmePodaciKorisnik.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

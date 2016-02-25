@@ -66,10 +66,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         final String password = editTextPassword.getText().toString().trim();
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeUsername.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.LOGIN_WAMP_URL+"taskmeBazaCitanjeUsername.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        System.out.println(response);
                         if (response.trim().equalsIgnoreCase("1")) {
                             //Creating a shared preference
                             SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);

@@ -93,7 +93,7 @@ public class PretragaKorisnika  extends AppCompatActivity{
     private void showList () {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeKorisnika.php",
+                Config.LOGIN_WAMP_URL+"taskmeBazaCitanjeKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

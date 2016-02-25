@@ -82,6 +82,9 @@
             android:name="com.example.mpetk.taskme.PretragaKorisnika"
             android:windowSoftInputMode="stateHidden" />
         <activity
+            android:name="com.example.mpetk.taskme.PretragaIzvjestaja"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
             android:name="com.example.mpetk.taskme.PretragaZadataka"
             android:windowSoftInputMode="stateHidden" />
         <activity
