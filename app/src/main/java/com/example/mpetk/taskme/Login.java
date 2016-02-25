@@ -133,6 +133,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
                 //returning parameter
                 System.out.println("params:");
+                //
                 System.out.println(params);
                 return params;
             }
@@ -144,6 +145,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 return headers;
             }
         };
+        int lazem=0;
 
         //Adding the string request to the queue
 
@@ -151,6 +153,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
       //  RequestQueue requestQueue = new RequestQueue(new NoCache(), new BasicNetwork(new HurlStack()));
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
+        System.out.println("ulogiran: "+ Config.SHARED_PREF_NAME);
+        //
     }
 
     @Override

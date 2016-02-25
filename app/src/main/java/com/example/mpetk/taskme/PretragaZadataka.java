@@ -121,7 +121,7 @@ public class PretragaZadataka extends AppCompatActivity{
         super.onCreateContextMenu(menu, v, menuInfo);
         if (v.getId()==R.id.lista_taskova) {
             MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.menu_list, menu);
+            inflater.inflate(R.menu.menu_task, menu);
         }
     }
 
