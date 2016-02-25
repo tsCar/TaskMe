@@ -4,7 +4,7 @@
 
     <!-- my profile -->
     <item android:id="@+id/action_profil"
-        android:icon="@drawable/profil"
+        android:icon="@drawable/profil2"
         android:title="Profil"
         app:showAsAction="always"
 
