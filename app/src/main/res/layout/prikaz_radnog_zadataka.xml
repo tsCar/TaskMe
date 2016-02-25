@@ -140,6 +140,57 @@
                 android:entries="@array/spinner_array1"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Completion status:"
+                android:id="@+id/textcopmletion"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/completion_status"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#E8FDF6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/spinner_array1"
+                />
+
+
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Asign status:"
+            android:id="@+id/text_dodjeljenost"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#FFFF"
+            android:textSize="20sp"
+            />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/opis_prikaz_dodjeljenosti"
+                android:paddingLeft="10dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -162,30 +213,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:id="@+id/opis_prikaz_task"
-                android:paddingLeft="10dp"
-                />
-
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Description:"
-            android:id="@+id/text_dodjeljenost"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#FFFF"
-            android:textSize="20sp"
-            />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:inputType="text"
-                android:background="#E8FDF6"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:id="@+id/opis_prikaz_dodjeljenosti"
                 android:paddingLeft="10dp"
                 />
 

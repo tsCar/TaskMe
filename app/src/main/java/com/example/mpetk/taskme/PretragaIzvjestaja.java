@@ -9,7 +9,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.ContextMenu;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -36,6 +38,8 @@ import java.util.Map;
  * Created by mpetk on 15.2.2016..
  */
 public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
+    public static final String id_extra = "com.example.mpetk.taskme._ID";
 
     public Spinner spinParent;
     public Spinner spinChild;
@@ -66,6 +70,9 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
     @Override
     protected void onResume() {
         super.onResume();
+
+
+        registerForContextMenu(listaIzvjestaj); //za meni nesto
 
           /*-----------SEARCH liste--------------*/
         inputSearch = (EditText) findViewById(R.id.inputSearch_report);
@@ -323,6 +330,33 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        if (v.getId()==R.id.lista_za_napuhavanje) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.menu_report, menu);
+        }
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        int index =info.position;
+        String user = arrayFinalTasks.get(index);
+        switch(item.getItemId()) {
+            case R.id.show:
+                Intent intent_showZ = new Intent(getApplicationContext(), PrikazZadatka.class);
+                intent_showZ.putExtra(id_extra,user);
+                startActivity(intent_showZ);
+                return true;
+
+
+            default:
+                return super.onContextItemSelected(item);
+        }
     }
 
     //Logout function

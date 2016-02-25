@@ -38,7 +38,7 @@ public class PrikazZadatka  extends AppCompatActivity{
     ArrayList<String> podaci;
 
     int[] idtxt = new int[] { R.id.prikaz_task_name_p, R.id.prikaz_task_type_p,R.id.prikaz_task_klijent_p, R.id.prikaz_task_zaposlenik_p,
-            R.id.date_prikaz_task_p,  R.id.opis_prikaz_task,R.id.opis_prikaz_dodjeljenosti};
+            R.id.date_prikaz_task_p,R.id.completion_status,  R.id.opis_prikaz_dodjeljenosti, R.id.opis_prikaz_task};
 
 
     // public ArrayList list;

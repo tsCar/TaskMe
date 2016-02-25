@@ -27,6 +27,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     //Defining views
     private EditText editTextUser;
     private EditText editTextPassword;
+    public int type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +54,19 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         boolean loggedIn = sharedPreferences.getBoolean(Config.LOGGEDIN_SHARED_PREF, false);
 
         //If we will get true
-       if (loggedIn) {
+       if (loggedIn && type==1) {
             //We will start the Profile Activity
             Intent intent = new Intent(Login.this, Home.class);
+           //Intent intentZap = new Intent(Login.this, HomeZaposlenik.class);
             startActivity(intent);
+           //startActivity(intentZap);
+       } else if(loggedIn && type==2) {
+           //We will start the Profile Activity
+           Intent intentZap = new Intent(Login.this, HomeZaposlenik.class);
+           startActivity(intentZap);
        }
     }
+
 
     private void login() {
         //Getting values from edit texts
@@ -72,6 +80,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     public void onResponse(String response) {
                         System.out.println(response);
                         if (response.trim().equalsIgnoreCase("1")) {
+                            type = 1;
                             //Creating a shared preference
                             SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
@@ -92,6 +101,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
                         }
                         else  if (response.trim().equalsIgnoreCase("2")) {
+                            type=2;
                             //Creating a shared preference
                             SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
@@ -107,8 +117,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             editor.apply();
 
                             //Starting profile activity
-                            Intent intent = new Intent(Login.this, HomeZaposlenik.class);
-                            startActivity(intent);
+                            Intent intentZap = new Intent(Login.this, HomeZaposlenik.class);
+                            startActivity(intentZap);
                         }
                         else {
                             //If the server response is not success
