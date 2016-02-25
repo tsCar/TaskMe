@@ -26,15 +26,18 @@
         </activity>
         <activity
             android:name="com.example.mpetk.taskme.BrisanjeKlijenata"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PrikazKlijenata"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.BrisanjeKorisnika"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.BrisanjeZadatka"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.DodjelaZadatka"

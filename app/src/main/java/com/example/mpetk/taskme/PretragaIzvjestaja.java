@@ -53,6 +53,17 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
     int[] idtxt = new int[] {R.id.spinner_izv};
     public ArrayAdapter adapter1;
 
+
+    Runnable run = new Runnable() {
+        public void run() {
+            //reload content
+            arrayFinalTasks.clear();
+            adapter1.notifyDataSetChanged();
+            listaIzvjestaj.invalidateViews();
+            listaIzvjestaj.refreshDrawableState();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -171,6 +182,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
 
                     adapter1 = new ArrayAdapter<String>(this, R.layout.activity_listview, arrayFinalTasks);
                     listaIzvjestaj.setAdapter(adapter1);
+                    runOnUiThread(run);
                 }
                 else if(spinParent.getSelectedItem().toString().equalsIgnoreCase("client")){
 
@@ -182,6 +194,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
 
                     adapter1 = new ArrayAdapter<String>(this, R.layout.activity_listview, arrayFinalTasks);
                     listaIzvjestaj.setAdapter(adapter1);
+                    runOnUiThread(run);
                 }
 
                 else if(spinParent.getSelectedItem().toString().equalsIgnoreCase("Type of task")){
@@ -194,6 +207,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
 
                     adapter1 = new ArrayAdapter<String>(this, R.layout.activity_listview, arrayFinalTasks);
                     listaIzvjestaj.setAdapter(adapter1);
+                    runOnUiThread(run);
                 }
 
                 break;

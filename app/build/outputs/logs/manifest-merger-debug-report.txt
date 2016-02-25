@@ -56,9 +56,11 @@ ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.example.mpetk.taskme.BrisanjeKlijenata
-ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:24:9-106
+ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:24:9-131
 	android:windowSoftInputMode
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:24:53-94
+	android:noHistory
+		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:24:95-119
 	android:name
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:24:19-52
 activity#com.example.mpetk.taskme.PrikazKlijenata
@@ -68,15 +70,19 @@ ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:25:19-50
 activity#com.example.mpetk.taskme.BrisanjeKorisnika
-ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:27:9-106
+ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:27:9-131
 	android:windowSoftInputMode
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:27:53-94
+	android:noHistory
+		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:27:95-119
 	android:name
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:27:19-52
 activity#com.example.mpetk.taskme.BrisanjeZadatka
-ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:28:9-104
+ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:28:9-129
 	android:windowSoftInputMode
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:28:51-92
+	android:noHistory
+		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:28:93-117
 	android:name
 		ADDED from C:\Users\mpetk\Desktop\TaskMe\TaskMe\app\src\main\AndroidManifest.xml:28:19-50
 activity#com.example.mpetk.taskme.DodjelaZadatka

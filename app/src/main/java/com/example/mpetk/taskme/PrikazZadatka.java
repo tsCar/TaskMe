@@ -49,6 +49,7 @@ public class PrikazZadatka  extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         podaci  =new ArrayList<>();
         setContentView(R.layout.prikaz_radnog_zadataka);
+        final Bundle bundle = getIntent().getExtras();
         stariZad = getIntent().getStringExtra(PretragaZadataka.id_extra);
 
     }
