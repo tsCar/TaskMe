@@ -8,6 +8,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -73,6 +74,11 @@ public class Home extends AppCompatActivity {
                 textView.setText(us);
             }
 
+
+
+
+
+
             //Logout function
             private void logout() {
                 //Creating an alert dialog to confirm logout
@@ -121,7 +127,8 @@ public class Home extends AppCompatActivity {
             public boolean onCreateOptionsMenu(Menu menu) {
                 //Adding our menu to toolbar
                 getMenuInflater().inflate(R.menu.menu, menu);
-
+                MenuInflater inflater = getMenuInflater();
+                inflater.inflate(R.menu.action_bar_mojprofil, menu);
                 return true;
             }
 
@@ -136,10 +143,17 @@ public class Home extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), Home.class);
                     startActivity(intent);
 
+                }else if(id == R.id.action_profil){
+
+                    Intent intent = new Intent(getApplicationContext(), PretragaKorisnika.class); //TODO moramo staviti da odvede na modifikaciju trenutno ulogiranog korisnika
+                    startActivity(intent);
                 }
 
                 return super.onOptionsItemSelected(item);
             }
+
+
+
 
 
         }
