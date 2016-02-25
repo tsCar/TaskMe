@@ -50,7 +50,16 @@
             />
         <!-- android:visibility="gone" -->
 
-
+        <EditText android:id="@+id/inputSearch_report"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#CDD0D1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Search reports.."
+            android:inputType="text"
+            android:visibility="gone"
+            />
      <ListView
          android:layout_width="fill_parent"
          android:layout_height="250dp"
@@ -59,6 +68,7 @@
          android:background="#E8FDF6"
          android:id="@+id/lista_za_napuhavanje"
          android:textColor="#000000"
+         android:visibility="gone"
 
             />
         <!--android:visibility="gone" -->

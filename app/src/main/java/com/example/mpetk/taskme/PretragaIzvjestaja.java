@@ -7,11 +7,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 
@@ -37,6 +40,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
     public Spinner spinParent;
     public Spinner spinChild;
     public ListView listaIzvjestaj;
+    public EditText inputSearch;
 
     public ArrayList<String> arrayEmployee;
     public ArrayList<String> arrayClient;
@@ -51,13 +55,40 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
         setContentView(R.layout.prikaz_izvjestaja);
 
         spinParent = (Spinner) findViewById(R.id.spinner_kriterij_izv);
+        spinChild = (Spinner)findViewById(R.id.spinner_izv);
+        listaIzvjestaj = (ListView) findViewById(R.id.lista_za_napuhavanje);
+        inputSearch = (EditText) findViewById(R.id.inputSearch_report);
         spinParent.setOnItemSelectedListener(this);
+        spinChild.setOnItemSelectedListener(this);
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+
+          /*-----------SEARCH liste--------------*/
+        inputSearch = (EditText) findViewById(R.id.inputSearch_report);
+        inputSearch.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
+                // When user changed the Text
+                PretragaIzvjestaja.this.adapter1.getFilter().filter(cs);
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+                                          int arg3) {
+                // TODO Auto-generated method stub
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable arg0) {
+                // TODO Auto-generated method stub
+            }
+        });
 
 
     }
@@ -72,106 +103,93 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
 
     @Override
     public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-        spinChild = (Spinner)findViewById(R.id.spinner_izv);
+
+        switch (parentView.getId()){
+
+            case R.id.spinner_kriterij_izv:
+                if (spinParent.getSelectedItem().toString().equalsIgnoreCase("user")) {
+
+
+                    spinChild.setVisibility(View.VISIBLE); //vraca vidljivost drugog spinnera
+                    //za popunjavati drugi spinner sa userima
+                    arrayEmployee = new ArrayList<>();
+                    arrayEmployee.add("Select user:");
+                    makeArrayEmployee();
+
+                    ArrayAdapter<String> adapterEmployee = new ArrayAdapter<String>(this, R.layout.spinner_zadatak_employee, arrayEmployee);//new String[]{"jebo","sam","ti","majku"});//                stringArrayEmployee);
+
+                    spinChild.setAdapter(adapterEmployee);
+                    adapterEmployee.notifyDataSetChanged();
 
 
 
-        if (spinParent.getSelectedItem().toString().equalsIgnoreCase("user"))  {
+
+                } else if (spinParent.getSelectedItem().toString().equalsIgnoreCase("Client")) {
+
+                    spinChild.setVisibility(View.VISIBLE); //vraca vidljivost drugog spinnera
+
+                    arrayClient = new ArrayList<>();
+                    arrayClient.add("Select client:");
+                    makeArrayClient();
+
+                    ArrayAdapter<String> adapterClient = new ArrayAdapter<String>(this, R.layout.spinner_zadatak_employee, arrayClient);//new String[]{"jebo","sam","ti","majku"});//                stringArrayEmployee);
+                    spinChild.setAdapter(adapterClient);
+                    adapterClient.notifyDataSetChanged();
 
 
-            spinChild.setVisibility(View.VISIBLE); //vraca vidljivost drugog spinnera
-            //za popunjavati drugi spinner sa userima
-            arrayEmployee =new ArrayList<>();arrayEmployee.add("Select user:");
-            makeArrayEmployee();
+                } else if (spinParent.getSelectedItem().toString().equalsIgnoreCase("Type of task")) {
 
-            ArrayAdapter<String> adapterEmployee=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayEmployee);//new String[]{"jebo","sam","ti","majku"});//                stringArrayEmployee);
+                    spinChild.setVisibility(View.VISIBLE); //vraca vidljivost drugog spinnera
+                    arrayTask = new ArrayList<>();
+                    arrayTask.add("Select type of task:");
+                    makeArrayType();
 
-            spinChild.setAdapter(adapterEmployee);
-            adapterEmployee.notifyDataSetChanged();
+                    ArrayAdapter<String> adapterTask = new ArrayAdapter<String>(this, R.layout.spinner_zadatak_employee, arrayTask);//new String[]{"jebo","sam","ti","majku"});//                stringArrayEmployee);
+                    spinChild.setAdapter(adapterTask);
+                    adapterTask.notifyDataSetChanged();
 
-
-
-            if(spinChild.isSelected()){
-                String user = ((Spinner)findViewById(idtxt[0])).getSelectedItem().toString();
-                System.out.print("izabran user");
-                listaIzvjestaj = (ListView) findViewById(R.id.lista_za_napuhavanje);
-
-                showListIzv("KORISNICKO_IME", user);
-                arrayFinalTasks=new ArrayList<>();
-                arrayFinalTasks.add("babina greda");
-                adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview,arrayFinalTasks);
-                listaIzvjestaj = (ListView) findViewById(R.id.lista_klijenata);
-                listaIzvjestaj.setAdapter(adapter1);
-            }
-
-           /* listaIzvjestaj = (ListView) findViewById(R.id.lista_za_napuhavanje);
-
-            showListIzv("KORISNICKO_IME", user);
-            arrayFinalTasks=new ArrayList<>();
-            arrayFinalTasks.add("babina greda");
-            adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview,arrayFinalTasks);
-            listaIzvjestaj = (ListView) findViewById(R.id.lista_klijenata);
-            listaIzvjestaj.setAdapter(adapter1);*/
-
-        }
-        else if (spinParent.getSelectedItem().toString().equalsIgnoreCase("Client") )      {
-
-            spinChild.setVisibility(View.VISIBLE); //vraca vidljivost drugog spinnera
-            //za popunjavati drugi spinner sa klijentima
-            arrayClient =new ArrayList<>();arrayClient.add("Select client:");
-            makeArrayClient();
-
-            ArrayAdapter<String> adapterClient=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayClient);//new String[]{"jebo","sam","ti","majku"});//                stringArrayEmployee);
-            spinChild.setAdapter(adapterClient);
-            adapterClient.notifyDataSetChanged();
-
-            String client = ((Spinner)findViewById(idtxt[0])).getSelectedItem().toString();
-            int spinnerPosition = adapterClient.getPosition("Mars");
-            spinChild.setSelection(spinnerPosition);
-
-            //spinChild.setVisibility(View.VISIBLE);
-
-           /* listaIzvjestaj = (ListView) findViewById(R.id.lista_za_napuhavanje);
-
-            showListIzv("NAZIV", client);
-            arrayFinalTasks=new ArrayList<>();
-            adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview,arrayFinalTasks);
-            listaIzvjestaj = (ListView) findViewById(R.id.lista_klijenata);
-            listaIzvjestaj.setAdapter(adapter1);*/
-
-        }
-        else if (spinParent.getSelectedItem().toString().equalsIgnoreCase("Type of task")  )      {
-
-            spinChild.setVisibility(View.VISIBLE); //vraca vidljivost drugog spinnera
-            arrayTask =new ArrayList<>();arrayTask.add("Select type of task:");
-            makeArrayType();
-            //
+                }
+                break;
 
 
-            ArrayAdapter<String> adapterTask=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayTask);//new String[]{"jebo","sam","ti","majku"});//                stringArrayEmployee);
-            spinChild.setAdapter(adapterTask);
-            adapterTask.notifyDataSetChanged();
+            case R.id.spinner_izv:
 
-            String task = ((Spinner)findViewById(idtxt[0])).getSelectedItem().toString();
-            int spinnerPosition = adapterTask.getPosition("Mars");
-            spinChild.setSelection(spinnerPosition);
+                if(spinParent.getSelectedItem().toString().equalsIgnoreCase("user")) {
 
-            //vraca vidljivost drugog spinnera
-            //spinChild.setVisibility(View.VISIBLE);
+                    listaIzvjestaj.setVisibility(View.VISIBLE); //vraca vidljivost liste
+                    inputSearch.setVisibility(View.VISIBLE); //vraca vidljivost srČa
+                    String user = ((Spinner) findViewById(idtxt[0])).getSelectedItem().toString();
+                    showListIzv("KORISNICKO_IME", user);
+                    arrayFinalTasks = new ArrayList<>();
 
-            /*listaIzvjestaj = (ListView) findViewById(R.id.lista_za_napuhavanje);
+                    adapter1 = new ArrayAdapter<String>(this, R.layout.activity_listview, arrayFinalTasks);
+                    listaIzvjestaj.setAdapter(adapter1);
+                }
+                else if(spinParent.getSelectedItem().toString().equalsIgnoreCase("client")){
 
-            showListIzv("VRSTAZADATKA", task);
-            arrayFinalTasks=new ArrayList<>();
-            adapter1=new ArrayAdapter<String>(this, R.layout.activity_listview,arrayFinalTasks);
-            listaIzvjestaj = (ListView) findViewById(R.id.lista_klijenata);
-            listaIzvjestaj.setAdapter(adapter1);*/
+                    listaIzvjestaj.setVisibility(View.VISIBLE); //vraca vidljivost liste
+                    inputSearch.setVisibility(View.VISIBLE); //vraca vidljivost srČa
+                    String user = ((Spinner) findViewById(idtxt[0])).getSelectedItem().toString();
+                    showListIzv("NAZIV", user);
+                    arrayFinalTasks = new ArrayList<>();
 
-        }
-    else {
+                    adapter1 = new ArrayAdapter<String>(this, R.layout.activity_listview, arrayFinalTasks);
+                    listaIzvjestaj.setAdapter(adapter1);
+                }
 
+                else if(spinParent.getSelectedItem().toString().equalsIgnoreCase("Type of task")){
 
+                    listaIzvjestaj.setVisibility(View.VISIBLE); //vraca vidljivost liste
+                    inputSearch.setVisibility(View.VISIBLE); //vraca vidljivost srČa
+                    String user = ((Spinner) findViewById(idtxt[0])).getSelectedItem().toString();
+                    showListIzv("VRSTAZADATKA", user);
+                    arrayFinalTasks = new ArrayList<>();
 
+                    adapter1 = new ArrayAdapter<String>(this, R.layout.activity_listview, arrayFinalTasks);
+                    listaIzvjestaj.setAdapter(adapter1);
+                }
+
+                break;
         }
     }
 
@@ -187,8 +205,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        System.out.print("useri "+useri);
-                        arrayEmployee.clear();
+                      //  arrayEmployee.clear();
                         arrayEmployee.addAll(useri);
 
                         System.out.print("iz respons e"+Arrays.asList(arrayEmployee));
@@ -220,7 +237,6 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        System.out.print("useri "+useri);
                         arrayClient.clear();
                         arrayClient.addAll(useri);
 
@@ -253,7 +269,6 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        System.out.print("useri "+useri);
                         arrayTask.clear();
                         arrayTask.addAll(useri);
 
@@ -297,6 +312,8 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
+                System.out.print("UVJET "+uvjet);
+                System.out.print("NAZIV  "+naziv);
                 params.put("UVJET", uvjet);
                 params.put("IME", naziv);
                 return params;
