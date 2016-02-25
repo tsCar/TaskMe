@@ -95,6 +95,7 @@ public class PretragaKorisnika  extends AppCompatActivity{
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
                         list.addAll(useri);
+                        System.out.println("response "+response);
                     }
                 },
                 new Response.ErrorListener() {

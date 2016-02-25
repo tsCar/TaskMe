@@ -22,6 +22,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.RequestFuture;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -30,6 +31,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 /**
  * Created by mpetk on 15.2.2016..
@@ -43,6 +45,12 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
     public ArrayList<String> arrayTaskType;
     ArrayList<String> arrayDefaultValues;
     String stariZadatak;
+    ArrayAdapter<String> adapterEmployee;
+    ArrayAdapter<String> adapterClient;
+    ArrayAdapter<String> adapterTaskType;
+    Spinner spinnerEmployee;
+    Spinner spinnerClient;
+    Spinner spinnerTaskType;
 
 
     @Override
@@ -57,12 +65,6 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
         arrayTaskType =new ArrayList<>();arrayTaskType.add("Select type");
         arrayDefaultValues=new ArrayList<>();arrayDefaultValues.add("");
 
-        makeArrayEmployee();
-        makeArrayClient();
-        makeArrayTaskType();
-        defaultValues();
-
-
         Button izmijeni = (Button) findViewById(R.id.button_create);
         izmijeni.setOnClickListener(this);
 //resdfsdfdghjkadfhgjkhdf
@@ -72,30 +74,38 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onResume() {
         super.onResume();
-        System.out.println("iz onResume: " + Arrays.asList(arrayEmployee));
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                makeArrayEmployee();
+                //testFuture();
+                makeArrayClient();
+                makeArrayTaskType();
+            }
+        };
 
-        ArrayAdapter<String> adapterEmployee=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayEmployee);
-        Spinner spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);
+        t.start(); // spawn thread
+        try {
+            t.join();  // wait for thread to finish
+        } catch (InterruptedException e) {
+            System.out.print("neću joinat");
+        }
+        defaultValues();
+
+        adapterEmployee =new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayEmployee);
+        spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);
         spinnerEmployee.setAdapter(adapterEmployee);
         adapterEmployee.notifyDataSetChanged();
 
-        ArrayAdapter<String> adapterClient=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayClient);
-        Spinner spinnerClient = (Spinner)findViewById(R.id.spinner_klijent);
+        adapterClient=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayClient);
+        spinnerClient = (Spinner)findViewById(R.id.spinner_klijent);
         spinnerClient.setAdapter(adapterClient);
         adapterClient.notifyDataSetChanged();
 
-        ArrayAdapter<String> adapterTaskType=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayTaskType);
-        Spinner spinnerTaskType = (Spinner)findViewById(R.id.spinner_type_task);
+        adapterTaskType=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayTaskType);
+        spinnerTaskType = (Spinner)findViewById(R.id.spinner_type_task);
         spinnerTaskType.setAdapter(adapterTaskType);
         adapterTaskType.notifyDataSetChanged();
-
-
-
-
-
-        //   int spinnerPosition = adapterEmployee.getPosition("Mars");
-        // spinnerEmployee.setSelection(spinnerPosition);
-
 
     }
     @Override
@@ -151,12 +161,12 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        System.out.print("useri "+useri);
                         arrayEmployee.clear();
                         arrayEmployee.add("unasigned");
                         arrayEmployee.addAll(useri);
+                        adapterEmployee.notifyDataSetChanged();
 
-                        System.out.print("iz respons e" + Arrays.asList(arrayEmployee));
+
                     }
                 },
                 new Response.ErrorListener() {
@@ -184,11 +194,10 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        System.out.print("useri " + useri);
                         arrayClient.clear();
                         arrayClient.addAll(useri);
+                        adapterClient.notifyDataSetChanged();
 
-                        System.out.print("klijenti iz responsa"+Arrays.asList(arrayClient));
                     }
                 },
                 new Response.ErrorListener() {
@@ -216,11 +225,10 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        System.out.print("useri " + useri);
                         arrayTaskType.clear();
                         arrayTaskType.addAll(useri);
+                        adapterTaskType.notifyDataSetChanged();
 
-                        System.out.print("klijenti iz responsa" + Arrays.asList(arrayTaskType));
                     }
                 },
                 new Response.ErrorListener() {
@@ -244,7 +252,7 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
         System.out.println("usao u default");
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmePodaciKorisnik.php",
+                "http://whackamile.byethost3.com/taskme/taskmeZadatakPodaci.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -252,19 +260,39 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                         List<String> podaci = Arrays.asList(response.split("\\|t", -1));
                         arrayDefaultValues.clear();
                         arrayDefaultValues.addAll(podaci);
-                        ((EditText)findViewById(idtxt[0])).setText(arrayDefaultValues.get(0).toString());
+                        System.out.println(Arrays.asList(arrayDefaultValues + " --> arrayDefaultValues"));
+
+
+                        ((EditText)findViewById(idtxt[0])).setText(arrayDefaultValues.get(0).toString().trim());
+
                         Spinner tmp=(Spinner)findViewById(idtxt[1]);
-                            ArrayAdapter myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
-                            int spinnerPosition = myAdap.getPosition(arrayDefaultValues.get(1).toString());
+                        System.out.println("adapter: " + adapterEmployee.toString());
+                         //   ArrayAdapter myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
+                            adapterEmployee.notifyDataSetChanged();
+                            tmp.setAdapter(adapterEmployee);
+                            int spinnerPosition = adapterEmployee.getPosition(arrayDefaultValues.get(3).toString());
+                            System.out.println(Arrays.asList(arrayEmployee + " --> arraEmployee"));
+                            System.out.println(arrayDefaultValues.get(3).toString() + " --> d. val. 1 at position " + spinnerPosition);
                             tmp.setSelection(spinnerPosition);
+
                         tmp=(Spinner)findViewById(idtxt[2]);
-                            myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
-                            spinnerPosition = myAdap.getPosition(arrayDefaultValues.get(2).toString());
+                          //  myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
+                            adapterClient.notifyDataSetChanged();
+                            tmp.setAdapter(adapterClient);
+                            spinnerPosition = adapterClient.getPosition(arrayDefaultValues.get(2).toString());
+                            System.out.println(Arrays.asList(arrayClient + " --> arrayClient"));
+                            System.out.println(arrayDefaultValues.get(2).toString() + " --> d. val. 2 at position " + spinnerPosition);
                             tmp.setSelection(spinnerPosition);
+
                         tmp=(Spinner)findViewById(idtxt[3]);
-                            myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
-                            spinnerPosition = myAdap.getPosition(arrayDefaultValues.get(3).toString());
+                        // myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
+                            adapterTaskType.notifyDataSetChanged();
+                            tmp.setAdapter(adapterTaskType);
+                            System.out.println(Arrays.asList(arrayTaskType + " --> arrayTaskType"));
+                            spinnerPosition = adapterTaskType.getPosition(arrayDefaultValues.get(1).toString());
+                            System.out.println(arrayDefaultValues.get(1).toString()+" --> d. val. 3 at position "+spinnerPosition);
                             tmp.setSelection(spinnerPosition);
+
                         ((DatePicker)findViewById(idtxt[4])).updateDate(2, 2, 2); //Todo skužit u kojem je formatu datum i kako izvuć vrijednosti
                         ((EditText)findViewById(idtxt[0])).setText(arrayDefaultValues.get(5).toString());
                     }
@@ -279,15 +307,51 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-          //      params.put("imeTablice", "radnizadatak");
+                params.put("NAZIV_ZADATKA", stariZadatak);
                 return params;
             }
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        System.out.println("request " + stringRequest+ "iz default values");
         requestQueue.add(stringRequest);
     }
+    private void testFuture(){
+        RequestFuture<String> future = RequestFuture.newFuture();
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
 
+        //77
+
+        future.setRequest(requestQueue.add(new StringRequest(
+                        Request.Method.POST,
+                        "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeKorisnika.php",
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                //If we are getting success from server
+                                List<String> useri = Arrays.asList(response.split(","));
+                                arrayEmployee.clear();
+                                arrayEmployee.add("unasigned");
+                                arrayEmployee.addAll(useri);
+                                adapterEmployee.notifyDataSetChanged();
+                            }
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                System.out.print("error: " + error.toString());
+                            }
+                        }))
+        );
+
+        try {
+            future.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+
+    } //block forever
 
 
 
