@@ -100,6 +100,9 @@
             android:name="com.example.mpetk.taskme.PrikazKorisnika"
             android:windowSoftInputMode="stateHidden" />
         <activity
+            android:name="com.example.mpetk.taskme.PrikazZadatka"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
             android:name="com.example.mpetk.taskme.FinnishedTask"
             android:windowSoftInputMode="stateHidden" />
         <activity

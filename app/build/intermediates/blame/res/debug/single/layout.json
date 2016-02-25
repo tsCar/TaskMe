@@ -20,20 +20,20 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\layout\\prikaz_obavljenog_posla.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upravljanje_zad.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\layout\\activity_upravljanje_zad.xml"
-    },
-    {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_zadatak_employee.xml",
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\spinner_zadatak_employee.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_layout_tab_icon.xml"
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upravljanje_zad.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\layout\\activity_upravljanje_zad.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home_zaposlenik.xml",
@@ -52,12 +52,12 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_layout_snackbar.xml"
-    },
-    {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_layout_snackbar.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dodjela_zad.xml",
@@ -116,12 +116,12 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\prikaz_korisnika.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grga.xml",
@@ -156,16 +156,16 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_brisanje_korisnika.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_brisanje_korisnika.xml"
+        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_zadaci_zaposlenika.xml",
+        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_zadaci_zaposlenika.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_zadaci_zaposlenika.xml",
-        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_zadaci_zaposlenika.xml"
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_brisanje_korisnika.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_brisanje_korisnika.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -280,12 +280,12 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\prikaz_obavljenog_posla.xml",
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\prikaz_obavljenog_posla.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -300,12 +300,12 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_navigation_item_separator.xml"
-    },
-    {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
@@ -356,12 +356,12 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\prikaz_klijenta.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upravljanje_zad.xml",
@@ -416,12 +416,12 @@
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_izmjena_zad.xml"
     },
     {
-        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_izmjena_korisnika.xml",
-        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_izmjena_korisnika.xml"
-    },
-    {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_izmjena_korisnika.xml",
+        "source": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_izmjena_korisnika.xml"
     },
     {
         "merged": "D:\\home\\tmilicic\\AndroidStudioProjects\\TaskMe\\C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pretraga_klijenata.xml",
