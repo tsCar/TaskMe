@@ -94,7 +94,7 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeModifikacijaKorisnika.php",
+                Config.LOGIN_WAMP_URL+"taskmeModifikacijaKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

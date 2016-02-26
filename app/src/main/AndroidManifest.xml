@@ -34,7 +34,6 @@
         <activity android:name=".IzmjenaKorisnika" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".IzmjenaZadatka" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".IzmjeniObavljeniPosao" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".KreiranjeIzvjestaja" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".KreiranjeKlijenta" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".KreiranjeKorisnika" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".KreiranjeZadatak" android:windowSoftInputMode="stateHidden"></activity>

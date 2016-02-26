@@ -64,9 +64,6 @@
             android:name="com.example.mpetk.taskme.IzmjeniObavljeniPosao"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.example.mpetk.taskme.KreiranjeIzvjestaja"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
             android:name="com.example.mpetk.taskme.KreiranjeKlijenta"
             android:windowSoftInputMode="stateHidden" />
         <activity

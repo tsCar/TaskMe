@@ -102,7 +102,6 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
                 Map < String, String > params = new HashMap<>();
                 params.put("NAZIV_ZADATKA", stariZad);
                 params.put("KORISNICKO_IME", ((Spinner)findViewById(idtxt[0])).getSelectedItem().toString());
-                params.put("STATUSDODJELJENOSTI", "1");
 
                 return params;
             }
@@ -117,7 +116,7 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
     public void makeArrayEmployee(){
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeKorisnika.php",
+                Config.LOGIN_WAMP_URL+"taskmeBazaCitanjeKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

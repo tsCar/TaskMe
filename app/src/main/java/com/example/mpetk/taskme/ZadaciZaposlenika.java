@@ -97,16 +97,6 @@ public class ZadaciZaposlenika extends AppCompatActivity {
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
     }
-
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        if (v.getId()==R.id.lista_poslova) {
-            MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.menu_uzmi, menu);
-        }
-    }
-
     public void assignTask(final String task){
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
@@ -129,8 +119,8 @@ public class ZadaciZaposlenika extends AppCompatActivity {
                 SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
                 String us = sharedPreferences.getString(Config.IME_SHARED_PREF,"Not Available");
                 System.out.print(us+task);
-                params.put("KORISNICKO_IME", us);
-                params.put("NAZIV_ZADATKA", task);
+                params.put("KORISNICKO_IME", us.trim());
+                params.put("NAZIV_ZADATKA", task.trim());
                 return params;
             }
         };
@@ -139,6 +129,16 @@ public class ZadaciZaposlenika extends AppCompatActivity {
         System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
     }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        if (v.getId()==R.id.lista_poslova) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.menu_uzmi, menu);
+        }
+    }
+
 
 
     @Override
