@@ -157,19 +157,19 @@ public class PretragaZadataka extends AppCompatActivity{
 
             case R.id.modifyZadatka:
                 Intent intent_izmjena_task = new Intent(getApplicationContext(), IzmjenaZadatka.class);
-                intent_izmjena_task.putExtra(id_extra,t);
+                intent_izmjena_task.putExtra(id_extra,t.trim());
                 startActivity(intent_izmjena_task);
                 return true;
 
             case R.id.dodjelaZadatka:
                 Intent intent_dodjela_task = new Intent(getApplicationContext(), DodjelaZadatka.class);
-                intent_dodjela_task.putExtra(id_extra,t);
+                intent_dodjela_task.putExtra(id_extra,t.trim());
                 startActivity(intent_dodjela_task);
                 return true;
 
             case R.id.deleteZadatka:
                 Intent intent_delete_task= new Intent(getApplicationContext(), BrisanjeZadatka.class);
-                intent_delete_task.putExtra(id_extra,t);
+                intent_delete_task.putExtra(id_extra,t.trim());
                 startActivity(intent_delete_task);
                 return true;
 

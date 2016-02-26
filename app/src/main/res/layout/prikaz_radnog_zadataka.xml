@@ -96,7 +96,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Employe:"
+                android:text="Asigned to:"
                 android:id="@+id/text_employe"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
@@ -168,7 +168,7 @@
 
 
 
-            <TextView
+      <!--      <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Asign status:"
@@ -190,7 +190,7 @@
                 android:layout_marginRight="10dp"
                 android:id="@+id/opis_prikaz_dodjeljenosti"
                 android:paddingLeft="10dp"
-                />
+                /> -->
 
             <TextView
                 android:layout_width="wrap_content"

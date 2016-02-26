@@ -26,6 +26,7 @@ import com.android.volley.toolbox.RequestFuture;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -38,8 +39,8 @@ import java.util.concurrent.ExecutionException;
  */
 public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickListener {
 
-    int[] idtxt = new int[] { R.id.editxt_taskname, R.id.spinner_type_task,R.id.spinner_klijent, R.id.spinner_employe,
-            R.id.datePicker,   R.id.editxt_taskDESC};
+    int[] idtxt = new int[] { R.id.editxt_taskname_izmjena, R.id.spinner_type_task_izmjena,R.id.spinner_klijent_izmjena, R.id.spinner_employe_izmjena,
+            R.id.datePicker_izmjena,   R.id.editxt_taskDESC_izm};
     public ArrayList<String> arrayEmployee;
     public ArrayList<String> arrayClient;
     public ArrayList<String> arrayTaskType;
@@ -56,16 +57,15 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kreiranje_zad);
-        stariZadatak = getIntent().getStringExtra(PretragaKorisnika.id_extra);
-
-
+        setContentView(R.layout.activity_izmjena_zad);
+        stariZadatak = getIntent().getStringExtra(PretragaZadataka.id_extra);
+System.out.println("stari: " + stariZadatak);
         arrayEmployee =new ArrayList<>();arrayEmployee.add("Select user");
         arrayClient =new ArrayList<>();arrayClient.add("Select client");
         arrayTaskType =new ArrayList<>();arrayTaskType.add("Select type");
         arrayDefaultValues=new ArrayList<>();arrayDefaultValues.add("");
 
-        Button izmijeni = (Button) findViewById(R.id.button_create);
+        Button izmijeni = (Button) findViewById(R.id.button_modify_izmjena);
         izmijeni.setOnClickListener(this);
 //resdfsdfdghjkadfhgjkhdf
 
@@ -93,17 +93,17 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
         defaultValues();
 
         adapterEmployee =new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayEmployee);
-        spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe);
+        spinnerEmployee = (Spinner)findViewById(R.id.spinner_employe_izmjena);
         spinnerEmployee.setAdapter(adapterEmployee);
         adapterEmployee.notifyDataSetChanged();
 
         adapterClient=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayClient);
-        spinnerClient = (Spinner)findViewById(R.id.spinner_klijent);
+        spinnerClient = (Spinner)findViewById(R.id.spinner_klijent_izmjena);
         spinnerClient.setAdapter(adapterClient);
         adapterClient.notifyDataSetChanged();
 
         adapterTaskType=new ArrayAdapter<String>(this,R.layout.spinner_zadatak_employee,arrayTaskType);
-        spinnerTaskType = (Spinner)findViewById(R.id.spinner_type_task);
+        spinnerTaskType = (Spinner)findViewById(R.id.spinner_type_task_izmjena);
         spinnerTaskType.setAdapter(adapterTaskType);
         adapterTaskType.notifyDataSetChanged();
 
@@ -121,6 +121,7 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                         startActivity(intentPretraga);
                     }
                 },
+                //////
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
@@ -132,14 +133,14 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
             protected Map<String, String> getParams() throws AuthFailureError {
                 //   nadiId();
                 Map < String, String > params = new HashMap<>();
-                params.put("STARO", stariZadatak);
-                params.put("NAZIV_ZADATKA", ((EditText) findViewById(idtxt[0])).getText().toString());
-                params.put("VRSTAZADATKA", ((Spinner)findViewById(idtxt[1])).getSelectedItem().toString());
-                params.put("KLIJENT_ID", ((Spinner) findViewById(idtxt[2])).getSelectedItem().toString());
+                params.put("STARO", stariZadatak.trim());
+                params.put("NAZIV_ZADATKA", ((EditText) findViewById(idtxt[0])).getText().toString().trim());
+                params.put("VRSTAZADATKA", ((Spinner)findViewById(idtxt[1])).getSelectedItem().toString().trim());
+                params.put("KLIJENT_ID", ((Spinner) findViewById(idtxt[2])).getSelectedItem().toString().trim());
                 if (!((Spinner) findViewById(idtxt[3])).getSelectedItem().toString().equalsIgnoreCase("unasigned"))
-                    params.put("KORISNIK_ID",((Spinner) findViewById(idtxt[3])).getSelectedItem().toString());
-                params.put("KRAJNJIDATUMIZVRSENJA", ((DatePicker) findViewById(idtxt[4])).getCalendarView().toString());
-                params.put("OPIS", ((EditText) findViewById(idtxt[5])).getText().toString());
+                    params.put("KORISNIK_ID",((Spinner) findViewById(idtxt[3])).getSelectedItem().toString().trim());
+                params.put("KRAJNJIDATUMIZVRSENJA", ((DatePicker) findViewById(idtxt[4])).getYear() + "-" + ((DatePicker) findViewById(idtxt[4])).getMonth()+1+"-"+((DatePicker) findViewById(idtxt[4])).getDayOfMonth());
+                params.put("OPIS", ((EditText) findViewById(idtxt[5])).getText().toString().trim());
                 if(((Spinner) findViewById(idtxt[3])).getSelectedItem().toString().equals("unasigned"))
                     params.put("STATUSDODJELJENOSTI", "0");
                 else
@@ -195,6 +196,7 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
                         arrayClient.clear();
+                       // arrayClient.add("No client");
                         arrayClient.addAll(useri);
                         adapterClient.notifyDataSetChanged();
 
@@ -226,6 +228,7 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
                         arrayTaskType.clear();
+                       // arrayTaskType.add("No type");
                         arrayTaskType.addAll(useri);
                         adapterTaskType.notifyDataSetChanged();
 
@@ -249,7 +252,6 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
     }
 
     private void defaultValues () {
-        System.out.println("usao u default");
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
                 "http://whackamile.byethost3.com/taskme/taskmeZadatakPodaci.php",
@@ -265,7 +267,7 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
 
                         ((EditText)findViewById(idtxt[0])).setText(arrayDefaultValues.get(0).toString().trim());
 
-                        Spinner tmp=(Spinner)findViewById(idtxt[1]);
+                        Spinner tmp=(Spinner)findViewById(idtxt[3]);
                         System.out.println("adapter: " + adapterEmployee.toString());
                          //   ArrayAdapter myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
                             adapterEmployee.notifyDataSetChanged();
@@ -275,26 +277,27 @@ public class IzmjenaZadatka  extends AppCompatActivity implements View.OnClickLi
                             System.out.println(arrayDefaultValues.get(3).toString() + " --> d. val. 1 at position " + spinnerPosition);
                             tmp.setSelection(spinnerPosition);
 
-                        tmp=(Spinner)findViewById(idtxt[2]);
+                        Spinner tmp2=(Spinner)findViewById(idtxt[2]);
                           //  myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
                             adapterClient.notifyDataSetChanged();
-                            tmp.setAdapter(adapterClient);
+                            tmp2.setAdapter(adapterClient);
                             spinnerPosition = adapterClient.getPosition(arrayDefaultValues.get(2).toString());
                             System.out.println(Arrays.asList(arrayClient + " --> arrayClient"));
                             System.out.println(arrayDefaultValues.get(2).toString() + " --> d. val. 2 at position " + spinnerPosition);
-                            tmp.setSelection(spinnerPosition);
+                            tmp2.setSelection(spinnerPosition);
 
-                        tmp=(Spinner)findViewById(idtxt[3]);
+                        Spinner tmp3=(Spinner)findViewById(idtxt[1]);
                         // myAdap = (ArrayAdapter) tmp.getAdapter(); //cast to an ArrayAdapter
                             adapterTaskType.notifyDataSetChanged();
-                            tmp.setAdapter(adapterTaskType);
+                            tmp3.setAdapter(adapterTaskType);
                             System.out.println(Arrays.asList(arrayTaskType + " --> arrayTaskType"));
                             spinnerPosition = adapterTaskType.getPosition(arrayDefaultValues.get(1).toString());
-                            System.out.println(arrayDefaultValues.get(1).toString()+" --> d. val. 3 at position "+spinnerPosition);
-                            tmp.setSelection(spinnerPosition);
+                            System.out.println(arrayDefaultValues.get(1).toString() + " --> d. val. 3 at position " + spinnerPosition);
+                            tmp3.setSelection(spinnerPosition);
 
-                        ((DatePicker)findViewById(idtxt[4])).updateDate(2, 2, 2); //Todo skužit u kojem je formatu datum i kako izvuć vrijednosti
-                        ((EditText)findViewById(idtxt[0])).setText(arrayDefaultValues.get(5).toString());
+                        String[] datum=arrayDefaultValues.get(4).split("-");
+                        ((DatePicker)findViewById(idtxt[4])).updateDate(Integer.parseInt(datum[0]), Integer.parseInt(datum[1])-1, Integer.parseInt(datum[2])); //Todo skužit u kojem je formatu datum i kako izvuć vrijednosti, valjda splitat d.v.(4) po razmacima
+                        ((EditText)findViewById(idtxt[5])).setText(arrayDefaultValues.get(6).toString());
                     }
                 },
                 new Response.ErrorListener() {

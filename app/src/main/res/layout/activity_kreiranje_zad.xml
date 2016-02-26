@@ -26,7 +26,7 @@
             android:layout_marginBottom="10dp"
             android:layout_gravity="center"
             />
-        <!--     <TextView
+             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Task name:"
@@ -36,7 +36,7 @@
                 android:layout_marginBottom="5dp"
                 android:textColor="#FFFF"
                 android:textSize="20sp"
-                /> -->
+                />
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="50dp"
@@ -48,17 +48,17 @@
             android:id="@+id/editxt_taskname"
             android:paddingLeft="10dp"
             />
-  <!--     <TextView
+       <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Type of task:"
-            android:id="@+id/text1"
+            android:id="@+id/textgh1"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="5dp"
             android:textColor="#FFFF"
             android:textSize="20sp"
-            /> -->
+            />
 
         <Spinner
             android:id="@+id/spinner_type_task"
@@ -71,7 +71,7 @@
             android:entries="@array/spinner_tip_korisnika"
             />
 
-   <!--     <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Client:"
@@ -81,7 +81,7 @@
             android:layout_marginBottom="5dp"
             android:textColor="#FFFF"
             android:textSize="20sp"
-        /> -->
+        />
 
         <Spinner
             android:id="@+id/spinner_klijent"
@@ -94,7 +94,7 @@
             android:entries="@array/spinner_array1"
             />
 
-  <!--      <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Employe:"
@@ -104,7 +104,7 @@
             android:layout_marginBottom="5dp"
             android:textColor="#FFFF"
             android:textSize="20sp"
-            /> -->
+            />
 
         <Spinner
             android:id="@+id/spinner_employe"
@@ -117,7 +117,7 @@
             android:entries="@array/spinner_array1"
             />
 
-   <!--     <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Due date:"
@@ -127,11 +127,11 @@
             android:layout_marginBottom="5dp"
             android:textColor="#FFFF"
             android:textSize="20sp"
-            /> -->
+            />
 
         <DatePicker
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:id="@+id/datePicker"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
@@ -139,10 +139,11 @@
             android:layout_marginBottom="10dp"
             android:datePickerMode="spinner"
             android:background="#E8FDF6"
+            android:calendarViewShown="false"
             />
 
 
-   <!--     <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Description:"
@@ -152,9 +153,9 @@
             android:layout_marginBottom="5dp"
             android:textColor="#FFFF"
             android:textSize="20sp"
-            /> -->
+            />
 
-        /> -->
+
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="50dp"
@@ -197,7 +198,7 @@
 
 
             <Button
-                android:layout_width="140dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Create"
                 android:id="@+id/button_create"

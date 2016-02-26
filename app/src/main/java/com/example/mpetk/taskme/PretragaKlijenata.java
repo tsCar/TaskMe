@@ -37,7 +37,7 @@ public class PretragaKlijenata  extends AppCompatActivity{
     Runnable run = new Runnable() {
         public void run() {
             //reload content
-            list.clear();
+            klijent.clear();
             adapter1.notifyDataSetChanged();
             listview.invalidateViews();
             listview.refreshDrawableState();

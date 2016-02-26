@@ -38,7 +38,7 @@ public class PrikazZadatka  extends AppCompatActivity{
     ArrayList<String> podaci;
 
     int[] idtxt = new int[] { R.id.prikaz_task_name_p, R.id.prikaz_task_type_p,R.id.prikaz_task_klijent_p, R.id.prikaz_task_zaposlenik_p,
-            R.id.date_prikaz_task_p,R.id.completion_status,  R.id.opis_prikaz_dodjeljenosti, R.id.opis_prikaz_task};
+            R.id.date_prikaz_task_p,R.id.completion_status, /*R.id.opis_prikaz_dodjeljenosti,*/ R.id.opis_prikaz_task};
 
 
     // public ArrayList list;
@@ -71,9 +71,10 @@ public class PrikazZadatka  extends AppCompatActivity{
                         System.out.println("response " );System.out.println(response);
                         List<String> taskovi = Arrays.asList(response.split("\\|t", -1));
                         podaci.addAll(taskovi);
-
+System.out.println(Arrays.asList(podaci) + "-->podaci");
                         for (int i = 0; i < podaci.size(); i++) {
-                            TextView tmp= (TextView) findViewById(idtxt[i]);
+                            TextView tmp = (TextView) findViewById(idtxt[i]);
+                            System.out.println("i="+i+", podaci="+(podaci.get(i)));
                             tmp.setText(podaci.get(i));
                         }
                     }
