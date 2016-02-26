@@ -12,6 +12,10 @@
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ikona.png",
+        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\mipmap-xxhdpi\\ikona.png"
+    },
+    {
         "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },

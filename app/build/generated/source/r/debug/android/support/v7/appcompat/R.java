@@ -542,7 +542,7 @@ public final class R {
 		public static final int submit_area = 0x7f0d0065;
 		public static final int tabMode = 0x7f0d000c;
 		public static final int text = 0x7f0d00cd;
-		public static final int text2 = 0x7f0d0080;
+		public static final int text2 = 0x7f0d008c;
 		public static final int textSpacerNoButtons = 0x7f0d004d;
 		public static final int time = 0x7f0d00ca;
 		public static final int title = 0x7f0d0043;

@@ -39,7 +39,7 @@ public class IzmjenaKorisnika  extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.grga);
+        setContentView(R.layout.activity_izmjena_korisnika);
         Button promijeni = (Button) findViewById(R.id.button_modify_user);
         promijeni.setOnClickListener(this);
         stariUser = getIntent().getStringExtra(PretragaKorisnika.id_extra);

@@ -732,10 +732,6 @@
         "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_izmeni_obavljeni_posao.xml"
     },
     {
-        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grga.xml",
-        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\layout\\grga.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_izmjena_klijenata.xml",
         "source": "D:\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_izmjena_klijenata.xml"
     },
@@ -1258,6 +1254,10 @@
     {
         "merged": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pretraga_zadataka.xml",
         "source": "C:\\home\\zla\\AndroidStudioProjects\\TaskMe\\app\\src\\main\\res\\layout\\activity_pretraga_zadataka.xml"
+    },
+    {
+        "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_izmjena_korisnika.xml",
+        "source": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\src\\main\\res\\layout\\activity_izmjena_korisnika.xml"
     },
     {
         "merged": "C:\\Users\\mpetk\\Desktop\\TaskMe\\TaskMe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
