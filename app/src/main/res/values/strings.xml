@@ -10,8 +10,14 @@
     <item>Saturn</item>
     <item>Uranus</item>
     <item>Neptune</item>
-        <item>1265456</item>
 </string-array>
+
+    <string-array name="spinner_kriterij">
+        <item>Select a criteria:</item>
+        <item>User</item>
+        <item>Client</item>
+        <item>Type of task</item>
+    </string-array>
 
     <string-array name="spinner_tip_korisnika">
         <item>1</item>

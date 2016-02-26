@@ -88,7 +88,7 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeBazaPisanje.php",
+                Config.LOGIN_WAMP_URL+"taskmeBazaPisanje.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

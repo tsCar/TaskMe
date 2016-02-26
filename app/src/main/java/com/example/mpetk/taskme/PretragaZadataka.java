@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -39,6 +40,16 @@ public class PretragaZadataka extends AppCompatActivity{
     public EditText inputSearch;
     public ArrayAdapter adapterTask;
 
+    Runnable run = new Runnable() {
+        public void run() {
+            //reload content
+            list.clear();
+            adapterTask.notifyDataSetChanged();
+            listview.invalidateViews();
+            listview.refreshDrawableState();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,17 +62,24 @@ public class PretragaZadataka extends AppCompatActivity{
             }
         });
         list = new ArrayList();
+
+
+
+
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         showList();
+
         adapterTask=new ArrayAdapter<String>(this, R.layout.activity_listview, list);
         listview = (ListView) findViewById(R.id.lista_taskova);
+
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapterTask);
 
+        runOnUiThread(run);
 
                 /*-----------SEARCH liste--------------*/
         inputSearch = (EditText) findViewById(R.id.inputSearch_tasks);
@@ -92,7 +110,7 @@ public class PretragaZadataka extends AppCompatActivity{
     private void showList () {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeZadataka.php", //ToDo
+                Config.LOGIN_WAMP_URL+"taskmeBazaCitanjeZadataka.php", //ToDo
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

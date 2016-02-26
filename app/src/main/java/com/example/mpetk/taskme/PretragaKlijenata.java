@@ -34,6 +34,16 @@ public class PretragaKlijenata  extends AppCompatActivity{
     public EditText inputSearch;
     public ArrayAdapter adapter1;
 
+    Runnable run = new Runnable() {
+        public void run() {
+            //reload content
+            list.clear();
+            adapter1.notifyDataSetChanged();
+            listview.invalidateViews();
+            listview.refreshDrawableState();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +66,7 @@ public class PretragaKlijenata  extends AppCompatActivity{
         listview = (ListView) findViewById(R.id.lista_klijenata);
         registerForContextMenu(listview); //za meni nesto
         listview.setAdapter(adapter1);
-
+        runOnUiThread(run);
 
                 /*-----------SEARCH liste--------------*/
         inputSearch = (EditText) findViewById(R.id.inputSearch_klijent);
@@ -87,7 +97,7 @@ public class PretragaKlijenata  extends AppCompatActivity{
     private void showList () {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeKijentCitanje.php",
+                Config.LOGIN_WAMP_URL+"taskmeKijentCitanje.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

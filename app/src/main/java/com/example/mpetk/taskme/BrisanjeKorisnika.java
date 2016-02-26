@@ -50,7 +50,7 @@ public class BrisanjeKorisnika  extends AppCompatActivity implements View.OnClic
            if (v.getId() == (R.id.button_delete_yes)) {
                StringRequest stringRequest = new StringRequest(
                        Request.Method.POST,
-                       "http://whackamile.byethost3.com/taskme/taskmeBrisanjeKorisnika.php",
+                       Config.LOGIN_WAMP_URL+"taskmeBrisanjeKorisnika.php",
                        new Response.Listener<String>() {
                            @Override
                            public void onResponse(String response) {

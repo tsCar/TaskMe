@@ -54,7 +54,7 @@ public class BrisanjeZadatka  extends AppCompatActivity implements View.OnClickL
         if (v.getId() == (R.id.button_delete_yes)) {
             StringRequest stringRequest = new StringRequest(
                     Request.Method.POST,
-                    "http://whackamile.byethost3.com/taskme/taskmeZadatakBrisanje.php",
+                    Config.LOGIN_WAMP_URL+"taskmeZadatakBrisanje.php",
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {

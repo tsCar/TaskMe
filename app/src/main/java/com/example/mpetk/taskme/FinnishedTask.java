@@ -29,6 +29,16 @@ public class FinnishedTask extends AppCompatActivity {
     public ArrayAdapter adapter;
     String user;
 
+    Runnable run = new Runnable() {
+        public void run() {
+            //reload content
+            podaci.clear();
+            adapter.notifyDataSetChanged();
+            listview.invalidateViews();
+            listview.refreshDrawableState();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,13 +58,13 @@ public class FinnishedTask extends AppCompatActivity {
         listview = (ListView) findViewById(R.id.lista_obavljenog);
         registerForContextMenu(listview);
         listview.setAdapter(adapter);
-
+        runOnUiThread(run);
     }
 
     private void showList () {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeOdradeniZadaci.php",
+                Config.LOGIN_WAMP_URL+"taskmeOdradeniZadaci.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

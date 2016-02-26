@@ -29,6 +29,16 @@ public class MyTasks extends AppCompatActivity {
     public ArrayAdapter adapter;
     String user;
 
+    Runnable run = new Runnable() {
+        public void run() {
+            //reload content
+            podaci.clear();
+            adapter.notifyDataSetChanged();
+            listview.invalidateViews();
+            listview.refreshDrawableState();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,13 +58,13 @@ public class MyTasks extends AppCompatActivity {
         listview = (ListView) findViewById(R.id.lista_poslova);
         registerForContextMenu(listview);
         listview.setAdapter(adapter);
-
+        runOnUiThread(run);
     }
 
     private void showList () {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeMytasks.php",
+                Config.LOGIN_WAMP_URL+"taskmeMytasks.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

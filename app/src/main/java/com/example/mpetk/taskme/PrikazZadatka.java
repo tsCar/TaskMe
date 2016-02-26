@@ -38,7 +38,7 @@ public class PrikazZadatka  extends AppCompatActivity{
     ArrayList<String> podaci;
 
     int[] idtxt = new int[] { R.id.prikaz_task_name_p, R.id.prikaz_task_type_p,R.id.prikaz_task_klijent_p, R.id.prikaz_task_zaposlenik_p,
-            R.id.date_prikaz_task_p,  R.id.opis_prikaz_task,R.id.opis_prikaz_dodjeljenosti};
+            R.id.date_prikaz_task_p,R.id.completion_status,  R.id.opis_prikaz_dodjeljenosti, R.id.opis_prikaz_task};
 
 
     // public ArrayList list;
@@ -49,6 +49,7 @@ public class PrikazZadatka  extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         podaci  =new ArrayList<>();
         setContentView(R.layout.prikaz_radnog_zadataka);
+        final Bundle bundle = getIntent().getExtras();
         stariZad = getIntent().getStringExtra(PretragaZadataka.id_extra);
 
     }
@@ -62,7 +63,7 @@ public class PrikazZadatka  extends AppCompatActivity{
 
     private void defaultValues () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeZadatakPodaci.php",
+                Config.LOGIN_WAMP_URL+"taskmeZadatakPodaci.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

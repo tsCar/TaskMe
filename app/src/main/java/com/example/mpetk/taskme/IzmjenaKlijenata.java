@@ -85,7 +85,7 @@ public class IzmjenaKlijenata  extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeKlijentIzmjena.php",
+                Config.LOGIN_WAMP_URL+"taskmeKlijentIzmjena.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
