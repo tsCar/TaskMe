@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -32,7 +33,7 @@ public class MojProfil  extends AppCompatActivity implements View.OnClickListene
     int[] idtxt = new int[] { R.id.izmjena_korisnika_ime, R.id.izmjena_korisnika_prezime, R.id.izmjena_korisnika_OIB,
             R.id.izmjena_korisnika_broj_osobne,R.id.izmjena_korisnika_adresa,R.id.izmjena_korisnika_telefon,
             R.id.izmjena_korisnika_mail,R.id.izmjena_korisnika_username,
-            R.id.izmjena_korisnika_pass, R.id.izmjena_korisnika_datum_zap};
+            R.id.izmjena_korisnika_pass, R.id.datePickerMojProfilKorisnik};
     // public ArrayList list;
     public String stariUser;
 
@@ -63,7 +64,7 @@ public class MojProfil  extends AppCompatActivity implements View.OnClickListene
                     public void onResponse(String response) {
                         //If we are getting success from server
                         podaci = response.split("\\|t",-1);
-                        for (int i = 0; i < podaci.length-1; i++) {//zadnje je spinner, ne edittext
+                        for (int i = 0; i < podaci.length-2; i++) {//zadnje je spinner, ne edittext
                             EditText tmp = (EditText) findViewById(idtxt[i]);
                             tmp.setText(podaci[i]);
                         }
@@ -126,7 +127,7 @@ public class MojProfil  extends AppCompatActivity implements View.OnClickListene
                 params.put("EMAIL", ((EditText) findViewById(idtxt[6])).getText().toString());
                 params.put("KORISNICKO_IME", ((EditText) findViewById(idtxt[7])).getText().toString());
                 params.put("LOZINKA", ((EditText) findViewById(idtxt[8])).getText().toString());
-                params.put("DATUM_ZAPOSLENJA", ((EditText) findViewById(idtxt[9])).getText().toString());
+                params.put("DATUM_ZAPOSLENJA", ((DatePicker) findViewById(idtxt[9])).getYear() + "-" + (((DatePicker) findViewById(idtxt[9])).getMonth() + 1) + "-" + ((DatePicker) findViewById(idtxt[9])).getDayOfMonth());
                 params.put("TIP_KORISNIKA", ((Spinner)findViewById(R.id.spinner_tip_korisnika)).getSelectedItem().toString() );
                 return params;
             }

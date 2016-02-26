@@ -7,14 +7,15 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -24,6 +25,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -31,35 +33,30 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by tmilicic on 2/23/16.
+ * Created by mpetk on 15.2.2016..
  */
-public class MyTasks extends AppCompatActivity {
+public class EvidencijaAktivnogZadatka  extends AppCompatActivity  implements View.OnClickListener{
 
-    ArrayList<String> podaci;
-    public ListView listview;
-    public ArrayAdapter adapter;
-    String user;
-    public static final String id_extra = "com.example.mpetk.taskme._ID";
-
-
-    Runnable run = new Runnable() {
-        public void run() {
-            //reload content
-            podaci.clear();
-            adapter.notifyDataSetChanged();
-            listview.invalidateViews();
-            listview.refreshDrawableState();
-        }
-    };
+    String staraEvidencija;
+    public String stariZ;
+    int[] idtxt1 = new int[] { R.id.evidencijaEdit};
+    //komentar
+    PrikazZadatka pz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zadaci_zaposlenika);
-        podaci = new ArrayList<>();
+        setContentView(R.layout.activity_evidentiraj_bavljeni_posao);
 
-        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        user = sharedPreferences.getString(Config.IME_SHARED_PREF,"Not Available");
+        pz=new PrikazZadatka();
+ //       pz.stariZad =taskname;
+
+        pz.defaultValues();
+        stariZ = getIntent().getStringExtra(FinnishedTask.id_extra);
+
+
+        Button dodajEvidenciju = (Button) findViewById(R.id.button_evidentiraj);
+        dodajEvidenciju.setOnClickListener(this);
 
 
     }
@@ -67,110 +64,52 @@ public class MyTasks extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        showList();
-        adapter=new ArrayAdapter<String>(this, R.layout.activity_listview, podaci);
-        listview = (ListView) findViewById(R.id.lista_poslova);
-        registerForContextMenu(listview);
-        listview.setAdapter(adapter);
-        runOnUiThread(run);
+        staraEvidencija=pz.podaci.get(7).toString();
+
     }
 
-    private void showList () {
+    @Override
+    public void onClick(View v) {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                Config.LOGIN_WAMP_URL+"taskmeMytasks.php",
+                Config.LOGIN_WAMP_URL+"taskmeDodajEvidenciju.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
-                        System.out.print("Response "+response);
-                        List<String> tasks = Arrays.asList(response.split("\\|t"));
-                        podaci.addAll(tasks);
+                        Toast.makeText(EvidencijaAktivnogZadatka.this, response, Toast.LENGTH_LONG).show();
+                        Intent intentNatrag = new Intent(getApplicationContext(), FinnishedTask.class);
+                        startActivity(intentNatrag);
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        System.out.println("error: " + error);
                     }
-                }) {
+                })
+
+        { //
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("KORISNICKO_IME", user);
+                //   nadiId();
+                Map < String, String > params = new HashMap<>();
+                System.out.print("Stari: "+stariZ);
+                System.out.print("evidencija: "+((EditText)findViewById(idtxt1[0])).getText().toString());
+                params.put("NAZIV_ZADATKA", stariZ.trim());
+                params.put("EVIDENCIJA", (staraEvidencija + "\n" + ((EditText) findViewById(idtxt1[0])).getText()).toString().trim());
+
                 return params;
             }
         };
-
+        //Adding the string request to the queue
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        System.out.println("request " + stringRequest);
         requestQueue.add(stringRequest);
     }
 
 
-    public void taskFin(final String task){
-        StringRequest stringRequest = new StringRequest(
-                Request.Method.POST,
-                Config.LOGIN_WAMP_URL+"taskmeIzvrsiZadatak.php",
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                        Toast.makeText(getApplicationContext(), response, Toast.LENGTH_LONG).show();
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                    }
-                }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-                String us = sharedPreferences.getString(Config.IME_SHARED_PREF,"Not Available");
-
-                params.put("NAZIV_ZADATKA", task.trim());
-                return params;
-            }
-        };
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        System.out.println("request " + stringRequest);
-        requestQueue.add(stringRequest);
-    }
-
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        if (v.getId()==R.id.lista_poslova) {
-            MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.menu_izvrsio_sam, menu);
-        }
-    }
 
 
 
-    @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-        int index =info.position;
-        String taskname = podaci.get(index);
-        switch(item.getItemId()) {
-
-            case R.id.make_log:
-                Intent intent_evid = new Intent(getApplicationContext(), EvidencijaAktivnogZadatka.class);
-                intent_evid.putExtra(id_extra,taskname);
-                startActivity(intent_evid);
-                return true;
-            case R.id.izvrseno_buraz:
-                taskFin(taskname);
-                return true;
-
-
-            default:
-                return super.onContextItemSelected(item);
-        }
-    }
 
     //Logout function
     private void logout() {
@@ -244,5 +183,4 @@ public class MyTasks extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

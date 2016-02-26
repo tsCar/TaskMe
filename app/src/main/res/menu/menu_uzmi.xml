@@ -9,5 +9,9 @@
         android:icon="@android:drawable/ic_menu_add"
         android:title="Take task" />
 
+    <item android:id="@+id/showMoreOfMyTasks"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Show more" />
+
 
 </menu>

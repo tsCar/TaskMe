@@ -83,6 +83,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             type = 1;
                             //Creating a shared preference
                             SharedPreferences sharedPreferences = Login.this.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                            SharedPreferences tip = Login.this.getSharedPreferences(Config.TYPE_PREF_NAME, Context.MODE_PRIVATE);
 
                             //Creating editor to store values to shared preferences
                             SharedPreferences.Editor editor;
@@ -95,6 +96,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             //Saving values to editor
                             editor.apply();
 
+                            SharedPreferences.Editor editorTip;
+                            editorTip = tip.edit();
+                            editorTip.putString(Config.TYPE_PREF_NAME, response.trim());
+                            editorTip.apply();
                             //Starting profile activity
                             Intent intent = new Intent(Login.this, Home.class);
                             startActivity(intent);
@@ -116,6 +121,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             //Saving values to editor
                             editor.apply();
 
+                            SharedPreferences tipShared = Login.this.getSharedPreferences(Config.TYPE_PREF_NAME, Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editorTip;
+                            editorTip = tipShared.edit();
+                            editorTip.putString(Config.TYPE_PREF_NAME, response.trim());
+                            editorTip.apply();
                             //Starting profile activity
                             Intent intentZap = new Intent(Login.this, HomeZaposlenik.class);
                             startActivity(intentZap);

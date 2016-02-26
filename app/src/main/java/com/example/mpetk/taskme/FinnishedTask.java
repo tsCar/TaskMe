@@ -191,7 +191,7 @@ public class FinnishedTask extends AppCompatActivity {
             logout();
         }else if (id == R.id.menuHome){
 
-            Intent intent = new Intent(getApplicationContext(), Home.class);
+            Intent intent = new Intent(getApplicationContext(), HomeZaposlenik.class);
             startActivity(intent);
 
         }else if(id == R.id.action_profil){

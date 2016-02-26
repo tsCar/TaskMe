@@ -23,6 +23,9 @@
 
         <activity android:name=".BrisanjeKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Delete client"></activity>
         <activity android:name=".PrikazKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Client overview"></activity>
+        <activity android:name=".EvidencijaAktivnogZadatka"  android:noHistory="true" android:label="Make log"></activity>
+        PrikazZadatkaZaposlenik
+        <activity android:name=".PrikazZadatkaZaposlenik" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Show more"></activity>
 
         <activity android:name=".BrisanjeKorisnika" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Delete user"></activity>
         <activity android:name=".BrisanjeZadatka" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Delete task"></activity>

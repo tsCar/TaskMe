@@ -53,6 +53,8 @@ public class PrikazZadatka  extends AppCompatActivity{
         final Bundle bundle = getIntent().getExtras();
         stariZad = getIntent().getStringExtra(PretragaZadataka.id_extra);
 
+
+
     }
 
     @Override
@@ -62,7 +64,7 @@ public class PrikazZadatka  extends AppCompatActivity{
         //   populate();
     }
 
-    private void defaultValues () {
+    public void defaultValues () {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 Config.LOGIN_WAMP_URL+"taskmeZadatakPodaci.php",
                 new Response.Listener<String>() {
@@ -77,8 +79,8 @@ System.out.println(Arrays.asList(podaci) + "-->podaci");
                             TextView tmp = (TextView) findViewById(idtxt[i]);
                             tmp.setText(podaci.get(i));
                         }
-                        if(podaci.get(3).equalsIgnoreCase("0")) ((TextView)findViewById(idtxt[3])).setText("Not assigned");
-                        if(podaci.get(5).equalsIgnoreCase("")) ((TextView)findViewById(idtxt[5])).setText("Not completed");
+                        if(podaci.get(3).equalsIgnoreCase("0")||podaci.get(3).equalsIgnoreCase("")) ((TextView)findViewById(idtxt[3])).setText("Not assigned");
+                        if(podaci.get(5).trim().equalsIgnoreCase("0")||podaci.get(5).trim().equalsIgnoreCase("")) ((TextView)findViewById(idtxt[5])).setText("Not completed");
                         else ((TextView)findViewById(idtxt[5])).setText("Completed");
                     }
                 },

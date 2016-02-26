@@ -39,6 +39,8 @@ public class ZadaciZaposlenika extends AppCompatActivity {
     public ListView listview;
     public ArrayAdapter adapter;
     String user;
+    public static final String id_extra = "com.example.mpetk.taskme._ID";
+
 
     Runnable run = new Runnable() {
         public void run() {
@@ -153,6 +155,15 @@ public class ZadaciZaposlenika extends AppCompatActivity {
             case R.id.take:
                 assignTask(taskname);
                 return true;
+            case R.id.showMoreOfMyTasks:
+                Intent intent_show = new Intent(getApplicationContext(), PrikazZadatkaZaposlenik.class);
+                intent_show.putExtra(id_extra,taskname);
+                startActivity(intent_show);
+
+
+
+                return true;
+
 
             default:
                 return super.onContextItemSelected(item);
@@ -220,7 +231,7 @@ public class ZadaciZaposlenika extends AppCompatActivity {
             logout();
         }else if (id == R.id.menuHome){
 
-            Intent intent = new Intent(getApplicationContext(), Home.class);
+            Intent intent = new Intent(getApplicationContext(), HomeZaposlenik.class);
             startActivity(intent);
 
         }else if(id == R.id.action_profil){

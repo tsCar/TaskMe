@@ -9,5 +9,9 @@
         android:icon="@android:drawable/ic_menu_add"
         android:title="Task completed" />
 
+    <item android:id="@+id/make_log"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Make log" />
+
 
 </menu>

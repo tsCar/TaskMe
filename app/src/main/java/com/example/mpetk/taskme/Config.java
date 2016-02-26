@@ -17,7 +17,7 @@ public class Config {
     //Keys for Sharedpreferences
     //This would be the name of our shared preferences
     public static final String SHARED_PREF_NAME = "myloginapp";
-
+    public static final String TYPE_PREF_NAME="";
     //This would be used to store the email of current logged in user
     public static final String IME_SHARED_PREF = "username";
 

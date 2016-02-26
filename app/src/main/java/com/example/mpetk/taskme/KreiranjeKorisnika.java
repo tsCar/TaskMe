@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -30,7 +31,7 @@ public class KreiranjeKorisnika  extends AppCompatActivity implements View.OnCli
     int[] idtxt = new int[] { R.id.kreiranje_korisnika_ime, R.id.kreiranje_korisnika_prezime, R.id.kreiranje_korisnika_OIB,
             R.id.kreiranje_korisnika_broj_osobne,R.id.kreiranje_korisnika_adresa,R.id.kreiranje_korisnika_telefon,
             R.id.kreiranje_korisnika_mail,R.id.kreiranje_korisnika_username,
-            R.id.kreiranje_korisnika_pass, R.id.kreiranje_korisnika_datum_zap};
+            R.id.kreiranje_korisnika_pass, R.id.datePickerNoviKorisnik};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +73,10 @@ public class KreiranjeKorisnika  extends AppCompatActivity implements View.OnCli
                 params.put("EMAIL", ((EditText) findViewById(idtxt[6])).getText().toString());
                 params.put("KORISNICKO_IME", ((EditText) findViewById(idtxt[7])).getText().toString());
                 params.put("LOZINKA", ((EditText) findViewById(idtxt[8])).getText().toString());
-                params.put("DATUM_ZAPOSLENJA", ((EditText) findViewById(idtxt[9])).getText().toString());
+
+                params.put("DATUM_ZAPOSLENJA", ((DatePicker) findViewById(idtxt[9])).getYear() + "-" + (((DatePicker) findViewById(idtxt[9])).getMonth() + 1) + "-" + ((DatePicker) findViewById(idtxt[9])).getDayOfMonth());
+
+
                 params.put("TIPKORISNIKA_ID", ((Spinner)findViewById(R.id.kreiranje_spinner_tip_korisnika)).getSelectedItem().toString() );
 
                 return params;
