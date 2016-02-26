@@ -38,7 +38,10 @@
                 android:layout_marginRight="10dp"
                 android:id="@+id/prikaz_klijenta_ime"
                 android:hint="Name"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
                 android:paddingLeft="10dp"
+                android:textSize="18sp"
                 />
 
             <TextView
@@ -51,7 +54,10 @@
                 android:layout_marginRight="10dp"
                 android:id="@+id/prikaz_klijent_adresa"
                 android:hint="Address"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
                 android:paddingLeft="10dp"
+                android:textSize="18sp"
                 />
 
             <TextView
@@ -64,7 +70,10 @@
                 android:layout_marginRight="10dp"
                 android:id="@+id/prikaz_klijent_telefon"
                 android:hint="Phone number"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
                 android:paddingLeft="10dp"
+                android:textSize="18sp"
                 />
 
 
@@ -78,7 +87,10 @@
                 android:layout_marginRight="10dp"
                 android:id="@+id/prikaz_klijent_mail"
                 android:hint="E-mail"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
                 android:paddingLeft="10dp"
+                android:textSize="18sp"
                 />
 
 

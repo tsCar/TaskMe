@@ -22,7 +22,7 @@
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="100dp"
-                android:src="@drawable/profil2"
+                android:src="@drawable/mojprofil"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_gravity="center"
