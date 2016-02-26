@@ -22,33 +22,30 @@
         </activity>
 
         <activity android:name=".BrisanjeKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
-        <activity android:name=".PrikazKlijenata" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".PrikazKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
 
         <activity android:name=".BrisanjeKorisnika" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
         <activity android:name=".BrisanjeZadatka" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
-        <activity android:name=".DodjelaZadatka" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".EvidentirajObavljeniPosao" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".DodjelaZadatka" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
+        <activity android:name=".EvidentirajObavljeniPosao" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
         <activity android:name=".Home" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".HomeZaposlenik" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".IzmjenaKlijenata" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".IzmjenaKorisnika" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".IzmjenaZadatka" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".IzmjeniObavljeniPosao" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".KreiranjeKlijenta" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".KreiranjeKorisnika" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".KreiranjeZadatak" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".PregledEvidencije" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".IzmjenaKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
+        <activity android:name=".IzmjenaKorisnika" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
+        <activity android:name=".IzmjenaZadatka" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
+        <activity android:name=".KreiranjeKlijenta" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
+        <activity android:name=".KreiranjeKorisnika" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
+        <activity android:name=".KreiranjeZadatak" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
         <activity android:name=".PretragaKlijenata" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaKorisnika" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaIzvjestaja" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".PretragaZadataka" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".PromjenaSifre" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".UpravljanjeZadacima" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".ZadaciZaposlenika" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".PrikazKorisnika" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".PrikazZadatka" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".PrikazKorisnika" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
+        <activity android:name=".PrikazZadatka" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
         <activity android:name=".MyTasks" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".FinnishedTask" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".MojProfil" android:windowSoftInputMode="stateHidden" android:noHistory="true"></activity>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

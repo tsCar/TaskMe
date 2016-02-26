@@ -212,7 +212,8 @@ public class PretragaKlijenata  extends AppCompatActivity{
     public boolean onCreateOptionsMenu(Menu menu) {
         //Adding our menu to toolbar
         getMenuInflater().inflate(R.menu.menu, menu);
-
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_bar_mojprofil, menu);
         return true;
     }
 
@@ -227,6 +228,10 @@ public class PretragaKlijenata  extends AppCompatActivity{
             Intent intent = new Intent(getApplicationContext(), Home.class);
             startActivity(intent);
 
+        }else if(id == R.id.action_profil){
+
+            Intent intent = new Intent(getApplicationContext(), MojProfil.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

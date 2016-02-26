@@ -20,9 +20,9 @@
 
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="70dp"
-                android:src="@drawable/logo1"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profil2"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_gravity="center"

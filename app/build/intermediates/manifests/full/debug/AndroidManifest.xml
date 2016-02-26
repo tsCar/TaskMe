@@ -30,6 +30,7 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PrikazKlijenata"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.BrisanjeKorisnika"
@@ -41,9 +42,11 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.DodjelaZadatka"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.EvidentirajObavljeniPosao"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.Home"
@@ -53,27 +56,27 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.IzmjenaKlijenata"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.IzmjenaKorisnika"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.IzmjenaZadatka"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.IzmjeniObavljeniPosao"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.KreiranjeKlijenta"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.KreiranjeKorisnika"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.KreiranjeZadatak"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.PregledEvidencije"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PretragaKlijenata"
@@ -88,25 +91,25 @@
             android:name="com.example.mpetk.taskme.PretragaZadataka"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.example.mpetk.taskme.PromjenaSifre"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.UpravljanjeZadacima"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
             android:name="com.example.mpetk.taskme.ZadaciZaposlenika"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PrikazKorisnika"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PrikazZadatka"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.MyTasks"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.FinnishedTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.mpetk.taskme.MojProfil"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for

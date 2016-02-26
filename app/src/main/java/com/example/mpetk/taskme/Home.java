@@ -145,7 +145,7 @@ public class Home extends AppCompatActivity {
 
                 }else if(id == R.id.action_profil){
 
-                    Intent intent = new Intent(getApplicationContext(), PretragaKorisnika.class); //TODO moramo staviti da odvede na modifikaciju trenutno ulogiranog korisnika
+                    Intent intent = new Intent(getApplicationContext(), MojProfil.class);
                     startActivity(intent);
                 }
 
