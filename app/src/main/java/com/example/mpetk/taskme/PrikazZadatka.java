@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -153,7 +154,8 @@ System.out.println(Arrays.asList(podaci) + "-->podaci");
     public boolean onCreateOptionsMenu(Menu menu) {
         //Adding our menu to toolbar
         getMenuInflater().inflate(R.menu.menu, menu);
-
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_bar_mojprofil, menu);
         return true;
     }
 
@@ -168,6 +170,10 @@ System.out.println(Arrays.asList(podaci) + "-->podaci");
             Intent intent = new Intent(getApplicationContext(), Home.class);
             startActivity(intent);
 
+        }else if(id == R.id.action_profil){
+
+            Intent intent = new Intent(getApplicationContext(), MojProfil.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

@@ -25,10 +25,12 @@
 
         <EditText android:id="@+id/inputSearch"
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="#CDD0D1"
             android:hint="Search users.."
             android:inputType="textVisiblePassword"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
             />
         <ListView
             android:layout_width="fill_parent"
@@ -40,7 +42,7 @@
 
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:text="new user"
             android:id="@+id/pretraga_add_korisnik"
             android:layout_marginTop="10dp"
@@ -49,6 +51,7 @@
             android:background="@drawable/zakrivljeno"
             android:textSize="18sp"
             android:textColor="#F7FAF9"
+            android:layout_marginLeft="10dp"
             />
 
 

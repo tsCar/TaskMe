@@ -58,12 +58,14 @@
 
         <EditText android:id="@+id/inputSearch_report"
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="#CDD0D1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:hint="Search reports.."
             android:inputType="text"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
             android:visibility="gone"
             />
      <ListView

@@ -8,6 +8,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -62,7 +63,7 @@ public class HomeZaposlenik extends AppCompatActivity {
     }
 
     //Logout function
-    private void logout(){
+    private void logout() {
         //Creating an alert dialog to confirm logout
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setMessage("Are you sure you want to logout?");
@@ -72,7 +73,7 @@ public class HomeZaposlenik extends AppCompatActivity {
                     public void onClick(DialogInterface arg0, int arg1) {
 
                         //Getting out sharedpreferences
-                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_NAME,Context.MODE_PRIVATE);
+                        SharedPreferences preferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
                         //Getting editor
                         SharedPreferences.Editor editor = preferences.edit();
 
@@ -86,7 +87,7 @@ public class HomeZaposlenik extends AppCompatActivity {
                         editor.commit();
 
                         //Starting login activity
-                        Intent intent = new Intent(HomeZaposlenik.this, Login.class);
+                        Intent intent = new Intent(getApplicationContext(), Login.class);
                         startActivity(intent);
                     }
                 });
@@ -109,6 +110,8 @@ public class HomeZaposlenik extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         //Adding our menu to toolbar
         getMenuInflater().inflate(R.menu.menu, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_bar_mojprofil, menu);
         return true;
     }
 
@@ -118,7 +121,17 @@ public class HomeZaposlenik extends AppCompatActivity {
         if (id == R.id.menuLogout) {
             //calling logout method when the logout button is clicked
             logout();
+        }else if (id == R.id.menuHome){
+
+            Intent intent = new Intent(getApplicationContext(), Home.class);
+            startActivity(intent);
+
+        }else if(id == R.id.action_profil){
+
+            Intent intent = new Intent(getApplicationContext(), MojProfil.class);
+            startActivity(intent);
         }
+
         return super.onOptionsItemSelected(item);
     }
 }

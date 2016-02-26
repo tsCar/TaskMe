@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -102,7 +103,6 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
                 Map < String, String > params = new HashMap<>();
                 params.put("NAZIV_ZADATKA", stariZad);
                 params.put("KORISNICKO_IME", ((Spinner)findViewById(idtxt[0])).getSelectedItem().toString());
-                params.put("STATUSDODJELJENOSTI", "1");
 
                 return params;
             }
@@ -117,7 +117,7 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
     public void makeArrayEmployee(){
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
-                "http://whackamile.byethost3.com/taskme/taskmeBazaCitanjeKorisnika.php",
+                Config.LOGIN_WAMP_URL+"taskmeBazaCitanjeKorisnika.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -196,7 +196,8 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
     public boolean onCreateOptionsMenu(Menu menu) {
         //Adding our menu to toolbar
         getMenuInflater().inflate(R.menu.menu, menu);
-
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_bar_mojprofil, menu);
         return true;
     }
 
@@ -211,6 +212,10 @@ public class DodjelaZadatka  extends AppCompatActivity  implements View.OnClickL
             Intent intent = new Intent(getApplicationContext(), Home.class);
             startActivity(intent);
 
+        }else if(id == R.id.action_profil){
+
+            Intent intent = new Intent(getApplicationContext(), MojProfil.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

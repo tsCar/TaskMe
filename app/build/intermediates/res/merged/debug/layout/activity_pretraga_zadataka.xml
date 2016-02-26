@@ -25,10 +25,13 @@
 
         <EditText android:id="@+id/inputSearch_tasks"
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="#CDD0D1"
             android:hint="Search tasks.."
-            android:inputType="textVisiblePassword"/>
+            android:inputType="textVisiblePassword"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            />
         <ListView
             android:layout_width="fill_parent"
             android:layout_height="250dp"
@@ -39,12 +42,13 @@
 
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:text="new task"
             android:id="@+id/pretraga_add_task"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/zakrivljeno"
             android:textSize="18sp"
             android:textColor="#F7FAF9"
