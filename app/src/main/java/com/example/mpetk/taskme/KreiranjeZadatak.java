@@ -115,13 +115,12 @@ public class KreiranjeZadatak  extends AppCompatActivity implements View.OnClick
                 if(((Spinner) findViewById(idtxt[3])).getSelectedItem().toString()!="unasigned")
                     params.put("KORISNIK_ID",((Spinner) findViewById(idtxt[3])).getSelectedItem().toString());
 
-                params.put("KRAJNJIDATUMIZVRSENJA", ((DatePicker) findViewById(idtxt[4])).getYear() + "-" + ((DatePicker) findViewById(idtxt[4])).getMonth()+1+"-"+((DatePicker) findViewById(idtxt[4])).getDayOfMonth());
+                params.put("KRAJNJIDATUMIZVRSENJA", ((DatePicker) findViewById(idtxt[4])).getYear() + "-" + (((DatePicker) findViewById(idtxt[4])).getMonth()+1)+"-"+((DatePicker) findViewById(idtxt[4])).getDayOfMonth());
                 params.put("OPIS", ((EditText) findViewById(idtxt[5])).getText().toString());
                 if(((Spinner) findViewById(idtxt[3])).getSelectedItem().toString()=="unasigned")
                     params.put("STATUSDODJELJENOSTI", "0");
                 else
                     params.put("STATUSDODJELJENOSTI", "1");
-                params.put("STATUSIZVRSENOSTI", "0");
                 params.put("VIDLJIVO", "1");
 
 
