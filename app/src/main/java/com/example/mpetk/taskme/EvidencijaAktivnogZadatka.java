@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,6 +41,7 @@ public class EvidencijaAktivnogZadatka  extends AppCompatActivity  implements Vi
     String staraEvidencija;
     volatile ArrayList<String> podaci;
     Button dodajEvidenciju;
+    EditText editText ;
 
     public String stariZ;
  //   int[] idtxt1 = new int[] { R.id.evidencijaEdit};
@@ -50,7 +53,7 @@ public class EvidencijaAktivnogZadatka  extends AppCompatActivity  implements Vi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evidentiraj_bavljeni_posao);
         podaci  =new ArrayList<>();
-
+        editText = (EditText) findViewById(R.id.evidencijaEdit);
 
         stariZ = getIntent().getStringExtra(MyTasks.id_extra);
         dohvatiStaruEvidenciju();
@@ -67,8 +70,9 @@ public class EvidencijaAktivnogZadatka  extends AppCompatActivity  implements Vi
         super.onResume();
         dodajEvidenciju.setAlpha(.5f);
         dodajEvidenciju.setClickable(false);
-        ((EditText) findViewById(R.id.evidencijaEdit)).setText("please wait...");
-        ((EditText) findViewById(R.id.evidencijaEdit)).setEnabled(false);
+
+        editText.setText("please wait...");
+        editText.setEnabled(false);
 
     }
 
@@ -87,11 +91,17 @@ public class EvidencijaAktivnogZadatka  extends AppCompatActivity  implements Vi
                         podaci.addAll(taskovi);
                         System.out.println(Arrays.asList(podaci));
                         staraEvidencija=podaci.get(7).toString();
-                        ((EditText) findViewById(R.id.evidencijaEdit)).setText(staraEvidencija);
-                        ((EditText) findViewById(R.id.evidencijaEdit)).setEnabled(true);
+
+
+                        editText.setText(staraEvidencija);
+                        editText.setEnabled(true);
+                        editText.requestFocus();
+                        editText.setSelection(editText.getText().length());
+                        InputMethodManager imm = (InputMethodManager)
+                                getSystemService(Context.INPUT_METHOD_SERVICE);
+                        imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
                         dodajEvidenciju.setAlpha(1);
                         dodajEvidenciju.setClickable(true);
-                        ((EditText) findViewById(R.id.evidencijaEdit)).setSelection(((EditText) findViewById(R.id.evidencijaEdit)).getText().length());
 
                     }
                 },
@@ -142,7 +152,7 @@ public class EvidencijaAktivnogZadatka  extends AppCompatActivity  implements Vi
                 System.out.print("Stari: "+stariZ);
                 System.out.print("evidencija: "+((EditText)findViewById(R.id.evidencijaEdit)).getText().toString());
                 params.put("NAZIV_ZADATKA", stariZ.trim());
-                params.put("EVIDENCIJA", (staraEvidencija + "\n" + ((EditText) findViewById(R.id.evidencijaEdit)).getText()).toString().trim());
+                params.put("EVIDENCIJA", (((EditText) findViewById(R.id.evidencijaEdit)).getText()).toString().trim());
 
                 return params;
             }

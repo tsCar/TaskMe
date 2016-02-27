@@ -44,6 +44,7 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
                 android:layout_marginTop="10dp"
+
                 />
 
 
@@ -51,7 +52,7 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="60dp"
-                android:text="Make log"
+                android:text="Edit log"
                 android:id="@+id/button_evidentiraj"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"

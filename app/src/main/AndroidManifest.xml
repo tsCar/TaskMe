@@ -23,7 +23,7 @@
 
         <activity android:name=".BrisanjeKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Delete client"></activity>
         <activity android:name=".PrikazKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Client overview"></activity>
-        <activity android:name=".EvidencijaAktivnogZadatka"  android:noHistory="true" android:label="Make log"></activity>
+        <activity android:name=".EvidencijaAktivnogZadatka"  android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Edit log"></activity>
         PrikazZadatkaZaposlenik
         <activity android:name=".PrikazZadatkaZaposlenik" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Show more"></activity>
 
