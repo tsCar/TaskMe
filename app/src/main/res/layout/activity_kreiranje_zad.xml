@@ -26,7 +26,7 @@
             android:layout_marginBottom="10dp"
             android:layout_gravity="center"
             />
-             <TextView
+             TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Task name:"
@@ -47,6 +47,7 @@
             android:layout_marginRight="10dp"
             android:id="@+id/editxt_taskname"
             android:paddingLeft="10dp"
+            android:hint="Task name"
             />
        <TextView
             android:layout_width="wrap_content"
@@ -113,7 +114,7 @@
             android:background="#E8FDF6"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="10dp"
             android:entries="@array/spinner_array1"
             />
 
@@ -134,8 +135,8 @@
             android:layout_height="150dp"
             android:id="@+id/datePicker"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:datePickerMode="spinner"
             android:background="#E8FDF6"
@@ -143,7 +144,7 @@
             />
 
 
-        <TextView
+        TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Description:"
@@ -166,6 +167,7 @@
             android:layout_marginRight="10dp"
             android:id="@+id/editxt_taskDESC"
             android:paddingLeft="10dp"
+            android:hint="Description"
             />
         <!--     <TextView
           android:layout_width="wrap_content"

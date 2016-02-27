@@ -28,6 +28,17 @@
                 android:layout_gravity="center"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Firm name:"
+                android:id="@+id/text24"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
 
 
             <EditText
@@ -41,6 +52,18 @@
                 android:id="@+id/izmjena_klijenta_ime"
                 android:hint="Firm name"
                 android:paddingLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Adress:"
+                android:id="@+id/text244"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
                 />
 
 
@@ -57,6 +80,19 @@
                 android:paddingLeft="10dp"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Phone number:"
+                android:id="@+id/text2994"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -69,6 +105,19 @@
                 android:hint="Phone number"
                 android:paddingLeft="10dp"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="E-mail:"
+                android:id="@+id/text276"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
 
             <EditText
                 android:layout_width="fill_parent"

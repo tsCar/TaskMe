@@ -29,6 +29,17 @@
                 />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:inputType="text"
@@ -43,7 +54,17 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Surname:"
+                android:id="@+id/text244"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -59,7 +80,16 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="OIB:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -77,6 +107,17 @@
                 />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ID number:"
+                android:id="@+id/text223"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:inputType="text"
@@ -91,7 +132,17 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Adress:"
+                android:id="@+id/text24a"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -107,7 +158,17 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Phone number:"
+                android:id="@+id/text243"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -123,7 +184,17 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="E-mail:"
+                android:id="@+id/text24lk"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -141,6 +212,17 @@
                 />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Date of employment:"
+                android:id="@+id/text3"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:inputType="text"
@@ -155,7 +237,17 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Usernamee:"
+                android:id="@+id/textgg24"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -171,7 +263,17 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Password:"
+                android:id="@+id/textpass24"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -187,6 +289,18 @@
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Type of user:"
+                android:id="@+id/text24ty"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -196,7 +310,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:id="@+id/prikaz_korisnika_tip"
-                android:hint="Password"
                 android:gravity="center_vertical"
                 android:textColor="#000000"
                 android:paddingLeft="10dp"
