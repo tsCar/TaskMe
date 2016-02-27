@@ -11,11 +11,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -37,30 +37,90 @@ import java.util.Map;
  */
 public class EvidentirajObavljeniPosao  extends AppCompatActivity  implements View.OnClickListener{
 
+    ArrayAdapter<String> adapterLog;
+    String staraEvidencija;
+    volatile ArrayList<String> podaci;
+    Button dodajEvidenciju;
+    EditText editText ;
 
     public String stariZ;
-    int[] idtxt1 = new int[] { R.id.evidencijaEdit};
+    //   int[] idtxt1 = new int[] { R.id.evidencijaEdit};
     //komentar
+    //PrikazZadatka pz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evidentiraj_bavljeni_posao);
-
+        podaci  =new ArrayList<>();
+        editText = (EditText) findViewById(R.id.evidencijaEdit);
 
         stariZ = getIntent().getStringExtra(FinnishedTask.id_extra);
-
-
-        Button dodajEvidenciju = (Button) findViewById(R.id.button_evidentiraj);
+        dohvatiStaruEvidenciju();
+/*        pz=new PrikazZadatka();
+        pz.stariZad =stariZ;
+        pz.defaultValues();*/
+        dodajEvidenciju = (Button) findViewById(R.id.button_evidentiraj);
         dodajEvidenciju.setOnClickListener(this);
-
-
     }
+
 
     @Override
     protected void onResume() {
         super.onResume();
+        dodajEvidenciju.setAlpha(.5f);
+        dodajEvidenciju.setClickable(false);
 
+        editText.setText("please wait...");
+        editText.setEnabled(false);
+
+    }
+
+
+    void dohvatiStaruEvidenciju() {
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,
+                Config.LOGIN_WAMP_URL+"taskmeZadatakPodaci.php",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        System.out.println("response ");System.out.println(response);
+                        List<String> taskovi = Arrays.asList(response.split("\\|t", -1));
+                        podaci.clear();
+                        podaci.addAll(taskovi);
+                        System.out.println(Arrays.asList(podaci));
+                        staraEvidencija=podaci.get(7).toString();
+
+
+                        editText.setText(staraEvidencija);
+                        editText.setEnabled(true);
+                        editText.requestFocus();
+                        editText.setSelection(editText.getText().length());
+                        InputMethodManager imm = (InputMethodManager)
+                                getSystemService(Context.INPUT_METHOD_SERVICE);
+                        imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
+                        dodajEvidenciju.setAlpha(1);
+                        dodajEvidenciju.setClickable(true);
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        System.out.println("error: "+error);
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("NAZIV_ZADATKA", stariZ.trim());
+                return params;
+            }
+        };
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
 
     }
 
@@ -90,9 +150,9 @@ public class EvidentirajObavljeniPosao  extends AppCompatActivity  implements Vi
                 //   nadiId();
                 Map < String, String > params = new HashMap<>();
                 System.out.print("Stari: "+stariZ);
-                System.out.print("evidencija: "+((EditText)findViewById(idtxt1[0])).getText().toString());
+                System.out.print("evidencija: "+((EditText)findViewById(R.id.evidencijaEdit)).getText().toString());
                 params.put("NAZIV_ZADATKA", stariZ.trim());
-                params.put("EVIDENCIJA", ((EditText)findViewById(idtxt1[0])).getText().toString().trim());
+                params.put("EVIDENCIJA", (((EditText) findViewById(R.id.evidencijaEdit)).getText()).toString().trim());
 
                 return params;
             }
@@ -100,6 +160,7 @@ public class EvidentirajObavljeniPosao  extends AppCompatActivity  implements Vi
         //Adding the string request to the queue
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
+
     }
 
 
