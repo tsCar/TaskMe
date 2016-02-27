@@ -28,7 +28,17 @@
                 android:layout_gravity="center"
                 />
 
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name:"
+                android:id="@+id/text24ty"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:layout_width="fill_parent"
@@ -42,7 +52,16 @@
                 android:hint="Name"
                 android:paddingLeft="10dp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Surname:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -55,7 +74,16 @@
                 android:hint="Surname"
                 android:paddingLeft="10dp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="OIB:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -68,7 +96,16 @@
                 android:hint="OIB"
                 android:paddingLeft="10dp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ID number:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -81,7 +118,16 @@
                 android:hint="ID number"
                 android:paddingLeft="10dp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Adress:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -95,6 +141,16 @@
                 android:paddingLeft="10dp"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Phone number:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -107,7 +163,16 @@
                 android:hint="Phone number"
                 android:paddingLeft="10dp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="E-mail:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -145,7 +210,16 @@
                 android:background="#E8FDF6"
                 android:calendarViewShown="false"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Username:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -158,7 +232,16 @@
                 android:hint="Username"
                 android:paddingLeft="10dp"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Password:"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"

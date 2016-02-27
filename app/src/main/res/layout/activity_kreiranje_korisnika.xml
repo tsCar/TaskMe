@@ -136,8 +136,8 @@
                 android:layout_height="150dp"
                 android:id="@+id/datePickerNoviKorisnik"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:datePickerMode="spinner"
                 android:background="#E8FDF6"
@@ -170,6 +170,19 @@
                 android:hint="Password"
                 android:paddingLeft="10dp"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Type of user:"
+                android:id="@+id/text111"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
 
             <Spinner
                 android:id="@+id/kreiranje_spinner_tip_korisnika"

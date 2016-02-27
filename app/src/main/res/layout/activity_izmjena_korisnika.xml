@@ -28,6 +28,17 @@
                 android:layout_gravity="center"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name:"
+                android:id="@+id/text24"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
 
 
             <EditText
@@ -42,6 +53,17 @@
                 android:hint="Name"
                 android:paddingLeft="10dp"
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Surname:"
+                android:id="@+id/text244"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:layout_width="fill_parent"
@@ -55,6 +77,19 @@
                 android:hint="Surname"
                 android:paddingLeft="10dp"
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="OIB:"
+                android:id="@+id/text2499"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
 
             <EditText
                 android:layout_width="fill_parent"
@@ -69,6 +104,19 @@
                 android:paddingLeft="10dp"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ID number:"
+                android:id="@+id/text223"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -81,6 +129,19 @@
                 android:hint="ID number"
                 android:paddingLeft="10dp"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Adress:"
+                android:id="@+id/text24a"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
 
             <EditText
                 android:layout_width="fill_parent"
@@ -95,6 +156,19 @@
                 android:paddingLeft="10dp"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Phone number:"
+                android:id="@+id/text243"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -108,6 +182,19 @@
                 android:paddingLeft="10dp"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="E-mail:"
+                android:id="@+id/text24lk"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -120,6 +207,8 @@
                 android:hint="E-mail"
                 android:paddingLeft="10dp"
                 />
+
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -146,6 +235,19 @@
                 android:calendarViewShown="false"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Usernamee:"
+                android:id="@+id/textgg24"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -159,6 +261,19 @@
                 android:paddingLeft="10dp"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Password:"
+                android:id="@+id/textpass24"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
@@ -171,6 +286,19 @@
                 android:hint="Password"
                 android:paddingLeft="10dp"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Type of user:"
+                android:id="@+id/text24ty"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
 
             <Spinner
                 android:id="@+id/spinner_tip_korisnika"
