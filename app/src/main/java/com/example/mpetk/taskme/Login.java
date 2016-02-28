@@ -49,7 +49,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         super.onResume();
         //In onresume fetching value from sharedpreference
         SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-
+        editTextPassword.clearComposingText();
+        editTextUser.clearComposingText();
         //Fetching the boolean value form sharedpreferences
         boolean loggedIn = sharedPreferences.getBoolean(Config.LOGGEDIN_SHARED_PREF, false);
 
@@ -166,7 +167,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 return headers;
             }
         };
-        int lazem=0;
 
         //Adding the string request to the queue
 
@@ -176,6 +176,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         requestQueue.add(stringRequest);
         System.out.println("ulogiran: "+ Config.SHARED_PREF_NAME);
         //
+    }
+    @Override
+    public void onBackPressed() {
+        onResume();
     }
 
     @Override
