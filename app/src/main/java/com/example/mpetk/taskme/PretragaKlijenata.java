@@ -107,7 +107,9 @@ public class PretragaKlijenata  extends AppCompatActivity{
                     @Override
                     public void onResponse(String response) {
                         List<String> klijent = Arrays.asList(response.split(","));
-                        list.addAll(klijent);
+
+                        list.clear();
+                        if(klijent.size()>1 || !klijent.get(0).trim().equalsIgnoreCase("") ) list.addAll(klijent);
                         adapter1.notifyDataSetChanged();
                     }
                 },

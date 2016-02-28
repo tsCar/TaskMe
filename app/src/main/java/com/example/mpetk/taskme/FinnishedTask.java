@@ -81,7 +81,9 @@ public class FinnishedTask extends AppCompatActivity {
 
                         System.out.print("Response "+response);
                         List<String> tasks = Arrays.asList(response.split("\\|t"));
-                        podaci.addAll(tasks);
+                        podaci.clear();
+                        if(tasks.size()>1 || !tasks.get(0).trim().equalsIgnoreCase("") ) podaci.addAll(tasks);
+                        adapter.notifyDataSetChanged();
                     }
                 },
                 new Response.ErrorListener() {

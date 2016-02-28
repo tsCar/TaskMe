@@ -68,6 +68,7 @@ public class ZadaciZaposlenika extends AppCompatActivity {
         super.onResume();
         showList();
         adapter=new ArrayAdapter<String>(this, R.layout.activity_listview, podaci);
+
         listview = (ListView) findViewById(R.id.lista_poslova);
         registerForContextMenu(listview);
         listview.setAdapter(adapter);
@@ -84,7 +85,10 @@ public class ZadaciZaposlenika extends AppCompatActivity {
 
                         System.out.print("Response "+response);
                         List<String> tasks = Arrays.asList(response.split("\\|t"));
-                        podaci.addAll(tasks);
+                        podaci.clear();
+                        if(tasks.size()>1 || !tasks.get(0).trim().equalsIgnoreCase("") ) podaci.addAll(tasks);
+                        adapter.notifyDataSetChanged();
+                        System.out.print("podaci iz pretrage: "+Arrays.asList(podaci));
                     }
                 },
                 new Response.ErrorListener() {

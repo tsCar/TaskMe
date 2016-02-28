@@ -109,7 +109,9 @@ public class PretragaKorisnika  extends AppCompatActivity{
                     public void onResponse(String response) {
                         //If we are getting success from server
                         List<String> useri = Arrays.asList(response.split(","));
-                        list.addAll(useri);
+
+                        list.clear();
+                        if(useri.size()>1 || !useri.get(0).trim().equalsIgnoreCase("") ) list.addAll(useri);
                         adapter1.notifyDataSetChanged();
                     }
                 },

@@ -325,6 +325,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                     @Override
                     public void onResponse(String response) {
                         List<String> klijent = Arrays.asList(response.split(","));
+
                         arrayFinalTasks.addAll(klijent);
                         adapter1.notifyDataSetChanged();
                     }
