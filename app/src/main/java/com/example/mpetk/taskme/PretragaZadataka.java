@@ -117,6 +117,7 @@ public class PretragaZadataka extends AppCompatActivity{
                         //If we are getting success from server
                         List<String> taskovi = Arrays.asList(response.split(","));
                         list.addAll(taskovi);
+                        adapterTask.notifyDataSetChanged();
                     }
                 },
                 new Response.ErrorListener() {

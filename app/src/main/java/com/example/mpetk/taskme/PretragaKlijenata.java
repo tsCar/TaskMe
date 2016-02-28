@@ -108,6 +108,7 @@ public class PretragaKlijenata  extends AppCompatActivity{
                     public void onResponse(String response) {
                         List<String> klijent = Arrays.asList(response.split(","));
                         list.addAll(klijent);
+                        adapter1.notifyDataSetChanged();
                     }
                 },
                 new Response.ErrorListener() {

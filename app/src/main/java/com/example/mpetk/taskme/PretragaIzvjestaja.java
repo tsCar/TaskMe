@@ -228,6 +228,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                         List<String> useri = Arrays.asList(response.split(","));
                       //  arrayEmployee.clear();
                         arrayEmployee.addAll(useri);
+                        adapter1.notifyDataSetChanged();
 
                         System.out.print("iz respons e"+Arrays.asList(arrayEmployee));
                     }
@@ -260,6 +261,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                         List<String> useri = Arrays.asList(response.split(","));
                         arrayClient.clear();
                         arrayClient.addAll(useri);
+                        adapter1.notifyDataSetChanged();
 
                         System.out.print("iz respons e"+Arrays.asList(arrayClient));
                     }
@@ -292,6 +294,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                         List<String> useri = Arrays.asList(response.split(","));
                         arrayTask.clear();
                         arrayTask.addAll(useri);
+                        adapter1.notifyDataSetChanged();
 
                         System.out.print("iz respons e"+Arrays.asList(arrayTask));
                     }
@@ -323,6 +326,7 @@ public class PretragaIzvjestaja  extends AppCompatActivity implements AdapterVie
                     public void onResponse(String response) {
                         List<String> klijent = Arrays.asList(response.split(","));
                         arrayFinalTasks.addAll(klijent);
+                        adapter1.notifyDataSetChanged();
                     }
                 },
                 new Response.ErrorListener() {
