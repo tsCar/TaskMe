@@ -13,13 +13,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:noHistory="true" >
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login" android:label="TaskMe"> </activity>
 
         <activity android:name=".BrisanjeKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Delete client"></activity>
         <activity android:name=".PrikazKlijenata" android:windowSoftInputMode="stateHidden" android:noHistory="true" android:label="Client overview"></activity>
