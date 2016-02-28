@@ -27,6 +27,35 @@
                 android:layout_gravity="center"
                 />
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Task name:"
+                android:id="@+id/text24"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="#E8FDF6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/editxt_taskname_izmjena"
+                android:hint="Task name"
+                android:paddingLeft="10dp"
+
+                />
+
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -46,7 +75,7 @@
                 android:background="#E8FDF6"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="10dp"
                 android:entries="@array/spinner_array1"
                 />
 
@@ -69,7 +98,7 @@
                 android:background="#E8FDF6"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="10dp"
                 android:entries="@array/spinner_array1"
                 />
 
@@ -92,7 +121,7 @@
                 android:background="#E8FDF6"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="10dp"
                 android:entries="@array/spinner_array1"
                 />
 
@@ -109,14 +138,16 @@
                 />
 
             <DatePicker
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
                 android:id="@+id/datePicker_izmjena"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="5dp"
-                android:datePickerMode="calendar"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:background="#E8FDF6"
                 />
 
 
@@ -140,8 +171,8 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:id="@+id/editxt_username_izmjena"
-                android:hint="username"
+                android:id="@+id/editxt_taskDESC_izm"
+                android:hint="Description"
                 android:paddingLeft="10dp"
                 />
 
@@ -153,7 +184,7 @@
 
 
 
-                <Button
+  <!--              <Button
                     android:layout_width="140dp"
                     android:layout_height="60dp"
                     android:text="Cancel"
@@ -167,10 +198,10 @@
 
 
 
-                    />
+                    /> -->
 
                 <Button
-                    android:layout_width="140dp"
+                    android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:text="Modify"
                     android:id="@+id/button_modify_izmjena"

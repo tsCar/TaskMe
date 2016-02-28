@@ -13,11 +13,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ikona"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.mpetk.taskme.Login" >
+        <activity
+            android:name="com.example.mpetk.taskme.Splashscreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,90 +29,131 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.mpetk.taskme.Login"
+            android:label="TaskMe" >
+        </activity>
+        <activity
             android:name="com.example.mpetk.taskme.BrisanjeKlijenata"
+            android:label="Delete client"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PrikazKlijenata"
+            android:label="Client overview"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.mpetk.taskme.EvidencijaAktivnogZadatka"
+            android:label="Edit log"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden" />
+        PrikazZadatkaZaposlenik
+        <activity
+            android:name="com.example.mpetk.taskme.PrikazZadatkaZaposlenik"
+            android:label="Show more"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.BrisanjeKorisnika"
+            android:label="Delete user"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.BrisanjeZadatka"
+            android:label="Delete task"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.DodjelaZadatka"
+            android:label="Asign task"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.EvidentirajObavljeniPosao"
+            android:label="Create task log"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.Home"
+            android:label="Home-admin"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.HomeZaposlenik"
+            android:label="Home-employee"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.IzmjenaKlijenata"
+            android:label="Modify client"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.IzmjenaKorisnika"
+            android:label="Modify user"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.IzmjenaZadatka"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.IzmjeniObavljeniPosao"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.KreiranjeIzvjestaja"
+            android:label="Modify task"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.KreiranjeKlijenta"
+            android:label="Create client"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.KreiranjeKorisnika"
+            android:label="Create employee"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.KreiranjeZadatak"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.Odjava"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.PregledEvidencije"
+            android:label="Create task"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PretragaKlijenata"
+            android:label="Search clients"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PretragaKorisnika"
+            android:label="Search employees"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.mpetk.taskme.PretragaIzvjestaja"
+            android:label="Search reports"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PretragaZadataka"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.PromjenaSifre"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.UpravljanjeZadacima"
+            android:label="Search tasks"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.ZadaciZaposlenika"
+            android:label="Search tasks"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PrikazKorisnika"
+            android:label="Employee overview"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.PrikazZadatka"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name="com.example.mpetk.taskme.FinnishedTask"
+            android:label="Task overview"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.example.mpetk.taskme.MyTasks"
+            android:label="My tasks"
             android:windowSoftInputMode="stateHidden" />
-
+        <activity
+            android:name="com.example.mpetk.taskme.FinnishedTask"
+            android:label="Finnished tasks"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.mpetk.taskme.MojProfil"
+            android:label="My profile"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
